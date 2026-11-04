@@ -25,6 +25,15 @@ deployments:
   - github/awesome-copilot/agents/Thinking-Beast-Mode.agent.md
   active_owner: github/awesome-copilot/agents/Thinking-Beast-Mode.agent.md
   content_hash: sha256:53f8b55fce98038d0b59d71146c439f363f5f6daf079237c37ed20e07711269d
+- kind: project-relative
+  target: copilot
+  value: .github/instructions/csharp.instructions.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:19e755c8c10c5c2d6b8e301772a38e7ff80b27fc915d2d012935fc17cbd9e6f5
 - kind: uri
   target: mcp
   value: microsoft-learn
@@ -45,3 +54,7 @@ mcp_configs:
 mcp_target_servers:
   vscode:
   - microsoft-learn
+local_deployed_files:
+- .github/instructions/csharp.instructions.md
+local_deployed_file_hashes:
+  .github/instructions/csharp.instructions.md: sha256:19e755c8c10c5c2d6b8e301772a38e7ff80b27fc915d2d012935fc17cbd9e6f5
