@@ -1,0 +1,887 @@
+openapi: 3.0.2
+info:
+  title: of-sys-acct-core-banking-v1
+  version: 1.0.0
+  description: >-
+    Banking accounts System API contract based on the functional specification.
+    This is a design draft; models and operations remain subject to approval.
+    Mambu accountType and accountState enums follow the public API v2 Deposit
+    Account reference: [create](https://docs.mambu.com/api/api-v2/deposits/create/)
+    and [read](https://docs.mambu.com/api/api-v2/deposits/get-by-id/).
+    Synthetic product and customer mappings in x-workshop-mock are workshop
+    fixtures only and are not valid for a real Mambu tenant.
+    OAuth2 client credentials with bearer JWT, per-operation scopes, upstream error mapping, Problem Details,
+    and Correlation-Id are defined for this draft. Consent, write preconditions,
+    and platform service-level targets remain subject to approval.
+  contact:
+    name: Open Finance API owner
+servers:
+  - url: /open-finance/system/accounts/v1
+    description: Proposed base path; host and deployment environments are pending approval.
+tags:
+  - name: accounts
+    description: Customer account listing and account details.
+  - name: balances
+    description: Account balance queries.
+  - name: account-lifecycle
+    description: Account creation and logical closure.
+  - name: adjustments
+    description: Auditable balance adjustments posted to the account ledger.
+security:
+  - oauth2Auth: []
+paths:
+  /customers/{customerId}/accounts:
+    get:
+      tags:
+        - accounts
+      operationId: listCustomerAccounts
+      summary: List accounts for a customer
+      security:
+        - oauth2Auth: [accounts.read]
+      x-required-scopes:
+        - accounts.read
+      description: >-
+        Returns accounts the consumer is authorized to query. Knowing a
+        customer identifier alone must not grant access. Each request must
+        authorize the authenticated consumer for the customer and account.
+        Return 404 for nonexistent and non-visible resources to prevent
+        resource enumeration. Bearer JWT and operation scopes are defined;
+        consent remains pending approval. If any account lacks a required
+        AccountReference field in source data, fail the entire operation;
+        do not omit the account or return a partial list; this maps to 502.
+      parameters:
+        - $ref: '#/components/parameters/CustomerId'
+        - $ref: '#/components/parameters/CorrelationId'
+      responses:
+        '200':
+          description: Authorized customer accounts returned.
+          headers:
+            Correlation-Id:
+              $ref: '#/components/headers/CorrelationId'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AccountReference'
+              examples:
+                illustrative:
+                  summary: Illustrative account collection
+                  value:
+                    - accountId: acc-50001
+                      accountType: CURRENT_ACCOUNT
+                      currency: EUR
+                      accountState: ACTIVE
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+        '502':
+          $ref: '#/components/responses/BadGateway'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+        '504':
+          $ref: '#/components/responses/GatewayTimeout'
+    post:
+      tags:
+        - account-lifecycle
+      operationId: createAccount
+      summary: Create an account for a customer
+      security:
+        - oauth2Auth: [accounts.write]
+      x-required-scopes:
+        - accounts.write
+      description: >-
+        Creates a Mambu Deposit Account. The System API resolves customerId
+        through the workshop mock fixture to accountHolderKey and maps
+        canonical accountType/currency to a synthetic productTypeKey. These
+        mock keys are internal and are not supplied by the caller; never send
+        them to a real Mambu tenant. Production replaces the fixture with
+        tenant product configuration and an authorized customer registry.
+        Mambu assigns accountState PENDING_APPROVAL; callers cannot select the
+        initial state. Tenant product configuration must support this state.
+        An unsupported accountType/currency combination returns 400. Missing
+        or incomplete tenant mapping configuration returns 503; no fallback
+        product is selected.
+        Source operation: POST /api/deposits.
+      parameters:
+        - $ref: '#/components/parameters/CustomerId'
+        - $ref: '#/components/parameters/CorrelationId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateAccountRequest'
+      responses:
+        '201':
+          description: Account created; the response contains the account identifier and Mambu accountState.
+          headers:
+            Correlation-Id:
+              $ref: '#/components/headers/CorrelationId'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountReference'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '409':
+          $ref: '#/components/responses/Conflict'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+        '502':
+          $ref: '#/components/responses/BadGateway'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+        '504':
+          $ref: '#/components/responses/GatewayTimeout'
+  /accounts/{accountId}:
+    get:
+      tags:
+        - accounts
+      operationId: getAccount
+      summary: Get account details
+      security:
+        - oauth2Auth: [accounts.read]
+      x-required-scopes:
+        - accounts.read
+      description: >-
+        Returns account details only when the consumer is authorized for the
+        account and its associated customer. Knowing accountId alone must not
+        grant access. If a required AccountReference field is missing from
+        source data, fail the operation rather than returning an incomplete
+        object; this maps to 502.
+      parameters:
+        - $ref: '#/components/parameters/AccountId'
+        - $ref: '#/components/parameters/CorrelationId'
+      responses:
+        '200':
+          description: Account details returned.
+          headers:
+            Correlation-Id:
+              $ref: '#/components/headers/CorrelationId'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountReference'
+              examples:
+                illustrative:
+                  summary: Illustrative account reference
+                  value:
+                    accountId: acc-50001
+                    accountType: CURRENT_ACCOUNT
+                    currency: EUR
+                    accountState: ACTIVE
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+        '502':
+          $ref: '#/components/responses/BadGateway'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+        '504':
+          $ref: '#/components/responses/GatewayTimeout'
+  /accounts/{accountId}/balances:
+    get:
+      tags:
+        - balances
+      operationId: getAccountBalances
+      summary: Get account balances
+      security:
+        - oauth2Auth: [balances.read]
+      x-required-scopes:
+        - balances.read
+      description: >-
+        Returns required available and book balances for an account. Their
+        semantics, account currency, shared UTC cut-off, sign convention, and
+        precision policy are defined for this draft. If either balance is
+        unavailable, fail the operation rather than returning a partial 200
+        or synthesizing a value. For a closed account, return recorded
+        balances when Core Banking provides them; otherwise apply the same
+        failure behavior. The authenticated consumer must be authorized for
+        the associated customer and account. HTTP status and error
+        representation for unavailable balances map to 502.
+      parameters:
+        - $ref: '#/components/parameters/AccountId'
+        - $ref: '#/components/parameters/CorrelationId'
+      responses:
+        '200':
+          description: Both available and book balances are present and returned.
+          headers:
+            Correlation-Id:
+              $ref: '#/components/headers/CorrelationId'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountBalance'
+              examples:
+                illustrative:
+                  summary: Illustrative account balance
+                  value:
+                    accountId: acc-50001
+                    asOf: '2026-10-31T10:30:00Z'
+                    currency: EUR
+                    availableBalance: 5400.25
+                    bookBalance: 5650.25
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+        '502':
+          $ref: '#/components/responses/BadGateway'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+        '504':
+          $ref: '#/components/responses/GatewayTimeout'
+  /accounts/{accountId}/closure:
+    post:
+      tags:
+        - account-lifecycle
+      operationId: closeAccount
+      summary: Close an account
+      security:
+        - oauth2Auth: [accounts.close]
+      x-required-scopes:
+        - accounts.close
+      description: >-
+        Closes the account logically and preserves its record and audit history.
+        This operation does not physically delete the account. Mambu source
+        operation: POST /deposits/{depositAccountId}:changeState with
+        accountState CLOSED. If already CLOSED, return the current account
+        representation with 200. If Mambu rejects a transition from another
+        state, return 409. Tenant transition preconditions remain open.
+      parameters:
+        - $ref: '#/components/parameters/AccountId'
+        - $ref: '#/components/parameters/CorrelationId'
+      responses:
+        '200':
+          description: Account closed; the returned account has Mambu accountState CLOSED.
+          headers:
+            Correlation-Id:
+              $ref: '#/components/headers/CorrelationId'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountReference'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '409':
+          $ref: '#/components/responses/Conflict'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+        '502':
+          $ref: '#/components/responses/BadGateway'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+        '504':
+          $ref: '#/components/responses/GatewayTimeout'
+  /accounts/{accountId}/balance-adjustments:
+    post:
+      tags:
+        - adjustments
+      operationId: createBalanceAdjustment
+      summary: Post a balance adjustment
+      security:
+        - oauth2Auth: [balances.adjust]
+      x-required-scopes:
+        - balances.adjust
+      description: >-
+        Appends an auditable signed adjustment to the account ledger; it does
+        not overwrite a balance. The adjustment currency must match the
+        account currency. The required Idempotency-Key prevents duplicate
+        postings on retry. Approved policy: Mambu product funds/overdraft
+        rules govern negative amounts; the API does not bypass configured
+        limits. Reject the entire
+        transaction when the debit exceeds available funds plus an explicitly
+        configured overdraft; never post partially. The tenant-specific HTTP
+        mapping remains pending. Completed retries with the same key and
+        payload replay the original response; reusing a key with a different
+        payload returns 409. A duplicate request while the original is still
+        processing returns 202. The transaction
+        channel is selected from tenant configuration, not caller input.
+        reason is stored in the System API audit record and is not forwarded
+        to Mambu unless the tenant OAS confirms a matching field.
+        Positive amounts map to Mambu deposit
+        transactions; negative amounts map to withdrawal transactions.
+        Corrections use a new compensating adjustment. Do not invoke Mambu's
+        transaction-adjust operation or rewrite the original transaction.
+      parameters:
+        - $ref: '#/components/parameters/AccountId'
+        - $ref: '#/components/parameters/IdempotencyKey'
+        - $ref: '#/components/parameters/CorrelationId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BalanceAdjustmentRequest'
+      responses:
+        '201':
+          description: Adjustment recorded in the ledger; an identical completed retry replays this original response.
+          headers:
+            Correlation-Id:
+              $ref: '#/components/headers/CorrelationId'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BalanceAdjustment'
+        '202':
+          description: An identical request with this idempotency key is still processing; retry later with the same key and request body.
+          headers:
+            Correlation-Id:
+              $ref: '#/components/headers/CorrelationId'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '409':
+          $ref: '#/components/responses/Conflict'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+        '502':
+          $ref: '#/components/responses/BadGateway'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+        '504':
+          $ref: '#/components/responses/GatewayTimeout'
+components:
+  securitySchemes:
+    oauth2Auth:
+      type: oauth2
+      description: >-
+        Workshop-only client-credentials flow for Swagger UI scope selection.
+        The local token endpoint is proposed for the workshop and is not
+        implemented by this API.
+      flows:
+        clientCredentials:
+          tokenUrl: http://localhost:5000/oauth/token
+          scopes:
+            accounts.read: Read account lists and details for authorized resources.
+            balances.read: Read available and book balances for authorized accounts.
+            accounts.write: Create accounts for authorized customers.
+            accounts.close: Close authorized accounts.
+            balances.adjust: Post signed adjustments to authorized accounts.
+  headers:
+    CorrelationId:
+      description: Correlation identifier for tracing this response; matches the request value when provided.
+      schema:
+        type: string
+  responses:
+    BadRequest:
+      description: Request parameters or body are invalid.
+      headers:
+        Correlation-Id:
+          $ref: '#/components/headers/CorrelationId'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+    Unauthorized:
+      description: Authentication is missing or invalid.
+      headers:
+        Correlation-Id:
+          $ref: '#/components/headers/CorrelationId'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+    Forbidden:
+      description: The caller lacks the required scope or authorization.
+      headers:
+        Correlation-Id:
+          $ref: '#/components/headers/CorrelationId'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+    NotFound:
+      description: The resource does not exist or is not visible to the caller.
+      headers:
+        Correlation-Id:
+          $ref: '#/components/headers/CorrelationId'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+    Conflict:
+      description: The request conflicts with resource state or reuses an idempotency key with a different payload.
+      headers:
+        Correlation-Id:
+          $ref: '#/components/headers/CorrelationId'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+    TooManyRequests:
+      description: Rate limit exceeded.
+      headers:
+        Correlation-Id:
+          $ref: '#/components/headers/CorrelationId'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+    InternalServerError:
+      description: Unexpected internal error.
+      headers:
+        Correlation-Id:
+          $ref: '#/components/headers/CorrelationId'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+    BadGateway:
+      description: Core Banking returned invalid or incomplete data, including a missing required field or balance.
+      headers:
+        Correlation-Id:
+          $ref: '#/components/headers/CorrelationId'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+    ServiceUnavailable:
+      description: A required backend dependency is unavailable.
+      headers:
+        Correlation-Id:
+          $ref: '#/components/headers/CorrelationId'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+    GatewayTimeout:
+      description: A required backend dependency did not respond before the timeout.
+      headers:
+        Correlation-Id:
+          $ref: '#/components/headers/CorrelationId'
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+  parameters:
+    CorrelationId:
+      name: Correlation-Id
+      in: header
+      required: false
+      description: Optional caller-provided correlation identifier; returned unchanged when supplied.
+      schema:
+        type: string
+    
+    CustomerId:
+      name: customerId
+      in: path
+      required: true
+      description: Confidential opaque customer identifier; do not log raw values, and mask them when logging is necessary. Must not embed personal data. Bearer JWT authentication and resource authorization are required.
+      schema:
+        type: string
+        minLength: 1
+        maxLength: 64
+        pattern: '^[A-Za-z0-9_-]+$'
+        example: cus-100045
+    AccountId:
+      name: accountId
+      in: path
+      required: true
+      description: Confidential opaque account identifier mapped to Mambu encodedKey; do not log raw values, and mask them when logging is necessary. Must not embed personal data. Bearer JWT authentication and resource authorization are required.
+      schema:
+        type: string
+        minLength: 1
+        maxLength: 64
+        pattern: '^[A-Za-z0-9_-]+$'
+        example: acc-50001
+    IdempotencyKey:
+      name: Idempotency-Key
+      in: header
+      required: true
+      description: >-
+        Mambu requires a UUID idempotency key and recommends UUID v4. Retries
+        must use the exact same request. Completed duplicate requests replay
+        the original response; a different payload with the same key returns
+        409; a duplicate while processing returns 202. Retention duration is
+        tenant-configured.
+      schema:
+        type: string
+        format: uuid
+        example: 8d2438e0-895b-4b24-8d72-39a52c623c18
+  schemas:
+    Problem:
+      type: object
+      description: Problem Details response with a correlation identifier extension.
+      required:
+        - type
+        - title
+        - status
+      properties:
+        type:
+          type: string
+          format: uri
+          description: URI identifying the problem type.
+        title:
+          type: string
+          description: Short, human-readable summary of the problem.
+        status:
+          type: integer
+          minimum: 100
+          maximum: 599
+          description: HTTP status code for this occurrence.
+        detail:
+          type: string
+          description: Human-readable explanation specific to this occurrence.
+        instance:
+          type: string
+          description: URI identifying this specific problem occurrence.
+        correlationId:
+          type: string
+          description: Correlation identifier matching the Correlation-Id response header.
+    CreateAccountRequest:
+      type: object
+      description: >-
+        Public account creation request. In workshop mode, the path customerId
+        is resolved through x-workshop-mock to a synthetic Mambu accountHolderKey
+        with accountHolderType CLIENT. The System API resolves accountType and
+        currency to a synthetic productTypeKey; no Mambu key is accepted from
+        the caller. These fixtures must never be sent to a real tenant.
+        Production uses tenant mappings. Mambu
+        initializes accountState to PENDING_APPROVAL when supported by the
+        tenant product.
+        Unsupported accountType/currency combinations are rejected with 400;
+        unavailable or incomplete tenant mapping returns 503. No fallback
+        product is selected.
+      required:
+        - name
+        - accountType
+        - currency
+      properties:
+        name:
+          type: string
+          description: Account display name.
+          minLength: 1
+        accountType:
+          type: string
+          description: Canonical Mambu Deposit Account type used to resolve the tenant product.
+          enum:
+            - CURRENT_ACCOUNT
+            - REGULAR_SAVINGS
+            - FIXED_DEPOSIT
+            - SAVINGS_PLAN
+            - INVESTOR_ACCOUNT
+        currency:
+          type: string
+          description: ISO 4217 account currency used with accountType to resolve the tenant product.
+          example: EUR
+    BalanceAdjustmentRequest:
+      type: object
+      description: >-
+        Request to append an auditable signed amount to the account ledger.
+        Positive values credit the customer; negative values debit the
+        customer. Currency must match the account currency. Negative values
+        must respect Mambu's configured available-funds/overdraft limit and
+        fail atomically if that limit is exceeded; this policy is approved.
+        Tenant overdraft values and the HTTP error mapping remain pending.
+        Positive values are posted through Mambu's deposit transaction
+        endpoint; negative values use the withdrawal transaction endpoint.
+        No partial posting is allowed. reason is audit-only and is not sent to
+        Mambu unless the tenant OAS defines an approved field mapping.
+      required:
+        - amount
+        - currency
+        - reason
+      properties:
+        amount:
+          type: number
+          description: Signed adjustment amount using the account's currency scale.
+          example: 100.00
+        currency:
+          type: string
+          description: ISO 4217 currency code; must match the account currency.
+          example: EUR
+        reason:
+          type: string
+          minLength: 1
+          description: Business reason recorded for audit.
+          example: Opening balance
+    BalanceAdjustment:
+      type: object
+      description: >-
+        Ledger adjustment record returned after posting. reason is retained
+        in the System API audit record and is not sourced from Mambu unless an
+        approved tenant OAS mapping is defined.
+      required:
+        - adjustmentId
+        - accountId
+        - amount
+        - currency
+        - reason
+        - recordedAt
+      properties:
+        adjustmentId:
+          type: string
+          description: Identifier assigned to the recorded adjustment.
+          example: adj-90001
+        accountId:
+          type: string
+          description: Account to which the adjustment was posted.
+          example: acc-50001
+        amount:
+          type: number
+          description: Signed adjustment amount in the account currency.
+          example: 100.00
+        currency:
+          type: string
+          description: ISO 4217 account currency.
+          example: EUR
+        reason:
+          type: string
+          description: Business reason recorded for audit.
+          example: Opening balance
+        recordedAt:
+          type: string
+          format: date-time
+          description: UTC instant when the adjustment was recorded.
+          example: '2026-10-31T12:00:00Z'
+    AccountReference:
+      type: object
+      description: >-
+        Mambu Deposit Account reference. The accountType and accountState
+        properties use the values documented in Mambu API v2. accountId maps
+        to the Mambu encodedKey. Internal resolution of customerId and
+        accountType/currency to Mambu keys is approved. Workshop values are
+        synthetic fixtures in x-workshop-mock; production values are tenant
+        deployment configuration.
+      required:
+        - accountId
+        - accountType
+        - currency
+        - accountState
+      properties:
+        accountId:
+          type: string
+          description: Confidential opaque identifier mapped to Mambu encodedKey; the example is illustrative, not a Mambu key.
+          minLength: 1
+          maxLength: 64
+          pattern: '^[A-Za-z0-9_-]+$'
+          example: acc-50001
+        accountType:
+          type: string
+          description: Mambu Deposit Account type.
+          enum:
+            - CURRENT_ACCOUNT
+            - REGULAR_SAVINGS
+            - FIXED_DEPOSIT
+            - SAVINGS_PLAN
+            - INVESTOR_ACCOUNT
+          example: CURRENT_ACCOUNT
+        currency:
+          type: string
+          description: Account currency; maps to Mambu currencyCode.
+          example: EUR
+        accountState:
+          type: string
+          description: Mambu Deposit Account state.
+          enum:
+            - PENDING_APPROVAL
+            - APPROVED
+            - ACTIVE
+            - ACTIVE_IN_ARREARS
+            - MATURED
+            - LOCKED
+            - DORMANT
+            - CLOSED
+            - CLOSED_WRITTEN_OFF
+            - WITHDRAWN
+            - CLOSED_REJECTED
+          example: ACTIVE
+    AccountBalance:
+      type: object
+      description: >-
+        Candidate canonical account balance. Available/book semantics, use of
+        the account currency, a shared UTC asOf cut-off, and the customer-
+        perspective sign convention are approved for this draft. The API
+        preserves Core Banking decimal precision, uses the scale applicable
+        to the currency, and performs no additional rounding. valueDate is
+        optional and distinct from asOf; include it only when an approved
+        tenant OAS or extension supplies it, and never infer it from asOf or
+        transactions. Unavailable-balance HTTP error mapping requires approval. Both
+        availableBalance and bookBalance are required and non-null; if either
+        is unavailable, the operation fails rather than returning a partial
+        response or synthesizing a value. For closed accounts, return recorded
+        balances when available; otherwise apply the same failure behavior.
+        Amounts use decimal semantics; do not use binary floating-point for
+        financial calculations. Positive values represent customer funds or
+        credit; negative values represent debt or overdraft.
+      properties:
+        accountId:
+          type: string
+          description: Confidential opaque identifier mapped to Mambu encodedKey; the example is illustrative, not a Mambu key.
+          minLength: 1
+          maxLength: 64
+          pattern: '^[A-Za-z0-9_-]+$'
+          example: acc-50001
+        asOf:
+          type: string
+          format: date-time
+          description: Shared cut-off instant for both balances, expressed in UTC and distinct from valueDate.
+          example: '2026-10-31T10:30:00Z'
+        valueDate:
+          type: string
+          format: date
+          description: >-
+            Optional business date to which the balance applies. Include only
+            when an approved tenant OAS/extension supplies it; never infer it
+            from asOf or transaction dates.
+        currency:
+          type: string
+          description: Account currency used by both balances, using an ISO 4217 code.
+          example: EUR
+        availableBalance:
+          type: number
+          description: >-
+            Funds available after pending holds and restrictions, in currency.
+            Positive values represent customer funds or credit; negative
+            values represent debt or overdraft. Preserve Core Banking decimal
+            precision and currency-specific scale without additional API rounding.
+          example: 5400.25
+        bookBalance:
+          type: number
+          description: >-
+            Ledger balance from posted transactions, in currency. Positive
+            values represent customer funds or credit; negative values
+            represent debt or overdraft. Preserve Core Banking decimal
+            precision and currency-specific scale without additional API rounding.
+          example: 5650.25
+      required:
+        - availableBalance
+        - bookBalance
+x-contract-status: draft
+x-open-decisions-scope: Remaining decisions apply to production integration and do not block workshop mock fixtures.
+x-open-decisions:
+  - Define rate limits, availability targets, timeout durations, and platform-specific error codes.
+  - Approve AccountReference, AccountBalance, and Money canonical model revisions.
+  - Verify tenant products permit initial accountState PENDING_APPROVAL and define Mambu changeState transition preconditions.
+  - Map adjustment amount and currency to Mambu deposit/withdrawal request fields; confirm tenant transaction channel, overdraft limits, insufficient-funds HTTP mapping, and idempotency retention duration. Mambu transaction correction stays out of scope; any future reversal requires a separately approved operation.
+  - Define consent-evidence propagation and audit-record retention required by organization policy.
+  - Approve deployment host and environments, and define the future compatibility policy; initial SemVer is 1.0.0.
+x-mambu-source-operations:
+  accountCreation: POST /api/deposits
+  accountClosure: POST /deposits/{depositAccountId}:changeState
+  positiveBalanceAdjustment: POST /deposits/{depositAccountId}/transactions/deposits
+  negativeBalanceAdjustment: POST /deposits/{depositAccountId}/transactions/withdrawals
+  existingTransactionCorrection: POST /deposits/transactions/{depositTransactionId}:adjust (not exposed; corrections use a compensating adjustment)
+x-mambu-internal-mappings:
+  customerHolderKey:
+    source: customerId
+    resolution: Workshop mock fixture; production uses the authorized customer registry
+    accountHolderType: CLIENT
+    mockOnly: true
+  productTypeKey:
+    sourceFields:
+      - accountType
+      - currency
+    resolution: Workshop mock fixture; production uses tenant product configuration
+    exposedToCaller: false
+    mockOnly: true
+    unsupportedCombinationStatus: 400
+    unavailableMappingStatus: 503
+    fallbackProduct: false
+  transactionChannel:
+    resolution: Tenant-configured channel
+    exposedToCaller: false
+  adjustmentReason:
+    persistence: System API audit record
+    mambuForwarding: Only when an approved tenant OAS defines a matching field
+x-idempotency-policy:
+  header: Idempotency-Key
+  format: UUIDv4
+  completedIdenticalRetry: Replay original response
+  sameKeyDifferentPayload: 409 Conflict
+  sameKeyWhileProcessing: 202 Accepted
+  retention: Tenant-configured
+x-scope-catalog:
+  accounts.read:
+    description: Read account lists and account details for resources the caller is authorized to access.
+    operations:
+      - listCustomerAccounts
+      - getAccount
+  balances.read:
+    description: Read available and book balances for accounts the caller is authorized to access.
+    operations:
+      - getAccountBalances
+  accounts.write:
+    description: Create an account for a customer the caller is authorized to manage.
+    operations:
+      - createAccount
+  accounts.close:
+    description: Close an account the caller is authorized to manage.
+    operations:
+      - closeAccount
+  balances.adjust:
+    description: Post a signed balance adjustment to an account the caller is authorized to manage.
+    operations:
+      - createBalanceAdjustment
+x-workshop-mock:
+  enabled: true
+  purpose: Mock Mambu responses for the brownfield workshop; never use these keys with a real tenant.
+  supportedProducts:
+    - accountType: CURRENT_ACCOUNT
+      currency: EUR
+      productTypeKey: mock-product-current-eur
+    - accountType: REGULAR_SAVINGS
+      currency: EUR
+      productTypeKey: mock-product-savings-eur
+    - accountType: FIXED_DEPOSIT
+      currency: EUR
+      productTypeKey: mock-product-fixed-eur
+    - accountType: SAVINGS_PLAN
+      currency: EUR
+      productTypeKey: mock-product-savings-plan-eur
+    - accountType: INVESTOR_ACCOUNT
+      currency: EUR
+      productTypeKey: mock-product-investor-eur
+  customers:
+    - customerId: cus-100045
+      accountHolderKey: mock-client-100045
+      accountHolderType: CLIENT
+  unsupportedProductCombinationStatus: 400
+  unknownCustomerStatus: 404

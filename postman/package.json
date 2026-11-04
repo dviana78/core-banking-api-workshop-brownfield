@@ -1,0 +1,7 @@
+{
+  "name": "corebanking-postman-workshop",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": { "generate": "node generate.cjs", "run": "node run-newman.cjs" },
+  "dependencies": { "newman": "6.2.1" }
+}

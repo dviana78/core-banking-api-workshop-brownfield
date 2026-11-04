@@ -1,0 +1,47 @@
+lockfile_version: '1'
+apm_version: 0.34.0
+dependencies:
+- repo_url: github/awesome-copilot
+  name: awesome-copilot-Thinking-Beast-Mode
+  host: github.com
+  resolved_commit: 9505d750de4c039ef7a9166f440a8e3ef12e2efa
+  resolved_ref: 9505d75
+  version: 1.0.0
+  virtual_path: agents/Thinking-Beast-Mode.agent.md
+  is_virtual: true
+  package_type: apm_package
+  deployed_files:
+  - .github/agents/Thinking-Beast-Mode.agent.md
+  deployed_file_hashes:
+    .github/agents/Thinking-Beast-Mode.agent.md: sha256:53f8b55fce98038d0b59d71146c439f363f5f6daf079237c37ed20e07711269d
+  content_hash: sha256:34c910c0f7f23298c644df32f0abad6cf6c792c7a6a30805785e680fa2b1b845
+deployments:
+- kind: project-relative
+  target: copilot
+  value: .github/agents/Thinking-Beast-Mode.agent.md
+  runtime: null
+  scope: project
+  owners:
+  - github/awesome-copilot/agents/Thinking-Beast-Mode.agent.md
+  active_owner: github/awesome-copilot/agents/Thinking-Beast-Mode.agent.md
+  content_hash: sha256:53f8b55fce98038d0b59d71146c439f363f5f6daf079237c37ed20e07711269d
+- kind: uri
+  target: mcp
+  value: microsoft-learn
+  runtime: vscode
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+mcp_servers:
+- microsoft-learn
+mcp_configs:
+  microsoft-learn:
+    name: microsoft-learn
+    transport: http
+    registry: false
+    url: https://learn.microsoft.com/api/mcp
+mcp_target_servers:
+  vscode:
+  - microsoft-learn

@@ -1,0 +1,9 @@
+**/bin/
+**/obj/
+**/node_modules/
+.vs/
+.env
+artifacts/
+
+# APM dependencies
+apm_modules/
