@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="563cf702-bb34-438c-a746-bff5477ef111" name="@55789b0fcba8 2026-11-04 14:46:37" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-04T14:46:37.3299167+00:00" queuing="2026-11-04T14:46:37.3299167+00:00" start="2026-11-04T14:46:36.2792974+00:00" finish="2026-11-04T14:46:39.6885026+00:00" />
+  <TestSettings name="default" id="10ddbcdb-2190-4e8e-bde8-7cc1eb89dca8">
+    <Deployment runDeploymentRoot="_55789b0fcba8_2026-11-04_14_46_37" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="f823b86a-3b44-492f-90dc-c7ba91838689" testId="004cc2b8-ffcc-3b17-4113-62694859ac5b" testName="CoreBanking.UnitTests.Domain.BalancePolicyTests.Accepted_errors_preserve_precedence_and_exact_messages(blocked: False, state: &quot;ACTIVE&quot;, code: 680, message: &quot;Required balance information is missing&quot;)" computerName="55789b0fcba8" duration="00:00:00.0000046" startTime="2026-11-04T14:46:37.3122586+00:00" endTime="2026-11-04T14:46:37.3123327+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f823b86a-3b44-492f-90dc-c7ba91838689" />
+    <UnitTestResult executionId="081a3818-0393-495e-a650-5c64b6055829" testId="dd1ad0e0-bc12-646b-2acd-0ad2cf547f3d" testName="CoreBanking.UnitTests.Domain.BalancePolicyTests.Accepted_errors_preserve_precedence_and_exact_messages(blocked: False, state: &quot;LOCKED&quot;, code: 678, message: &quot;Balance inquiry is not allowed for a locked accoun&quot;···)" computerName="55789b0fcba8" duration="00:00:00.0006762" startTime="2026-11-04T14:46:37.3110168+00:00" endTime="2026-11-04T14:46:37.3118953+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="081a3818-0393-495e-a650-5c64b6055829" />
+    <UnitTestResult executionId="1b49ffa2-bff1-4370-9e74-256ebbf7b055" testId="52f14979-5bf1-5f35-c852-f4506b83a9bd" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_technical_use_outside_api_composition(source: &quot;using Alias = CoreBanking.Infrastructure.Persisten&quot;···)" computerName="55789b0fcba8" duration="00:00:00.0186218" startTime="2026-11-04T14:46:37.2128925+00:00" endTime="2026-11-04T14:46:37.2896614+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b49ffa2-bff1-4370-9e74-256ebbf7b055" />
+    <UnitTestResult executionId="4430b932-f343-41fd-b883-d992305d1aa9" testId="9be127c2-52ef-fe42-515c-3b9985d04fed" testName="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(grant: &quot;client_credentials&quot;, secret: True, scope: &quot;bad&quot;, scenario: &quot;bad&quot;, error: &quot;invalid_scope&quot;)" computerName="55789b0fcba8" duration="00:00:00.0110262" startTime="2026-11-04T14:46:37.2127749+00:00" endTime="2026-11-04T14:46:37.2484424+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4430b932-f343-41fd-b883-d992305d1aa9" />
+    <UnitTestResult executionId="40abb70f-19e1-4b9c-bb9e-2e9a6f2395d5" testId="2f325830-cfde-2b20-e2c2-9dfbbe7cd2cc" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Closure_rejects_state_balances_or_holds(state: &quot;ACTIVE&quot;, available: 1, book: 0, holds: 0)" computerName="55789b0fcba8" duration="00:00:00.0000788" startTime="2026-11-04T14:46:37.2862472+00:00" endTime="2026-11-04T14:46:37.2872492+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40abb70f-19e1-4b9c-bb9e-2e9a6f2395d5" />
+    <UnitTestResult executionId="e77fbb8e-d5bf-4044-b8fd-f4a4df7d92a4" testId="fc48794a-0506-0549-84ec-15f7835cf844" testName="CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: &quot;aaaaaaaa-aaaa-1aaa-8aaa-aaaaaaaaaaaa&quot;)" computerName="55789b0fcba8" duration="00:00:00.0000482" startTime="2026-11-04T14:46:37.3156357+00:00" endTime="2026-11-04T14:46:37.3156818+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e77fbb8e-d5bf-4044-b8fd-f4a4df7d92a4">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.False() Failure
+Expected: False
+Actual:   True</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(String key) in /source/tests/CoreBanking.UnitTests/Application/IdempotencyPolicyTests.cs:line 15
+   at InvokeStub_IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0ef89fcc-e1af-4676-9fb7-a1a2edbaf51b" testId="d825edf8-ec56-145e-c85a-8bf6f9e2d94a" testName="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Omitted_scope_differs_from_empty_and_expired_scenario_is_retained" computerName="55789b0fcba8" duration="00:00:00.0048281" startTime="2026-11-04T14:46:37.3092725+00:00" endTime="2026-11-04T14:46:37.3167021+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ef89fcc-e1af-4676-9fb7-a1a2edbaf51b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ
+Expected: 5
+Actual:   0</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Omitted_scope_differs_from_empty_and_expired_scenario_is_retained() in /source/tests/CoreBanking.UnitTests/Application/WorkshopTokenPolicyTests.cs:line 21
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="22e17eec-c8d7-4624-bccc-7a8814d17454" testId="caa6a353-7b31-937c-3304-89d5aab08859" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_technical_use_outside_api_composition(source: &quot;global using Microsoft.EntityFrameworkCore;&quot;)" computerName="55789b0fcba8" duration="00:00:00.0002570" startTime="2026-11-04T14:46:37.2897567+00:00" endTime="2026-11-04T14:46:37.2899453+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22e17eec-c8d7-4624-bccc-7a8814d17454" />
+    <UnitTestResult executionId="131e7b8d-751d-4b14-b902-a251e26ba84b" testId="9890dbc1-4f35-47f6-913d-381e110f44e2" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Existing_types_allow_EUR_creation(type: &quot;CURRENT_ACCOUNT&quot;)" computerName="55789b0fcba8" duration="00:00:00.0000096" startTime="2026-11-04T14:46:37.2907954+00:00" endTime="2026-11-04T14:46:37.2908732+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="131e7b8d-751d-4b14-b902-a251e26ba84b" />
+    <UnitTestResult executionId="5abb684a-188e-45b6-bc70-99172f1a9b10" testId="437fc1ee-44d6-c748-0dd4-9418c83f6d8e" testName="CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: &quot;aaaaaaaa-aaaa-4aaa-7aaa-aaaaaaaaaaaa&quot;)" computerName="55789b0fcba8" duration="00:00:00.0001862" startTime="2026-11-04T14:46:37.3139715+00:00" endTime="2026-11-04T14:46:37.3143907+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5abb684a-188e-45b6-bc70-99172f1a9b10">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.False() Failure
+Expected: False
+Actual:   True</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(String key) in /source/tests/CoreBanking.UnitTests/Application/IdempotencyPolicyTests.cs:line 15
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="37c56e7f-a47a-4ec9-b6a8-9acc0797fb83" testId="7c9b9efe-d405-3995-e5a4-f1c51d98b6fb" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_technical_use_outside_api_composition(source: &quot;class Handler { CoreBanking.Infrastructure.Persist&quot;···)" computerName="55789b0fcba8" duration="00:00:00.0000199" startTime="2026-11-04T14:46:37.2907347+00:00" endTime="2026-11-04T14:46:37.2909363+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37c56e7f-a47a-4ec9-b6a8-9acc0797fb83" />
+    <UnitTestResult executionId="cca6fb43-0603-4053-a866-02ae90698469" testId="d352fad4-485f-b25f-a719-44de3c989159" testName="CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: &quot;&quot;)" computerName="55789b0fcba8" duration="00:00:00.0000255" startTime="2026-11-04T14:46:37.3164831+00:00" endTime="2026-11-04T14:46:37.3165432+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cca6fb43-0603-4053-a866-02ae90698469" />
+    <UnitTestResult executionId="3780b12e-deaa-43c2-b419-93a301c80cb0" testId="b32e0fab-820b-0d0e-1e17-b7bd4f0941c5" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Existing_types_allow_EUR_creation(type: &quot;REGULAR_SAVINGS&quot;)" computerName="55789b0fcba8" duration="00:00:00.0000037" startTime="2026-11-04T14:46:37.2910796+00:00" endTime="2026-11-04T14:46:37.2911479+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3780b12e-deaa-43c2-b419-93a301c80cb0" />
+    <UnitTestResult executionId="21e4facc-292d-4f3d-b2ce-2666e1ce4798" testId="74e30d25-1926-7aac-4be9-e39ce13fde90" testName="CoreBanking.UnitTests.Application.AccountUseCaseTests.Create_starts_pending_with_zero_balances_and_rejects_missing_mapping" computerName="55789b0fcba8" duration="00:00:00.0018764" startTime="2026-11-04T14:46:37.3181482+00:00" endTime="2026-11-04T14:46:37.3189584+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="21e4facc-292d-4f3d-b2ce-2666e1ce4798">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsType() Failure: Value is not the exact type
+Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AccountReference&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AccountReference&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.AccountUseCaseTests.Create_starts_pending_with_zero_balances_and_rejects_missing_mapping() in /source/tests/CoreBanking.UnitTests/Application/AccountUseCaseTests.cs:line 61
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a6c3760c-ea64-4bce-97cc-99ac9b69fdc1" testId="e6cee037-3cac-d93b-be7b-e13de58b913d" testName="CoreBanking.UnitTests.Application.BalanceUseCaseTests.Access_and_source_validation_precede_accepted_business_error" computerName="55789b0fcba8" duration="00:00:00.0028103" startTime="2026-11-04T14:46:37.3112313+00:00" endTime="2026-11-04T14:46:37.3148608+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6c3760c-ea64-4bce-97cc-99ac9b69fdc1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsType() Failure: Value is not the exact type
+Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;BalanceSnapshot&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;BalanceSnapshot&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.BalanceUseCaseTests.Access_and_source_validation_precede_accepted_business_error() in /source/tests/CoreBanking.UnitTests/Application/BalanceUseCaseTests.cs:line 14
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8566545c-af18-4eb0-90cc-78acf366519a" testId="d2ce24b3-2dc3-af84-5c90-d213ac91a544" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Missing_balance_does_not_count_as_zero" computerName="55789b0fcba8" duration="00:00:00.0002595" startTime="2026-11-04T14:46:37.2915625+00:00" endTime="2026-11-04T14:46:37.2918328+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8566545c-af18-4eb0-90cc-78acf366519a" />
+    <UnitTestResult executionId="ab5246f3-8535-4f1c-ae15-53dec8f9baf8" testId="2de6b40b-8326-15ea-7e74-c9538edc811b" testName="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(grant: &quot;password&quot;, secret: False, scope: &quot;bad&quot;, scenario: &quot;bad&quot;, error: &quot;unsupported_grant_type&quot;)" computerName="55789b0fcba8" duration="00:00:00.0001532" startTime="2026-11-04T14:46:37.3072266+00:00" endTime="2026-11-04T14:46:37.3076332+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab5246f3-8535-4f1c-ae15-53dec8f9baf8">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Strings differ
+           ↓ (pos 0)
+Expected: "unsupported_grant_type"
+Actual:   "invalid_scope"
+           ↑ (pos 0)</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(String grant, Boolean secret, String scope, String scenario, String error) in /source/tests/CoreBanking.UnitTests/Application/WorkshopTokenPolicyTests.cs:line 14
+   at InvokeStub_WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fe845be9-fd2e-4ab1-9fd9-3f9e6a267a48" testId="c25e2e53-dec3-d224-ae5a-6e7c5f2570f9" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Closure_rejects_state_balances_or_holds(state: &quot;ACTIVE&quot;, available: 0, book: 0, holds: 1)" computerName="55789b0fcba8" duration="00:00:00.0000648" startTime="2026-11-04T14:46:37.2874263+00:00" endTime="2026-11-04T14:46:37.2875411+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe845be9-fd2e-4ab1-9fd9-3f9e6a267a48" />
+    <UnitTestResult executionId="9f9aa131-807f-46f3-9de1-e68466e3861a" testId="fbb6bedf-6860-ef78-66d3-32f3db5ab955" testName="CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_payload_and_replay_preserve_exact_comparison" computerName="55789b0fcba8" duration="00:00:00.0011699" startTime="2026-11-04T14:46:37.3127251+00:00" endTime="2026-11-04T14:46:37.3135749+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f9aa131-807f-46f3-9de1-e68466e3861a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Strings differ
+           ↓ (pos 0)
+Expected: "acc-test|1.20|EUR|Reason"
+Actual:   ""</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_payload_and_replay_preserve_exact_comparison() in /source/tests/CoreBanking.UnitTests/Application/IdempotencyPolicyTests.cs:line 23
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="eb843302-4d97-46b5-84bc-5522d5525439" testId="09043946-32ee-0b98-1d5c-e1862a5d3039" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Inward_assemblies_have_no_effective_framework_or_adapter_dependency(assembly: &quot;CoreBanking.Application&quot;)" computerName="55789b0fcba8" duration="00:00:00.0037386" startTime="2026-11-04T14:46:37.2976724+00:00" endTime="2026-11-04T14:46:37.2979384+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eb843302-4d97-46b5-84bc-5522d5525439" />
+    <UnitTestResult executionId="481a4eb6-d95e-41d1-8656-00b16e61a87f" testId="4b41111b-9452-481e-7863-3ba10eff4a49" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Existing_types_allow_EUR_creation(type: &quot;INVESTOR_ACCOUNT&quot;)" computerName="55789b0fcba8" duration="00:00:00.0001855" startTime="2026-11-04T14:46:37.2898970+00:00" endTime="2026-11-04T14:46:37.2900052+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="481a4eb6-d95e-41d1-8656-00b16e61a87f" />
+    <UnitTestResult executionId="61b65bf2-25ec-4e84-9ab4-a8210d7a5256" testId="0cf5b29a-04b1-4f93-2268-4e367341fa74" testName="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Posting_checks_currency_state_information_funds_and_resulting_range_in_order" computerName="55789b0fcba8" duration="00:00:00.0067517" startTime="2026-11-04T14:46:37.2894133+00:00" endTime="2026-11-04T14:46:37.2940492+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61b65bf2-25ec-4e84-9ab4-a8210d7a5256" />
+    <UnitTestResult executionId="e649e12e-0383-4b92-81a7-3f7228b194d9" testId="f4b8d547-a440-58bc-b24a-7e16dbdfe2df" testName="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Exact_scale_and_range_boundaries_are_accepted(text: &quot;-999999999999999999&quot;)" computerName="55789b0fcba8" duration="00:00:00.0000049" startTime="2026-11-04T14:46:37.2858020+00:00" endTime="2026-11-04T14:46:37.2858945+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e649e12e-0383-4b92-81a7-3f7228b194d9" />
+    <UnitTestResult executionId="aaa23e6e-0eea-4874-82d8-83a7c984702a" testId="643453fb-17bb-22cb-e32a-062e18f3b296" testName="CoreBanking.UnitTests.Application.WorkshopHealthTests.Unavailable_database_is_not_healthy_and_cancellation_propagates" computerName="55789b0fcba8" duration="00:00:00.0114117" startTime="2026-11-04T14:46:37.2129340+00:00" endTime="2026-11-04T14:46:37.3093993+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aaa23e6e-0eea-4874-82d8-83a7c984702a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.False() Failure
+Expected: False
+Actual:   True</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.WorkshopHealthTests.Unavailable_database_is_not_healthy_and_cancellation_propagates() in /source/tests/CoreBanking.UnitTests/Application/WorkshopHealthTests.cs:line 13
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4c2bb4ee-79e6-420b-a8d7-b46047f8d5da" testId="e60d67dd-b1fc-c818-88b7-596f2032b9e3" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_allows_api_composition_and_plain_inward_contracts" computerName="55789b0fcba8" duration="00:00:00.0009697" startTime="2026-11-04T14:46:37.2912329+00:00" endTime="2026-11-04T14:46:37.2933843+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c2bb4ee-79e6-420b-a8d7-b46047f8d5da" />
+    <UnitTestResult executionId="c66baa1f-610c-443e-b5bc-08e82693f8ab" testId="22f7a38e-da30-814e-ea4c-32f0ad0abfc7" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_framework_types_in_inward_signatures" computerName="55789b0fcba8" duration="00:00:00.0004144" startTime="2026-11-04T14:46:37.2980865+00:00" endTime="2026-11-04T14:46:37.3073228+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c66baa1f-610c-443e-b5bc-08e82693f8ab" />
+    <UnitTestResult executionId="526db144-f1a2-446b-8fad-f759b152562f" testId="489a46b6-9871-7c17-da7c-5a8810fe3edc" testName="CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: null)" computerName="55789b0fcba8" duration="00:00:00.0000079" startTime="2026-11-04T14:46:37.3154779+00:00" endTime="2026-11-04T14:46:37.3155393+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="526db144-f1a2-446b-8fad-f759b152562f" />
+    <UnitTestResult executionId="ec1356e0-5b9e-4848-893c-91f1b28efb78" testId="5b8a3938-5084-601c-1f04-3a5c60f9ea89" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Zero_balance_closure_and_repeated_closed_are_allowed(state: &quot;CLOSED&quot;)" computerName="55789b0fcba8" duration="00:00:00.0000237" startTime="2026-11-04T14:46:37.2937556+00:00" endTime="2026-11-04T14:46:37.2939255+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ec1356e0-5b9e-4848-893c-91f1b28efb78" />
+    <UnitTestResult executionId="1707a7bc-6430-4b8b-b78a-3884df6e7ae5" testId="2a6bd41b-5068-38e7-59d5-5639e1948862" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Zero_balance_closure_and_repeated_closed_are_allowed(state: &quot;APPROVED&quot;)" computerName="55789b0fcba8" duration="00:00:00.0047082" startTime="2026-11-04T14:46:37.2932453+00:00" endTime="2026-11-04T14:46:37.2936062+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1707a7bc-6430-4b8b-b78a-3884df6e7ae5" />
+    <UnitTestResult executionId="2d589e81-1165-46af-90ee-88d9f603e868" testId="a51d9b41-81d5-fa88-87ec-ae0fc587abb7" testName="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Invalid_scale_zero_and_range_are_rejected_without_rounding(text: &quot;0&quot;)" computerName="55789b0fcba8" duration="00:00:00.0003935" startTime="2026-11-04T14:46:37.2878408+00:00" endTime="2026-11-04T14:46:37.2878924+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2d589e81-1165-46af-90ee-88d9f603e868" />
+    <UnitTestResult executionId="b13c553f-a8e7-4858-a060-909bbd3ab9d2" testId="045c633c-521b-da30-2544-0b9a0e07ca73" testName="CoreBanking.UnitTests.Application.AccountUseCaseTests.Visibility_respects_explicit_ownership_and_portfolio_exception" computerName="55789b0fcba8" duration="00:00:00.0006868" startTime="2026-11-04T14:46:37.3135166+00:00" endTime="2026-11-04T14:46:37.3140221+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b13c553f-a8e7-4858-a060-909bbd3ab9d2">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.True() Failure
+Expected: True
+Actual:   False</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.AccountUseCaseTests.Visibility_respects_explicit_ownership_and_portfolio_exception() in /source/tests/CoreBanking.UnitTests/Application/AccountUseCaseTests.cs:line 22
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8b04080d-8844-4c66-9f38-ead2ee2ba445" testId="81adb013-f9f8-0634-152c-0b33f3b116c3" testName="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Invalid_scale_zero_and_range_are_rejected_without_rounding(text: &quot;1.234&quot;)" computerName="55789b0fcba8" duration="00:00:00.0000163" startTime="2026-11-04T14:46:37.2892063+00:00" endTime="2026-11-04T14:46:37.2892625+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b04080d-8844-4c66-9f38-ead2ee2ba445" />
+    <UnitTestResult executionId="29bd17d7-abe2-4972-a3eb-02d489df3d1a" testId="a8ad12a6-a2ab-f84f-fcb1-d0a8e7b0d627" testName="CoreBanking.UnitTests.Application.AccountUseCaseTests.Hidden_and_missing_detail_have_the_same_result_without_gateway_calls" computerName="55789b0fcba8" duration="00:00:00.0046790" startTime="2026-11-04T14:46:37.3195434+00:00" endTime="2026-11-04T14:46:37.3200893+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29bd17d7-abe2-4972-a3eb-02d489df3d1a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ
+Expected: NotFound
+Actual:   Internal</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.AccountUseCaseTests.Hidden_and_missing_detail_have_the_same_result_without_gateway_calls() in /source/tests/CoreBanking.UnitTests/Application/AccountUseCaseTests.cs:line 36
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3a9a5267-5933-49b4-809d-90c5a1d0aeb0" testId="d7dd5b0c-673a-f653-bbef-9a09005ff886" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Creation_rejects_unsupported_type_or_currency(type: &quot;CURRENT_ACCOUNT&quot;, currency: &quot;USD&quot;)" computerName="55789b0fcba8" duration="00:00:00.0002147" startTime="2026-11-04T14:46:37.2890114+00:00" endTime="2026-11-04T14:46:37.2894789+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a9a5267-5933-49b4-809d-90c5a1d0aeb0" />
+    <UnitTestResult executionId="cf137632-20d7-4bb8-9ce3-c68506024aa4" testId="8707982c-abe0-f284-75d7-8cf42b38c32c" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Inward_assemblies_have_no_effective_framework_or_adapter_dependency(assembly: &quot;CoreBanking.Domain&quot;)" computerName="55789b0fcba8" duration="00:00:00.0095321" startTime="2026-11-04T14:46:37.2941461+00:00" endTime="2026-11-04T14:46:37.2975173+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf137632-20d7-4bb8-9ce3-c68506024aa4" />
+    <UnitTestResult executionId="0d38d296-6850-43e0-9b64-ca9febf404b5" testId="086b3620-b013-7f14-bef7-1c54d5059736" testName="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Invalid_scale_zero_and_range_are_rejected_without_rounding(text: &quot;1000000000000000000&quot;)" computerName="55789b0fcba8" duration="00:00:00.0001967" startTime="2026-11-04T14:46:37.2874843+00:00" endTime="2026-11-04T14:46:37.2877507+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d38d296-6850-43e0-9b64-ca9febf404b5" />
+    <UnitTestResult executionId="1183e4d1-a487-487c-808d-7b23651212e9" testId="30405c2a-36d3-f745-62a3-b8ed8546a3da" testName="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Exact_scale_and_range_boundaries_are_accepted(text: &quot;0.01&quot;)" computerName="55789b0fcba8" duration="00:00:00.0108390" startTime="2026-11-04T14:46:37.2129699+00:00" endTime="2026-11-04T14:46:37.2358267+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1183e4d1-a487-487c-808d-7b23651212e9" />
+    <UnitTestResult executionId="fd215800-f118-4ead-84ba-8df598a3ea11" testId="73f12cf5-80d6-6db3-b3a3-094eb508ea14" testName="CoreBanking.UnitTests.Application.BalanceUseCaseTests.Complete_balance_result_uses_source_identity_and_shared_cutoff" computerName="55789b0fcba8" duration="00:00:00.0011391" startTime="2026-11-04T14:46:37.3154342+00:00" endTime="2026-11-04T14:46:37.3170260+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd215800-f118-4ead-84ba-8df598a3ea11">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsType() Failure: Value is not the exact type
+Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;BalanceSnapshot&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;BalanceSnapshot&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.BalanceUseCaseTests.Complete_balance_result_uses_source_identity_and_shared_cutoff() in /source/tests/CoreBanking.UnitTests/Application/BalanceUseCaseTests.cs:line 28
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="da0083b8-526b-479f-aedd-8a7c6584920a" testId="4d529ae3-d865-6229-b00a-f920b7127b9e" testName="CoreBanking.UnitTests.Application.WriteUseCaseTests.Known_failures_complete_after_disposal_but_technical_failures_keep_processing(known: True)" computerName="55789b0fcba8" duration="00:00:00.0089529" startTime="2026-11-04T14:46:37.2965288+00:00" endTime="2026-11-04T14:46:37.3112905+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da0083b8-526b-479f-aedd-8a7c6584920a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsType() Failure: Value is not the exact type
+Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.WriteUseCaseTests.Known_failures_complete_after_disposal_but_technical_failures_keep_processing(Boolean known) in /source/tests/CoreBanking.UnitTests/Application/WriteUseCaseTests.cs:line 49
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f3d1afe9-decb-439e-8134-30bda70050cf" testId="fb7255ad-cfdc-d44c-9bb1-a71c5feec88c" testName="CoreBanking.UnitTests.Application.AccountUseCaseTests.List_and_detail_return_typed_source_references_and_propagate_cancellation" computerName="55789b0fcba8" duration="00:00:00.0022165" startTime="2026-11-04T14:46:37.3143395+00:00" endTime="2026-11-04T14:46:37.3176065+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3d1afe9-decb-439e-8134-30bda70050cf">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsType() Failure: Value is not the exact type
+Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;IReadOnlyList&lt;AccountReference&gt;&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;IReadOnlyList&lt;AccountReference&gt;&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.AccountUseCaseTests.List_and_detail_return_typed_source_references_and_propagate_cancellation() in /source/tests/CoreBanking.UnitTests/Application/AccountUseCaseTests.cs:line 45
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d366ba1e-e9c0-4eaa-bd5b-03b71f7118dd" testId="1047d7a0-2573-3075-579a-d7b9d350e67c" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Existing_types_allow_EUR_creation(type: &quot;SAVINGS_PLAN&quot;)" computerName="55789b0fcba8" duration="00:00:00.0001160" startTime="2026-11-04T14:46:37.2896119+00:00" endTime="2026-11-04T14:46:37.2898052+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d366ba1e-e9c0-4eaa-bd5b-03b71f7118dd" />
+    <UnitTestResult executionId="d4d27562-ee9b-4c8f-a942-88e95d8118ce" testId="2ab21594-8de9-dc50-5dcc-5cd146ef3674" testName="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(grant: &quot;client_credentials&quot;, secret: True, scope: &quot;accounts.read&quot;, scenario: &quot;bad&quot;, error: &quot;invalid_scenario&quot;)" computerName="55789b0fcba8" duration="00:00:00.0001077" startTime="2026-11-04T14:46:37.3085151+00:00" endTime="2026-11-04T14:46:37.3085987+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4d27562-ee9b-4c8f-a942-88e95d8118ce">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Strings differ
+                     ↓ (pos 10)
+Expected: "invalid_scenario"
+Actual:   "invalid_scope"
+                     ↑ (pos 10)</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(String grant, Boolean secret, String scope, String scenario, String error) in /source/tests/CoreBanking.UnitTests/Application/WorkshopTokenPolicyTests.cs:line 14
+   at InvokeStub_WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="62af095b-ccd8-4a42-838c-f85a44ac4686" testId="216c3605-110b-22ca-af40-07258c0089a0" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Closure_rejects_state_balances_or_holds(state: &quot;LOCKED&quot;, available: 0, book: 0, holds: 0)" computerName="55789b0fcba8" duration="00:00:00.0145653" startTime="2026-11-04T14:46:37.2097450+00:00" endTime="2026-11-04T14:46:37.2486374+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62af095b-ccd8-4a42-838c-f85a44ac4686" />
+    <UnitTestResult executionId="06c79813-aff2-4a12-bf26-4230033c276a" testId="8a5f7bc7-dcaa-3a16-7908-389a424266bd" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Closure_rejects_state_balances_or_holds(state: &quot;APPROVED&quot;, available: 0, book: 1, holds: 0)" computerName="55789b0fcba8" duration="00:00:00.0005608" startTime="2026-11-04T14:46:37.2661916+00:00" endTime="2026-11-04T14:46:37.2859898+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06c79813-aff2-4a12-bf26-4230033c276a" />
+    <UnitTestResult executionId="fa024dff-f208-4b2b-9875-f19888460169" testId="21a1df6f-7022-1671-2858-1f990a9171a6" testName="CoreBanking.UnitTests.Domain.BalancePolicyTests.Accepted_errors_preserve_precedence_and_exact_messages(blocked: True, state: &quot;LOCKED&quot;, code: 677, message: &quot;Balance is not posible&quot;)" computerName="55789b0fcba8" duration="00:00:00.0000162" startTime="2026-11-04T14:46:37.3120350+00:00" endTime="2026-11-04T14:46:37.3120989+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa024dff-f208-4b2b-9875-f19888460169" />
+    <UnitTestResult executionId="68f1f67f-89de-4d49-948f-340b547ae827" testId="9f364310-e634-4d5a-6558-dcf3c40a5dd4" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Creation_rejects_unsupported_type_or_currency(type: &quot;UNKNOWN&quot;, currency: &quot;EUR&quot;)" computerName="55789b0fcba8" duration="00:00:00.0005524" startTime="2026-11-04T14:46:37.2877020+00:00" endTime="2026-11-04T14:46:37.2879508+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="68f1f67f-89de-4d49-948f-340b547ae827" />
+    <UnitTestResult executionId="d11bfdf2-3d9b-4845-b3de-0393ee42d87a" testId="2b72f38d-322b-29e6-c312-9bedfe61feea" testName="CoreBanking.UnitTests.Architecture.DependencyGraphTests.Approved_graph_has_no_violations" computerName="55789b0fcba8" duration="00:00:00.0025066" startTime="2026-11-04T14:46:37.2965801+00:00" endTime="2026-11-04T14:46:37.2967072+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d11bfdf2-3d9b-4845-b3de-0393ee42d87a" />
+    <UnitTestResult executionId="2da64730-1d30-43b1-b4cb-98e2f08ffbbc" testId="847bba9b-15c7-dc5c-3a23-8a1483963d91" testName="CoreBanking.UnitTests.Application.PortContractTests.Cancelled_port_calls_do_not_mutate_state" computerName="55789b0fcba8" duration="00:00:00.0194618" startTime="2026-11-04T14:46:37.2130022+00:00" endTime="2026-11-04T14:46:37.2916343+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2da64730-1d30-43b1-b4cb-98e2f08ffbbc" />
+    <UnitTestResult executionId="b151e39e-b525-49a2-aa42-f6c7fbfb82b9" testId="53adb98e-337f-443a-f860-ca779dc63dfa" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Existing_types_allow_EUR_creation(type: &quot;FIXED_DEPOSIT&quot;)" computerName="55789b0fcba8" duration="00:00:00.0000024" startTime="2026-11-04T14:46:37.2913037+00:00" endTime="2026-11-04T14:46:37.2913718+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b151e39e-b525-49a2-aa42-f6c7fbfb82b9" />
+    <UnitTestResult executionId="a96e2360-46f5-4fb7-ba2f-c3249c0a37aa" testId="a862457b-c753-c31f-aca5-2fe6f245953e" testName="CoreBanking.UnitTests.Architecture.DependencyGraphTests.Checker_rejects_reversed_edges_cycles_and_production_to_test_references" computerName="55789b0fcba8" duration="00:00:00.0024302" startTime="2026-11-04T14:46:37.2974430+00:00" endTime="2026-11-04T14:46:37.2977246+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a96e2360-46f5-4fb7-ba2f-c3249c0a37aa" />
+    <UnitTestResult executionId="3584e177-66e8-41b1-b616-48eb9068e707" testId="f855526b-81b7-df4e-fd17-cc76bb0fa945" testName="CoreBanking.UnitTests.Application.WriteUseCaseTests.Closure_commits_once_and_disposes_each_locked_session" computerName="55789b0fcba8" duration="00:00:00.0012829" startTime="2026-11-04T14:46:37.3175551+00:00" endTime="2026-11-04T14:46:37.3182302+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3584e177-66e8-41b1-b616-48eb9068e707">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsType() Failure: Value is not the exact type
+Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AccountReference&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AccountReference&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.WriteUseCaseTests.Closure_commits_once_and_disposes_each_locked_session() in /source/tests/CoreBanking.UnitTests/Application/WriteUseCaseTests.cs:line 14
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="82a34c97-eeea-4039-ba73-83fd991d7204" testId="06d2e4a4-4c5d-1525-89eb-481f2896b461" testName="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Invalid_scale_zero_and_range_are_rejected_without_rounding(text: &quot;-1000000000000000000&quot;)" computerName="55789b0fcba8" duration="00:00:00.0000111" startTime="2026-11-04T14:46:37.2889569+00:00" endTime="2026-11-04T14:46:37.2890858+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82a34c97-eeea-4039-ba73-83fd991d7204" />
+    <UnitTestResult executionId="20986fc5-1149-43a0-8137-11c7e756afaa" testId="d177a0ee-721b-feff-ae79-6c3d54adb4ee" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Closure_rejects_state_balances_or_holds(state: &quot;PENDING_APPROVAL&quot;, available: 0, book: 0, holds: 0)" computerName="55789b0fcba8" duration="00:00:00.0000111" startTime="2026-11-04T14:46:37.2861088+00:00" endTime="2026-11-04T14:46:37.2861604+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20986fc5-1149-43a0-8137-11c7e756afaa" />
+    <UnitTestResult executionId="73699ca3-9fee-4e4c-a8cc-66fe11f7a217" testId="b4f0119d-15a3-b861-d0a4-c6d274bdf1a6" testName="CoreBanking.UnitTests.Domain.AccountPolicyTests.Zero_balance_closure_and_repeated_closed_are_allowed(state: &quot;ACTIVE&quot;)" computerName="55789b0fcba8" duration="00:00:00.0002972" startTime="2026-11-04T14:46:37.2921925+00:00" endTime="2026-11-04T14:46:37.2922789+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="73699ca3-9fee-4e4c-a8cc-66fe11f7a217" />
+    <UnitTestResult executionId="7e2ce4f1-1a4c-4009-918c-ef2778689a63" testId="0b487aac-346c-eb11-5fc7-8eccd8096f77" testName="CoreBanking.UnitTests.Application.WriteUseCaseTests.Adjustment_reserves_before_lock_and_atomically_completes_once" computerName="55789b0fcba8" duration="00:00:00.0012648" startTime="2026-11-04T14:46:37.3188714+00:00" endTime="2026-11-04T14:46:37.3196312+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e2ce4f1-1a4c-4009-918c-ef2778689a63">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsType() Failure: Value is not the exact type
+Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.WriteUseCaseTests.Adjustment_reserves_before_lock_and_atomically_completes_once() in /source/tests/CoreBanking.UnitTests/Application/WriteUseCaseTests.cs:line 27
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="177fc052-1c5d-44bc-a32f-0493a4b35fe7" testId="9e780c21-c3ca-937b-a76a-aa6bd2768147" testName="CoreBanking.UnitTests.Application.PortContractTests.Reservation_is_consumer_isolated_and_returns_the_original_payload" computerName="55789b0fcba8" duration="00:00:00.0114320" startTime="2026-11-04T14:46:37.2919819+00:00" endTime="2026-11-04T14:46:37.2961904+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="177fc052-1c5d-44bc-a32f-0493a4b35fe7" />
+    <UnitTestResult executionId="f499f830-79a3-462b-bf25-590a36407faf" testId="346fb744-7a45-d0e1-7e14-e82b46741a26" testName="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Exact_scale_and_range_boundaries_are_accepted(text: &quot;999999999999999999&quot;)" computerName="55789b0fcba8" duration="00:00:00.0003174" startTime="2026-11-04T14:46:37.2663848+00:00" endTime="2026-11-04T14:46:37.2665892+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f499f830-79a3-462b-bf25-590a36407faf" />
+    <UnitTestResult executionId="0e54c1af-e75c-44cf-acbc-e17d3a3710e2" testId="fefd90ad-7ac6-2098-f953-23a1fa14f582" testName="CoreBanking.UnitTests.Domain.BalancePolicyTests.Complete_snapshot_requires_a_shared_UTC_cutoff" computerName="55789b0fcba8" duration="00:00:00.0006979" startTime="2026-11-04T14:46:37.3126022+00:00" endTime="2026-11-04T14:46:37.3127750+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e54c1af-e75c-44cf-acbc-e17d3a3710e2" />
+    <UnitTestResult executionId="adc27098-f6be-40c3-bde9-50a2b47366da" testId="cbfa19a8-c0b2-09e3-41de-03560fd00ba4" testName="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(grant: &quot;client_credentials&quot;, secret: False, scope: &quot;bad&quot;, scenario: &quot;bad&quot;, error: &quot;invalid_client&quot;)" computerName="55789b0fcba8" duration="00:00:00.0079793" startTime="2026-11-04T14:46:37.2664823+00:00" endTime="2026-11-04T14:46:37.2989376+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="adc27098-f6be-40c3-bde9-50a2b47366da">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Strings differ
+                   ↓ (pos 8)
+Expected: "invalid_client"
+Actual:   "invalid_scope"
+                   ↑ (pos 8)</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(String grant, Boolean secret, String scope, String scenario, String error) in /source/tests/CoreBanking.UnitTests/Application/WorkshopTokenPolicyTests.cs:line 14
+   at InvokeStub_WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f10a4401-63cc-462a-8b0c-97d7352eee89" testId="868a8cc2-0d4e-a424-871f-10b4e562503c" testName="CoreBanking.UnitTests.Architecture.DependencyGraphTests.Existing_projects_do_not_introduce_unauthorized_direct_references" computerName="55789b0fcba8" duration="00:00:02.3552396" startTime="2026-11-04T14:46:37.2978890+00:00" endTime="2026-11-04T14:46:39.6115920+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f10a4401-63cc-462a-8b0c-97d7352eee89" />
+    <UnitTestResult executionId="fb3c7083-29c5-49dc-8660-a1f0458d4831" testId="634dbc51-f269-a263-e8a3-0a8e221ebdf5" testName="CoreBanking.UnitTests.Application.WriteUseCaseTests.Known_failures_complete_after_disposal_but_technical_failures_keep_processing(known: False)" computerName="55789b0fcba8" duration="00:00:00.0029438" startTime="2026-11-04T14:46:37.3118323+00:00" endTime="2026-11-04T14:46:37.3172867+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb3c7083-29c5-49dc-8660-a1f0458d4831">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Throws() Failure: No exception was thrown
+Expected: typeof(System.InvalidOperationException)</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.WriteUseCaseTests.Known_failures_complete_after_disposal_but_technical_failures_keep_processing(Boolean known) in /source/tests/CoreBanking.UnitTests/Application/WriteUseCaseTests.cs:line 54
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9d0f779b-7a77-4792-a8ae-42bfba72739e" testId="bb5f6915-68b5-3243-e25b-4e901276e239" testName="CoreBanking.UnitTests.Domain.BalancePolicyTests.Accepted_errors_preserve_precedence_and_exact_messages(blocked: False, state: &quot;PENDING_APPROVAL&quot;, code: 679, message: &quot;Balance is unavailable while the account is pendin&quot;···)" computerName="55789b0fcba8" duration="00:00:00.0090328" startTime="2026-11-04T14:46:37.2965589+00:00" endTime="2026-11-04T14:46:37.3107414+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d0f779b-7a77-4792-a8ae-42bfba72739e" />
+    <UnitTestResult executionId="bfbe78e0-caf8-41df-8632-2a6c5a7707ce" testId="89a918c8-780f-9357-6d76-2c6cc682acdb" testName="CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: &quot;{aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa}&quot;)" computerName="55789b0fcba8" duration="00:00:00.0003033" startTime="2026-11-04T14:46:37.3148103+00:00" endTime="2026-11-04T14:46:37.3151385+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bfbe78e0-caf8-41df-8632-2a6c5a7707ce">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.False() Failure
+Expected: False
+Actual:   True</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(String key) in /source/tests/CoreBanking.UnitTests/Application/IdempotencyPolicyTests.cs:line 15
+   at InvokeStub_IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="04c829b4-d7ea-4f1c-b934-39e7add3577f" testId="878b63ea-e9b9-c07f-31fc-3f2a9fe1fb41" testName="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Exact_scale_and_range_boundaries_are_accepted(text: &quot;-0.01&quot;)" computerName="55789b0fcba8" duration="00:00:00.0000100" startTime="2026-11-04T14:46:37.2851688+00:00" endTime="2026-11-04T14:46:37.2852782+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="04c829b4-d7ea-4f1c-b934-39e7add3577f" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(grant: &quot;password&quot;, secret: False, scope: &quot;bad&quot;, scenario: &quot;bad&quot;, error: &quot;unsupported_grant_type&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="2de6b40b-8326-15ea-7e74-c9538edc811b">
+      <Execution id="ab5246f3-8535-4f1c-ae15-53dec8f9baf8" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests" name="Token_error_precedence_is_preserved" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Exact_scale_and_range_boundaries_are_accepted(text: &quot;0.01&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="30405c2a-36d3-f745-62a3-b8ed8546a3da">
+      <Execution id="1183e4d1-a487-487c-808d-7b23651212e9" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests" name="Exact_scale_and_range_boundaries_are_accepted" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.BalancePolicyTests.Accepted_errors_preserve_precedence_and_exact_messages(blocked: False, state: &quot;LOCKED&quot;, code: 678, message: &quot;Balance inquiry is not allowed for a locked accoun&quot;···)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="dd1ad0e0-bc12-646b-2acd-0ad2cf547f3d">
+      <Execution id="081a3818-0393-495e-a650-5c64b6055829" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.BalancePolicyTests" name="Accepted_errors_preserve_precedence_and_exact_messages" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Creation_rejects_unsupported_type_or_currency(type: &quot;UNKNOWN&quot;, currency: &quot;EUR&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="9f364310-e634-4d5a-6558-dcf3c40a5dd4">
+      <Execution id="68f1f67f-89de-4d49-948f-340b547ae827" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Creation_rejects_unsupported_type_or_currency" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: &quot;aaaaaaaa-aaaa-1aaa-8aaa-aaaaaaaaaaaa&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="fc48794a-0506-0549-84ec-15f7835cf844">
+      <Execution id="e77fbb8e-d5bf-4044-b8fd-f4a4df7d92a4" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.IdempotencyPolicyTests" name="Key_requires_exact_UUID_v4_and_RFC_variant" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_allows_api_composition_and_plain_inward_contracts" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="e60d67dd-b1fc-c818-88b7-596f2032b9e3">
+      <Execution id="4c2bb4ee-79e6-420b-a8d7-b46047f8d5da" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Checker_allows_api_composition_and_plain_inward_contracts" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Zero_balance_closure_and_repeated_closed_are_allowed(state: &quot;CLOSED&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="5b8a3938-5084-601c-1f04-3a5c60f9ea89">
+      <Execution id="ec1356e0-5b9e-4848-893c-91f1b28efb78" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Zero_balance_closure_and_repeated_closed_are_allowed" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Exact_scale_and_range_boundaries_are_accepted(text: &quot;-0.01&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="878b63ea-e9b9-c07f-31fc-3f2a9fe1fb41">
+      <Execution id="04c829b4-d7ea-4f1c-b934-39e7add3577f" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests" name="Exact_scale_and_range_boundaries_are_accepted" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.BalancePolicyTests.Complete_snapshot_requires_a_shared_UTC_cutoff" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="fefd90ad-7ac6-2098-f953-23a1fa14f582">
+      <Execution id="0e54c1af-e75c-44cf-acbc-e17d3a3710e2" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.BalancePolicyTests" name="Complete_snapshot_requires_a_shared_UTC_cutoff" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Inward_assemblies_have_no_effective_framework_or_adapter_dependency(assembly: &quot;CoreBanking.Application&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="09043946-32ee-0b98-1d5c-e1862a5d3039">
+      <Execution id="eb843302-4d97-46b5-84bc-5522d5525439" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Inward_assemblies_have_no_effective_framework_or_adapter_dependency" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Existing_types_allow_EUR_creation(type: &quot;REGULAR_SAVINGS&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="b32e0fab-820b-0d0e-1e17-b7bd4f0941c5">
+      <Execution id="3780b12e-deaa-43c2-b419-93a301c80cb0" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Existing_types_allow_EUR_creation" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.PortContractTests.Cancelled_port_calls_do_not_mutate_state" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="847bba9b-15c7-dc5c-3a23-8a1483963d91">
+      <Execution id="2da64730-1d30-43b1-b4cb-98e2f08ffbbc" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.PortContractTests" name="Cancelled_port_calls_do_not_mutate_state" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyGraphTests.Approved_graph_has_no_violations" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="2b72f38d-322b-29e6-c312-9bedfe61feea">
+      <Execution id="d11bfdf2-3d9b-4845-b3de-0393ee42d87a" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyGraphTests" name="Approved_graph_has_no_violations" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Existing_types_allow_EUR_creation(type: &quot;SAVINGS_PLAN&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="1047d7a0-2573-3075-579a-d7b9d350e67c">
+      <Execution id="d366ba1e-e9c0-4eaa-bd5b-03b71f7118dd" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Existing_types_allow_EUR_creation" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Closure_rejects_state_balances_or_holds(state: &quot;LOCKED&quot;, available: 0, book: 0, holds: 0)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="216c3605-110b-22ca-af40-07258c0089a0">
+      <Execution id="62af095b-ccd8-4a42-838c-f85a44ac4686" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Closure_rejects_state_balances_or_holds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Missing_balance_does_not_count_as_zero" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="d2ce24b3-2dc3-af84-5c90-d213ac91a544">
+      <Execution id="8566545c-af18-4eb0-90cc-78acf366519a" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Missing_balance_does_not_count_as_zero" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Closure_rejects_state_balances_or_holds(state: &quot;APPROVED&quot;, available: 0, book: 1, holds: 0)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="8a5f7bc7-dcaa-3a16-7908-389a424266bd">
+      <Execution id="06c79813-aff2-4a12-bf26-4230033c276a" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Closure_rejects_state_balances_or_holds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Existing_types_allow_EUR_creation(type: &quot;FIXED_DEPOSIT&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="53adb98e-337f-443a-f860-ca779dc63dfa">
+      <Execution id="b151e39e-b525-49a2-aa42-f6c7fbfb82b9" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Existing_types_allow_EUR_creation" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Exact_scale_and_range_boundaries_are_accepted(text: &quot;999999999999999999&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="346fb744-7a45-d0e1-7e14-e82b46741a26">
+      <Execution id="f499f830-79a3-462b-bf25-590a36407faf" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests" name="Exact_scale_and_range_boundaries_are_accepted" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Omitted_scope_differs_from_empty_and_expired_scenario_is_retained" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="d825edf8-ec56-145e-c85a-8bf6f9e2d94a">
+      <Execution id="0ef89fcc-e1af-4676-9fb7-a1a2edbaf51b" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests" name="Omitted_scope_differs_from_empty_and_expired_scenario_is_retained" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Existing_types_allow_EUR_creation(type: &quot;CURRENT_ACCOUNT&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="9890dbc1-4f35-47f6-913d-381e110f44e2">
+      <Execution id="131e7b8d-751d-4b14-b902-a251e26ba84b" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Existing_types_allow_EUR_creation" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.PortContractTests.Reservation_is_consumer_isolated_and_returns_the_original_payload" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="9e780c21-c3ca-937b-a76a-aa6bd2768147">
+      <Execution id="177fc052-1c5d-44bc-a32f-0493a4b35fe7" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.PortContractTests" name="Reservation_is_consumer_isolated_and_returns_the_original_payload" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.BalanceUseCaseTests.Complete_balance_result_uses_source_identity_and_shared_cutoff" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="73f12cf5-80d6-6db3-b3a3-094eb508ea14">
+      <Execution id="fd215800-f118-4ead-84ba-8df598a3ea11" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.BalanceUseCaseTests" name="Complete_balance_result_uses_source_identity_and_shared_cutoff" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.AccountUseCaseTests.Create_starts_pending_with_zero_balances_and_rejects_missing_mapping" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="74e30d25-1926-7aac-4be9-e39ce13fde90">
+      <Execution id="21e4facc-292d-4f3d-b2ce-2666e1ce4798" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.AccountUseCaseTests" name="Create_starts_pending_with_zero_balances_and_rejects_missing_mapping" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Invalid_scale_zero_and_range_are_rejected_without_rounding(text: &quot;1.234&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="81adb013-f9f8-0634-152c-0b33f3b116c3">
+      <Execution id="8b04080d-8844-4c66-9f38-ead2ee2ba445" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests" name="Invalid_scale_zero_and_range_are_rejected_without_rounding" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.AccountUseCaseTests.Visibility_respects_explicit_ownership_and_portfolio_exception" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="045c633c-521b-da30-2544-0b9a0e07ca73">
+      <Execution id="b13c553f-a8e7-4858-a060-909bbd3ab9d2" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.AccountUseCaseTests" name="Visibility_respects_explicit_ownership_and_portfolio_exception" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Posting_checks_currency_state_information_funds_and_resulting_range_in_order" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="0cf5b29a-04b1-4f93-2268-4e367341fa74">
+      <Execution id="61b65bf2-25ec-4e84-9ab4-a8210d7a5256" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests" name="Posting_checks_currency_state_information_funds_and_resulting_range_in_order" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.WriteUseCaseTests.Adjustment_reserves_before_lock_and_atomically_completes_once" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="0b487aac-346c-eb11-5fc7-8eccd8096f77">
+      <Execution id="7e2ce4f1-1a4c-4009-918c-ef2778689a63" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.WriteUseCaseTests" name="Adjustment_reserves_before_lock_and_atomically_completes_once" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: &quot;{aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa}&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="89a918c8-780f-9357-6d76-2c6cc682acdb">
+      <Execution id="bfbe78e0-caf8-41df-8632-2a6c5a7707ce" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.IdempotencyPolicyTests" name="Key_requires_exact_UUID_v4_and_RFC_variant" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Creation_rejects_unsupported_type_or_currency(type: &quot;CURRENT_ACCOUNT&quot;, currency: &quot;USD&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="d7dd5b0c-673a-f653-bbef-9a09005ff886">
+      <Execution id="3a9a5267-5933-49b4-809d-90c5a1d0aeb0" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Creation_rejects_unsupported_type_or_currency" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Exact_scale_and_range_boundaries_are_accepted(text: &quot;-999999999999999999&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="f4b8d547-a440-58bc-b24a-7e16dbdfe2df">
+      <Execution id="e649e12e-0383-4b92-81a7-3f7228b194d9" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests" name="Exact_scale_and_range_boundaries_are_accepted" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Inward_assemblies_have_no_effective_framework_or_adapter_dependency(assembly: &quot;CoreBanking.Domain&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="8707982c-abe0-f284-75d7-8cf42b38c32c">
+      <Execution id="cf137632-20d7-4bb8-9ce3-c68506024aa4" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Inward_assemblies_have_no_effective_framework_or_adapter_dependency" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_technical_use_outside_api_composition(source: &quot;using Alias = CoreBanking.Infrastructure.Persisten&quot;···)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="52f14979-5bf1-5f35-c852-f4506b83a9bd">
+      <Execution id="1b49ffa2-bff1-4370-9e74-256ebbf7b055" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Checker_rejects_technical_use_outside_api_composition" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Invalid_scale_zero_and_range_are_rejected_without_rounding(text: &quot;0&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="a51d9b41-81d5-fa88-87ec-ae0fc587abb7">
+      <Execution id="2d589e81-1165-46af-90ee-88d9f603e868" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests" name="Invalid_scale_zero_and_range_are_rejected_without_rounding" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.BalancePolicyTests.Accepted_errors_preserve_precedence_and_exact_messages(blocked: False, state: &quot;PENDING_APPROVAL&quot;, code: 679, message: &quot;Balance is unavailable while the account is pendin&quot;···)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="bb5f6915-68b5-3243-e25b-4e901276e239">
+      <Execution id="9d0f779b-7a77-4792-a8ae-42bfba72739e" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.BalancePolicyTests" name="Accepted_errors_preserve_precedence_and_exact_messages" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_payload_and_replay_preserve_exact_comparison" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="fbb6bedf-6860-ef78-66d3-32f3db5ab955">
+      <Execution id="9f9aa131-807f-46f3-9de1-e68466e3861a" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.IdempotencyPolicyTests" name="Key_payload_and_replay_preserve_exact_comparison" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.WorkshopHealthTests.Unavailable_database_is_not_healthy_and_cancellation_propagates" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="643453fb-17bb-22cb-e32a-062e18f3b296">
+      <Execution id="aaa23e6e-0eea-4874-82d8-83a7c984702a" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.WorkshopHealthTests" name="Unavailable_database_is_not_healthy_and_cancellation_propagates" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Zero_balance_closure_and_repeated_closed_are_allowed(state: &quot;ACTIVE&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="b4f0119d-15a3-b861-d0a4-c6d274bdf1a6">
+      <Execution id="73699ca3-9fee-4e4c-a8cc-66fe11f7a217" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Zero_balance_closure_and_repeated_closed_are_allowed" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.WriteUseCaseTests.Known_failures_complete_after_disposal_but_technical_failures_keep_processing(known: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="634dbc51-f269-a263-e8a3-0a8e221ebdf5">
+      <Execution id="fb3c7083-29c5-49dc-8660-a1f0458d4831" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.WriteUseCaseTests" name="Known_failures_complete_after_disposal_but_technical_failures_keep_processing" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.WriteUseCaseTests.Closure_commits_once_and_disposes_each_locked_session" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="f855526b-81b7-df4e-fd17-cc76bb0fa945">
+      <Execution id="3584e177-66e8-41b1-b616-48eb9068e707" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.WriteUseCaseTests" name="Closure_commits_once_and_disposes_each_locked_session" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: &quot;&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="d352fad4-485f-b25f-a719-44de3c989159">
+      <Execution id="cca6fb43-0603-4053-a866-02ae90698469" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.IdempotencyPolicyTests" name="Key_requires_exact_UUID_v4_and_RFC_variant" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Closure_rejects_state_balances_or_holds(state: &quot;ACTIVE&quot;, available: 1, book: 0, holds: 0)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="2f325830-cfde-2b20-e2c2-9dfbbe7cd2cc">
+      <Execution id="40abb70f-19e1-4b9c-bb9e-2e9a6f2395d5" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Closure_rejects_state_balances_or_holds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.BalancePolicyTests.Accepted_errors_preserve_precedence_and_exact_messages(blocked: True, state: &quot;LOCKED&quot;, code: 677, message: &quot;Balance is not posible&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="21a1df6f-7022-1671-2858-1f990a9171a6">
+      <Execution id="fa024dff-f208-4b2b-9875-f19888460169" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.BalancePolicyTests" name="Accepted_errors_preserve_precedence_and_exact_messages" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyGraphTests.Checker_rejects_reversed_edges_cycles_and_production_to_test_references" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="a862457b-c753-c31f-aca5-2fe6f245953e">
+      <Execution id="a96e2360-46f5-4fb7-ba2f-c3249c0a37aa" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyGraphTests" name="Checker_rejects_reversed_edges_cycles_and_production_to_test_references" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Invalid_scale_zero_and_range_are_rejected_without_rounding(text: &quot;-1000000000000000000&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="06d2e4a4-4c5d-1525-89eb-481f2896b461">
+      <Execution id="82a34c97-eeea-4039-ba73-83fd991d7204" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests" name="Invalid_scale_zero_and_range_are_rejected_without_rounding" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.WriteUseCaseTests.Known_failures_complete_after_disposal_but_technical_failures_keep_processing(known: True)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="4d529ae3-d865-6229-b00a-f920b7127b9e">
+      <Execution id="da0083b8-526b-479f-aedd-8a7c6584920a" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.WriteUseCaseTests" name="Known_failures_complete_after_disposal_but_technical_failures_keep_processing" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Closure_rejects_state_balances_or_holds(state: &quot;ACTIVE&quot;, available: 0, book: 0, holds: 1)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="c25e2e53-dec3-d224-ae5a-6e7c5f2570f9">
+      <Execution id="fe845be9-fd2e-4ab1-9fd9-3f9e6a267a48" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Closure_rejects_state_balances_or_holds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.AccountUseCaseTests.Hidden_and_missing_detail_have_the_same_result_without_gateway_calls" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="a8ad12a6-a2ab-f84f-fcb1-d0a8e7b0d627">
+      <Execution id="29bd17d7-abe2-4972-a3eb-02d489df3d1a" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.AccountUseCaseTests" name="Hidden_and_missing_detail_have_the_same_result_without_gateway_calls" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyGraphTests.Existing_projects_do_not_introduce_unauthorized_direct_references" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="868a8cc2-0d4e-a424-871f-10b4e562503c">
+      <Execution id="f10a4401-63cc-462a-8b0c-97d7352eee89" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyGraphTests" name="Existing_projects_do_not_introduce_unauthorized_direct_references" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(grant: &quot;client_credentials&quot;, secret: False, scope: &quot;bad&quot;, scenario: &quot;bad&quot;, error: &quot;invalid_client&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="cbfa19a8-c0b2-09e3-41de-03560fd00ba4">
+      <Execution id="adc27098-f6be-40c3-bde9-50a2b47366da" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests" name="Token_error_precedence_is_preserved" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Closure_rejects_state_balances_or_holds(state: &quot;PENDING_APPROVAL&quot;, available: 0, book: 0, holds: 0)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="d177a0ee-721b-feff-ae79-6c3d54adb4ee">
+      <Execution id="20986fc5-1149-43a0-8137-11c7e756afaa" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Closure_rejects_state_balances_or_holds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_technical_use_outside_api_composition(source: &quot;class Handler { CoreBanking.Infrastructure.Persist&quot;···)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="7c9b9efe-d405-3995-e5a4-f1c51d98b6fb">
+      <Execution id="37c56e7f-a47a-4ec9-b6a8-9acc0797fb83" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Checker_rejects_technical_use_outside_api_composition" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.BalanceUseCaseTests.Access_and_source_validation_precede_accepted_business_error" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="e6cee037-3cac-d93b-be7b-e13de58b913d">
+      <Execution id="a6c3760c-ea64-4bce-97cc-99ac9b69fdc1" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.BalanceUseCaseTests" name="Access_and_source_validation_precede_accepted_business_error" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: &quot;aaaaaaaa-aaaa-4aaa-7aaa-aaaaaaaaaaaa&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="437fc1ee-44d6-c748-0dd4-9418c83f6d8e">
+      <Execution id="5abb684a-188e-45b6-bc70-99172f1a9b10" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.IdempotencyPolicyTests" name="Key_requires_exact_UUID_v4_and_RFC_variant" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_framework_types_in_inward_signatures" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="22f7a38e-da30-814e-ea4c-32f0ad0abfc7">
+      <Execution id="c66baa1f-610c-443e-b5bc-08e82693f8ab" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Checker_rejects_framework_types_in_inward_signatures" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests.Invalid_scale_zero_and_range_are_rejected_without_rounding(text: &quot;1000000000000000000&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="086b3620-b013-7f14-bef7-1c54d5059736">
+      <Execution id="0d38d296-6850-43e0-9b64-ca9febf404b5" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AdjustmentPolicyTests" name="Invalid_scale_zero_and_range_are_rejected_without_rounding" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Existing_types_allow_EUR_creation(type: &quot;INVESTOR_ACCOUNT&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="4b41111b-9452-481e-7863-3ba10eff4a49">
+      <Execution id="481a4eb6-d95e-41d1-8656-00b16e61a87f" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Existing_types_allow_EUR_creation" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.AccountPolicyTests.Zero_balance_closure_and_repeated_closed_are_allowed(state: &quot;APPROVED&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="2a6bd41b-5068-38e7-59d5-5639e1948862">
+      <Execution id="1707a7bc-6430-4b8b-b78a-3884df6e7ae5" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.AccountPolicyTests" name="Zero_balance_closure_and_repeated_closed_are_allowed" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_technical_use_outside_api_composition(source: &quot;global using Microsoft.EntityFrameworkCore;&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="caa6a353-7b31-937c-3304-89d5aab08859">
+      <Execution id="22e17eec-c8d7-4624-bccc-7a8814d17454" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Checker_rejects_technical_use_outside_api_composition" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(grant: &quot;client_credentials&quot;, secret: True, scope: &quot;accounts.read&quot;, scenario: &quot;bad&quot;, error: &quot;invalid_scenario&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="2ab21594-8de9-dc50-5dcc-5cd146ef3674">
+      <Execution id="d4d27562-ee9b-4c8f-a942-88e95d8118ce" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests" name="Token_error_precedence_is_preserved" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: null)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="489a46b6-9871-7c17-da7c-5a8810fe3edc">
+      <Execution id="526db144-f1a2-446b-8fad-f759b152562f" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.IdempotencyPolicyTests" name="Key_requires_exact_UUID_v4_and_RFC_variant" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Domain.BalancePolicyTests.Accepted_errors_preserve_precedence_and_exact_messages(blocked: False, state: &quot;ACTIVE&quot;, code: 680, message: &quot;Required balance information is missing&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="004cc2b8-ffcc-3b17-4113-62694859ac5b">
+      <Execution id="f823b86a-3b44-492f-90dc-c7ba91838689" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Domain.BalancePolicyTests" name="Accepted_errors_preserve_precedence_and_exact_messages" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(grant: &quot;client_credentials&quot;, secret: True, scope: &quot;bad&quot;, scenario: &quot;bad&quot;, error: &quot;invalid_scope&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="9be127c2-52ef-fe42-515c-3b9985d04fed">
+      <Execution id="4430b932-f343-41fd-b883-d992305d1aa9" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests" name="Token_error_precedence_is_preserved" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.AccountUseCaseTests.List_and_detail_return_typed_source_references_and_propagate_cancellation" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="fb7255ad-cfdc-d44c-9bb1-a71c5feec88c">
+      <Execution id="f3d1afe9-decb-439e-8134-30bda70050cf" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.AccountUseCaseTests" name="List_and_detail_return_typed_source_references_and_propagate_cancellation" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="004cc2b8-ffcc-3b17-4113-62694859ac5b" executionId="f823b86a-3b44-492f-90dc-c7ba91838689" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dd1ad0e0-bc12-646b-2acd-0ad2cf547f3d" executionId="081a3818-0393-495e-a650-5c64b6055829" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52f14979-5bf1-5f35-c852-f4506b83a9bd" executionId="1b49ffa2-bff1-4370-9e74-256ebbf7b055" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9be127c2-52ef-fe42-515c-3b9985d04fed" executionId="4430b932-f343-41fd-b883-d992305d1aa9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f325830-cfde-2b20-e2c2-9dfbbe7cd2cc" executionId="40abb70f-19e1-4b9c-bb9e-2e9a6f2395d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc48794a-0506-0549-84ec-15f7835cf844" executionId="e77fbb8e-d5bf-4044-b8fd-f4a4df7d92a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d825edf8-ec56-145e-c85a-8bf6f9e2d94a" executionId="0ef89fcc-e1af-4676-9fb7-a1a2edbaf51b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="caa6a353-7b31-937c-3304-89d5aab08859" executionId="22e17eec-c8d7-4624-bccc-7a8814d17454" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9890dbc1-4f35-47f6-913d-381e110f44e2" executionId="131e7b8d-751d-4b14-b902-a251e26ba84b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="437fc1ee-44d6-c748-0dd4-9418c83f6d8e" executionId="5abb684a-188e-45b6-bc70-99172f1a9b10" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c9b9efe-d405-3995-e5a4-f1c51d98b6fb" executionId="37c56e7f-a47a-4ec9-b6a8-9acc0797fb83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d352fad4-485f-b25f-a719-44de3c989159" executionId="cca6fb43-0603-4053-a866-02ae90698469" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b32e0fab-820b-0d0e-1e17-b7bd4f0941c5" executionId="3780b12e-deaa-43c2-b419-93a301c80cb0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74e30d25-1926-7aac-4be9-e39ce13fde90" executionId="21e4facc-292d-4f3d-b2ce-2666e1ce4798" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e6cee037-3cac-d93b-be7b-e13de58b913d" executionId="a6c3760c-ea64-4bce-97cc-99ac9b69fdc1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d2ce24b3-2dc3-af84-5c90-d213ac91a544" executionId="8566545c-af18-4eb0-90cc-78acf366519a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2de6b40b-8326-15ea-7e74-c9538edc811b" executionId="ab5246f3-8535-4f1c-ae15-53dec8f9baf8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c25e2e53-dec3-d224-ae5a-6e7c5f2570f9" executionId="fe845be9-fd2e-4ab1-9fd9-3f9e6a267a48" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fbb6bedf-6860-ef78-66d3-32f3db5ab955" executionId="9f9aa131-807f-46f3-9de1-e68466e3861a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="09043946-32ee-0b98-1d5c-e1862a5d3039" executionId="eb843302-4d97-46b5-84bc-5522d5525439" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b41111b-9452-481e-7863-3ba10eff4a49" executionId="481a4eb6-d95e-41d1-8656-00b16e61a87f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0cf5b29a-04b1-4f93-2268-4e367341fa74" executionId="61b65bf2-25ec-4e84-9ab4-a8210d7a5256" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4b8d547-a440-58bc-b24a-7e16dbdfe2df" executionId="e649e12e-0383-4b92-81a7-3f7228b194d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="643453fb-17bb-22cb-e32a-062e18f3b296" executionId="aaa23e6e-0eea-4874-82d8-83a7c984702a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e60d67dd-b1fc-c818-88b7-596f2032b9e3" executionId="4c2bb4ee-79e6-420b-a8d7-b46047f8d5da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22f7a38e-da30-814e-ea4c-32f0ad0abfc7" executionId="c66baa1f-610c-443e-b5bc-08e82693f8ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="489a46b6-9871-7c17-da7c-5a8810fe3edc" executionId="526db144-f1a2-446b-8fad-f759b152562f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b8a3938-5084-601c-1f04-3a5c60f9ea89" executionId="ec1356e0-5b9e-4848-893c-91f1b28efb78" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a6bd41b-5068-38e7-59d5-5639e1948862" executionId="1707a7bc-6430-4b8b-b78a-3884df6e7ae5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a51d9b41-81d5-fa88-87ec-ae0fc587abb7" executionId="2d589e81-1165-46af-90ee-88d9f603e868" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="045c633c-521b-da30-2544-0b9a0e07ca73" executionId="b13c553f-a8e7-4858-a060-909bbd3ab9d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="81adb013-f9f8-0634-152c-0b33f3b116c3" executionId="8b04080d-8844-4c66-9f38-ead2ee2ba445" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8ad12a6-a2ab-f84f-fcb1-d0a8e7b0d627" executionId="29bd17d7-abe2-4972-a3eb-02d489df3d1a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d7dd5b0c-673a-f653-bbef-9a09005ff886" executionId="3a9a5267-5933-49b4-809d-90c5a1d0aeb0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8707982c-abe0-f284-75d7-8cf42b38c32c" executionId="cf137632-20d7-4bb8-9ce3-c68506024aa4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="086b3620-b013-7f14-bef7-1c54d5059736" executionId="0d38d296-6850-43e0-9b64-ca9febf404b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30405c2a-36d3-f745-62a3-b8ed8546a3da" executionId="1183e4d1-a487-487c-808d-7b23651212e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73f12cf5-80d6-6db3-b3a3-094eb508ea14" executionId="fd215800-f118-4ead-84ba-8df598a3ea11" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4d529ae3-d865-6229-b00a-f920b7127b9e" executionId="da0083b8-526b-479f-aedd-8a7c6584920a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb7255ad-cfdc-d44c-9bb1-a71c5feec88c" executionId="f3d1afe9-decb-439e-8134-30bda70050cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1047d7a0-2573-3075-579a-d7b9d350e67c" executionId="d366ba1e-e9c0-4eaa-bd5b-03b71f7118dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2ab21594-8de9-dc50-5dcc-5cd146ef3674" executionId="d4d27562-ee9b-4c8f-a942-88e95d8118ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="216c3605-110b-22ca-af40-07258c0089a0" executionId="62af095b-ccd8-4a42-838c-f85a44ac4686" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a5f7bc7-dcaa-3a16-7908-389a424266bd" executionId="06c79813-aff2-4a12-bf26-4230033c276a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="21a1df6f-7022-1671-2858-1f990a9171a6" executionId="fa024dff-f208-4b2b-9875-f19888460169" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9f364310-e634-4d5a-6558-dcf3c40a5dd4" executionId="68f1f67f-89de-4d49-948f-340b547ae827" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b72f38d-322b-29e6-c312-9bedfe61feea" executionId="d11bfdf2-3d9b-4845-b3de-0393ee42d87a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="847bba9b-15c7-dc5c-3a23-8a1483963d91" executionId="2da64730-1d30-43b1-b4cb-98e2f08ffbbc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="53adb98e-337f-443a-f860-ca779dc63dfa" executionId="b151e39e-b525-49a2-aa42-f6c7fbfb82b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a862457b-c753-c31f-aca5-2fe6f245953e" executionId="a96e2360-46f5-4fb7-ba2f-c3249c0a37aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f855526b-81b7-df4e-fd17-cc76bb0fa945" executionId="3584e177-66e8-41b1-b616-48eb9068e707" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06d2e4a4-4c5d-1525-89eb-481f2896b461" executionId="82a34c97-eeea-4039-ba73-83fd991d7204" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d177a0ee-721b-feff-ae79-6c3d54adb4ee" executionId="20986fc5-1149-43a0-8137-11c7e756afaa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4f0119d-15a3-b861-d0a4-c6d274bdf1a6" executionId="73699ca3-9fee-4e4c-a8cc-66fe11f7a217" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0b487aac-346c-eb11-5fc7-8eccd8096f77" executionId="7e2ce4f1-1a4c-4009-918c-ef2778689a63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e780c21-c3ca-937b-a76a-aa6bd2768147" executionId="177fc052-1c5d-44bc-a32f-0493a4b35fe7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="346fb744-7a45-d0e1-7e14-e82b46741a26" executionId="f499f830-79a3-462b-bf25-590a36407faf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fefd90ad-7ac6-2098-f953-23a1fa14f582" executionId="0e54c1af-e75c-44cf-acbc-e17d3a3710e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cbfa19a8-c0b2-09e3-41de-03560fd00ba4" executionId="adc27098-f6be-40c3-bde9-50a2b47366da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="868a8cc2-0d4e-a424-871f-10b4e562503c" executionId="f10a4401-63cc-462a-8b0c-97d7352eee89" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="634dbc51-f269-a263-e8a3-0a8e221ebdf5" executionId="fb3c7083-29c5-49dc-8660-a1f0458d4831" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb5f6915-68b5-3243-e25b-4e901276e239" executionId="9d0f779b-7a77-4792-a8ae-42bfba72739e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="89a918c8-780f-9357-6d76-2c6cc682acdb" executionId="bfbe78e0-caf8-41df-8632-2a6c5a7707ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="878b63ea-e9b9-c07f-31fc-3f2a9fe1fb41" executionId="04c829b4-d7ea-4f1c-b934-39e7add3577f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="64" executed="64" passed="45" failed="19" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v4.0.1+0f7d528729 (64-bit .NET 10.0.14)
+[xUnit.net 00:00:00.27]   Discovering: CoreBanking.UnitTests
+[xUnit.net 00:00:00.35]   Discovered:  CoreBanking.UnitTests
+[xUnit.net 00:00:00.40]   Starting:    CoreBanking.UnitTests
+[xUnit.net 00:00:00.53]       Assert.Equal() Failure: Strings differ
+[xUnit.net 00:00:00.53]                          ↓ (pos 8)
+[xUnit.net 00:00:00.53]       Expected: "invalid_client"
+[xUnit.net 00:00:00.53]       Actual:   "invalid_scope"
+[xUnit.net 00:00:00.53]                          ↑ (pos 8)
+[xUnit.net 00:00:00.53]       Stack Trace:
+[xUnit.net 00:00:00.53]         /source/tests/CoreBanking.UnitTests/Application/WorkshopTokenPolicyTests.cs(14,0): at CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(String grant, Boolean secret, String scope, String scenario, String error)
+[xUnit.net 00:00:00.53]            at InvokeStub_WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(Object, Span`1)
+[xUnit.net 00:00:00.53]            at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.53]       Assert.Equal() Failure: Strings differ
+[xUnit.net 00:00:00.53]                  ↓ (pos 0)
+[xUnit.net 00:00:00.53]       Expected: "unsupported_grant_type"
+[xUnit.net 00:00:00.53]       Actual:   "invalid_scope"
+[xUnit.net 00:00:00.53]                  ↑ (pos 0)
+[xUnit.net 00:00:00.53]       Stack Trace:
+[xUnit.net 00:00:00.53]         /source/tests/CoreBanking.UnitTests/Application/WorkshopTokenPolicyTests.cs(14,0): at CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(String grant, Boolean secret, String scope, String scenario, String error)
+[xUnit.net 00:00:00.53]            at InvokeStub_WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(Object, Span`1)
+[xUnit.net 00:00:00.53]            at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.53]       Assert.Equal() Failure: Strings differ
+[xUnit.net 00:00:00.53]                            ↓ (pos 10)
+[xUnit.net 00:00:00.53]       Expected: "invalid_scenario"
+[xUnit.net 00:00:00.53]       Actual:   "invalid_scope"
+[xUnit.net 00:00:00.53]                            ↑ (pos 10)
+[xUnit.net 00:00:00.53]       Stack Trace:
+[xUnit.net 00:00:00.53]         /source/tests/CoreBanking.UnitTests/Application/WorkshopTokenPolicyTests.cs(14,0): at CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(String grant, Boolean secret, String scope, String scenario, String error)
+[xUnit.net 00:00:00.53]            at InvokeStub_WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(Object, Span`1)
+[xUnit.net 00:00:00.53]            at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.53]       Assert.False() Failure
+[xUnit.net 00:00:00.53]       Expected: False
+[xUnit.net 00:00:00.53]       Actual:   True
+[xUnit.net 00:00:00.53]       Stack Trace:
+[xUnit.net 00:00:00.53]         /source/tests/CoreBanking.UnitTests/Application/WorkshopHealthTests.cs(13,0): at CoreBanking.UnitTests.Application.WorkshopHealthTests.Unavailable_database_is_not_healthy_and_cancellation_propagates()
+[xUnit.net 00:00:00.53]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.54]       Assert.IsType() Failure: Value is not the exact type
+[xUnit.net 00:00:00.54]       Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/WriteUseCaseTests.cs(49,0): at CoreBanking.UnitTests.Application.WriteUseCaseTests.Known_failures_complete_after_disposal_but_technical_failures_keep_processing(Boolean known)
+[xUnit.net 00:00:00.54]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.54]       Assert.Equal() Failure: Strings differ
+[xUnit.net 00:00:00.54]                  ↓ (pos 0)
+[xUnit.net 00:00:00.54]       Expected: "acc-test|1.20|EUR|Reason"
+[xUnit.net 00:00:00.54]       Actual:   ""
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/IdempotencyPolicyTests.cs(23,0): at CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_payload_and_replay_preserve_exact_comparison()
+[xUnit.net 00:00:00.54]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:00:00.54]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+[xUnit.net 00:00:00.54]       Assert.True() Failure
+[xUnit.net 00:00:00.54]       Expected: True
+[xUnit.net 00:00:00.54]       Actual:   False
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/AccountUseCaseTests.cs(22,0): at CoreBanking.UnitTests.Application.AccountUseCaseTests.Visibility_respects_explicit_ownership_and_portfolio_exception()
+[xUnit.net 00:00:00.54]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:00:00.54]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+[xUnit.net 00:00:00.54]       Assert.False() Failure
+[xUnit.net 00:00:00.54]       Expected: False
+[xUnit.net 00:00:00.54]       Actual:   True
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/IdempotencyPolicyTests.cs(15,0): at CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(String key)
+[xUnit.net 00:00:00.54]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:00:00.54]            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+[xUnit.net 00:00:00.54]       Assert.IsType() Failure: Value is not the exact type
+[xUnit.net 00:00:00.54]       Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;BalanceSnapshot&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;BalanceSnapshot&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/BalanceUseCaseTests.cs(14,0): at CoreBanking.UnitTests.Application.BalanceUseCaseTests.Access_and_source_validation_precede_accepted_business_error()
+[xUnit.net 00:00:00.54]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.54]       Assert.False() Failure
+[xUnit.net 00:00:00.54]       Expected: False
+[xUnit.net 00:00:00.54]       Actual:   True
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/IdempotencyPolicyTests.cs(15,0): at CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(String key)
+[xUnit.net 00:00:00.54]            at InvokeStub_IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(Object, Span`1)
+[xUnit.net 00:00:00.54]            at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.54]       Assert.False() Failure
+[xUnit.net 00:00:00.54]       Expected: False
+[xUnit.net 00:00:00.54]       Actual:   True
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/IdempotencyPolicyTests.cs(15,0): at CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(String key)
+[xUnit.net 00:00:00.54]            at InvokeStub_IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(Object, Span`1)
+[xUnit.net 00:00:00.54]            at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:00.54]       Assert.Equal() Failure: Values differ
+[xUnit.net 00:00:00.54]       Expected: 5
+[xUnit.net 00:00:00.54]       Actual:   0
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/WorkshopTokenPolicyTests.cs(21,0): at CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Omitted_scope_differs_from_empty_and_expired_scenario_is_retained()
+[xUnit.net 00:00:00.54]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:00:00.54]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+[xUnit.net 00:00:00.54]       Assert.IsType() Failure: Value is not the exact type
+[xUnit.net 00:00:00.54]       Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;BalanceSnapshot&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;BalanceSnapshot&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/BalanceUseCaseTests.cs(28,0): at CoreBanking.UnitTests.Application.BalanceUseCaseTests.Complete_balance_result_uses_source_identity_and_shared_cutoff()
+[xUnit.net 00:00:00.54]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.54]       Assert.Throws() Failure: No exception was thrown
+[xUnit.net 00:00:00.54]       Expected: typeof(System.InvalidOperationException)
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/WriteUseCaseTests.cs(54,0): at CoreBanking.UnitTests.Application.WriteUseCaseTests.Known_failures_complete_after_disposal_but_technical_failures_keep_processing(Boolean known)
+[xUnit.net 00:00:00.54]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.54]       Assert.IsType() Failure: Value is not the exact type
+[xUnit.net 00:00:00.54]       Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;IReadOnlyList&lt;AccountReference&gt;&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;IReadOnlyList&lt;AccountReference&gt;&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/AccountUseCaseTests.cs(45,0): at CoreBanking.UnitTests.Application.AccountUseCaseTests.List_and_detail_return_typed_source_references_and_propagate_cancellation()
+[xUnit.net 00:00:00.54]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.54]       Assert.IsType() Failure: Value is not the exact type
+[xUnit.net 00:00:00.54]       Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AccountReference&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AccountReference&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/WriteUseCaseTests.cs(14,0): at CoreBanking.UnitTests.Application.WriteUseCaseTests.Closure_commits_once_and_disposes_each_locked_session()
+[xUnit.net 00:00:00.54]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.54]       Assert.IsType() Failure: Value is not the exact type
+[xUnit.net 00:00:00.54]       Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AccountReference&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AccountReference&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/AccountUseCaseTests.cs(61,0): at CoreBanking.UnitTests.Application.AccountUseCaseTests.Create_starts_pending_with_zero_balances_and_rejects_missing_mapping()
+[xUnit.net 00:00:00.54]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.54]       Assert.IsType() Failure: Value is not the exact type
+[xUnit.net 00:00:00.54]       Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/WriteUseCaseTests.cs(27,0): at CoreBanking.UnitTests.Application.WriteUseCaseTests.Adjustment_reserves_before_lock_and_atomically_completes_once()
+[xUnit.net 00:00:00.54]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:00.54]       Assert.Equal() Failure: Values differ
+[xUnit.net 00:00:00.54]       Expected: NotFound
+[xUnit.net 00:00:00.54]       Actual:   Internal
+[xUnit.net 00:00:00.54]       Stack Trace:
+[xUnit.net 00:00:00.54]         /source/tests/CoreBanking.UnitTests/Application/AccountUseCaseTests.cs(36,0): at CoreBanking.UnitTests.Application.AccountUseCaseTests.Hidden_and_missing_detail_have_the_same_result_without_gateway_calls()
+[xUnit.net 00:00:00.54]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:02.84]   Finished:    CoreBanking.UnitTests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3496663+00:00">
+        <Text>[xUnit.net 00:00:00.53]     CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(grant: "client_credentials", secret: False, scope: "bad", scenario: "bad", error: "invalid_client") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3500717+00:00">
+        <Text>[xUnit.net 00:00:00.53]     CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(grant: "password", secret: False, scope: "bad", scenario: "bad", error: "unsupported_grant_type") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3501407+00:00">
+        <Text>[xUnit.net 00:00:00.53]     CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Token_error_precedence_is_preserved(grant: "client_credentials", secret: True, scope: "accounts.read", scenario: "bad", error: "invalid_scenario") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3502652+00:00">
+        <Text>[xUnit.net 00:00:00.53]     CoreBanking.UnitTests.Application.WorkshopHealthTests.Unavailable_database_is_not_healthy_and_cancellation_propagates [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3583745+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.WriteUseCaseTests.Known_failures_complete_after_disposal_but_technical_failures_keep_processing(known: True) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3612138+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_payload_and_replay_preserve_exact_comparison [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3613123+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.AccountUseCaseTests.Visibility_respects_explicit_ownership_and_portfolio_exception [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3613622+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: "aaaaaaaa-aaaa-4aaa-7aaa-aaaaaaaaaaaa") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3614397+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.BalanceUseCaseTests.Access_and_source_validation_precede_accepted_business_error [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3614808+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: "{aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa}") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3615268+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.IdempotencyPolicyTests.Key_requires_exact_UUID_v4_and_RFC_variant(key: "aaaaaaaa-aaaa-1aaa-8aaa-aaaaaaaaaaaa") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3628765+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.WorkshopTokenPolicyTests.Omitted_scope_differs_from_empty_and_expired_scenario_is_retained [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3629253+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.BalanceUseCaseTests.Complete_balance_result_uses_source_identity_and_shared_cutoff [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3630051+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.WriteUseCaseTests.Known_failures_complete_after_disposal_but_technical_failures_keep_processing(known: False) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3630818+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.AccountUseCaseTests.List_and_detail_return_typed_source_references_and_propagate_cancellation [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3631656+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.WriteUseCaseTests.Closure_commits_once_and_disposes_each_locked_session [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3632089+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.AccountUseCaseTests.Create_starts_pending_with_zero_balances_and_rejects_missing_mapping [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3633020+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.WriteUseCaseTests.Adjustment_reserves_before_lock_and_atomically_completes_once [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="55789b0fcba8" outcome="Error" timestamp="2026-11-04T14:46:37.3633932+00:00">
+        <Text>[xUnit.net 00:00:00.54]     CoreBanking.UnitTests.Application.AccountUseCaseTests.Hidden_and_missing_detail_have_the_same_result_without_gateway_calls [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="9c3758a1-94aa-4ed4-ae63-c577083f7ca4" name="@e66ee8b4c509 2026-11-04 15:52:24" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-04T15:52:24.6022312+00:00" queuing="2026-11-04T15:52:24.6022313+00:00" start="2026-11-04T15:52:11.0711596+00:00" finish="2026-11-04T15:52:24.6394051+00:00" />
+  <TestSettings name="default" id="d53efeec-2bd9-4386-aa6c-9af6693bb864">
+    <Deployment runDeploymentRoot="_e66ee8b4c509_2026-11-04_15_52_24" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="2ef0010a-4db6-42b4-89b3-1e471f63ff81" testId="897ee6b1-b0a6-d175-9891-dbaf90da33b1" testName="CoreBanking.IntegrationTests.Persistence.DatabaseMigrationTests.Design_factory_uses_the_explicit_isolated_connection_and_infrastructure_migrations" computerName="e66ee8b4c509" duration="00:00:00.0598498" startTime="2026-11-04T15:52:24.3067528+00:00" endTime="2026-11-04T15:52:24.3800649+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ef0010a-4db6-42b4-89b3-1e471f63ff81">
+      <Output>
+        <ErrorInfo>
+          <Message>Design connection differs: server matches=True, database matches=True, credentials match=True, configured keys=Data Source,Failover Partner,AttachDbFilename,Initial Catalog,Integrated Security,Persist Security Info,User ID,Password,Enlist,Pooling,Min Pool Size,Max Pool Size,Pool Blocking Period,Multiple Active Result Sets,Replication,Connect Timeout,Encrypt,Host Name In Certificate,Server Certificate,Trust Server Certificate,Load Balance Timeout,Packet Size,Type System Version,Authentication,Application Name,Current Language,Workstation ID,User Instance,Transaction Binding,Application Intent,Multi Subnet Failover,Connect Retry Count,Connect Retry Interval,Column Encryption Setting,Enclave Attestation Url,Attestation Protocol,Command Timeout,IP Address Preference,Server SPN,Failover Partner SPN,Context Connection.</Message>
+          <StackTrace>   at CoreBanking.IntegrationTests.Persistence.DatabaseMigrationTests.Design_factory_uses_the_explicit_isolated_connection_and_infrastructure_migrations() in /source/tests/CoreBanking.IntegrationTests/Persistence/DatabaseMigrationTests.cs:line 17
+   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)
+   at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CoreBanking.IntegrationTests.Persistence.DatabaseMigrationTests.Design_factory_uses_the_explicit_isolated_connection_and_infrastructure_migrations" storage="/source/tests/corebanking.integrationtests/bin/release/net10.0/corebanking.integrationtests.dll" id="897ee6b1-b0a6-d175-9891-dbaf90da33b1">
+      <Execution id="2ef0010a-4db6-42b4-89b3-1e471f63ff81" />
+      <TestMethod codeBase="/source/tests/CoreBanking.IntegrationTests/bin/Release/net10.0/CoreBanking.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.IntegrationTests.Persistence.DatabaseMigrationTests" name="Design_factory_uses_the_explicit_isolated_connection_and_infrastructure_migrations" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="897ee6b1-b0a6-d175-9891-dbaf90da33b1" executionId="2ef0010a-4db6-42b4-89b3-1e471f63ff81" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" passed="0" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v4.0.1+0f7d528729 (64-bit .NET 10.0.14)
+[xUnit.net 00:00:00.31]   Discovering: CoreBanking.IntegrationTests
+[xUnit.net 00:00:00.40]   Discovered:  CoreBanking.IntegrationTests
+[xUnit.net 00:00:00.44]   Starting:    CoreBanking.IntegrationTests
+[xUnit.net 00:00:12.13]       Design connection differs: server matches=True, database matches=True, credentials match=True, configured keys=Data Source,Failover Partner,AttachDbFilename,Initial Catalog,Integrated Security,Persist Security Info,User ID,Password,Enlist,Pooling,Min Pool Size,Max Pool Size,Pool Blocking Period,Multiple Active Result Sets,Replication,Connect Timeout,Encrypt,Host Name In Certificate,Server Certificate,Trust Server Certificate,Load Balance Timeout,Packet Size,Type System Version,Authentication,Application Name,Current Language,Workstation ID,User Instance,Transaction Binding,Application Intent,Multi Subnet Failover,Connect Retry Count,Connect Retry Interval,Column Encryption Setting,Enclave Attestation Url,Attestation Protocol,Command Timeout,IP Address Preference,Server SPN,Failover Partner SPN,Context Connection.
+[xUnit.net 00:00:12.13]       Stack Trace:
+[xUnit.net 00:00:12.15]         /source/tests/CoreBanking.IntegrationTests/Persistence/DatabaseMigrationTests.cs(17,0): at CoreBanking.IntegrationTests.Persistence.DatabaseMigrationTests.Design_factory_uses_the_explicit_isolated_connection_and_infrastructure_migrations()
+[xUnit.net 00:00:12.15]            at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)
+[xUnit.net 00:00:12.15]            at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)
+[xUnit.net 00:00:12.15]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:00:12.15]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:12.19]   Finished:    CoreBanking.IntegrationTests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="e66ee8b4c509" outcome="Error" timestamp="2026-11-04T15:52:24.3879191+00:00">
+        <Text>[xUnit.net 00:00:12.13]     CoreBanking.IntegrationTests.Persistence.DatabaseMigrationTests.Design_factory_uses_the_explicit_isolated_connection_and_infrastructure_migrations [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

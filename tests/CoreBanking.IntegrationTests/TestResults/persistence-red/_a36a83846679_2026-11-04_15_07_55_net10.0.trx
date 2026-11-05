@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="aceef794-5670-42b9-9ba9-b8ce1ecfa2c1" name="@a36a83846679 2026-11-04 15:07:55" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-04T15:07:55.0565419+00:00" queuing="2026-11-04T15:07:55.0565419+00:00" start="2026-11-04T15:07:52.3729262+00:00" finish="2026-11-04T15:08:09.2144118+00:00" />
+  <TestSettings name="default" id="ef8ce552-e412-41e1-b66e-7a7189fd5757">
+    <Deployment runDeploymentRoot="_a36a83846679_2026-11-04_15_07_55" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="f32a2094-9e6d-484a-b691-e42af62bac52" testId="8de6e644-4080-6583-a549-3c64a8d41dbf" testName="CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_replay_returns_same_result_without_duplicate_persisted_effect" computerName="a36a83846679" duration="00:00:00.0124481" startTime="2026-11-04T15:08:09.0335518+00:00" endTime="2026-11-04T15:08:09.0458073+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f32a2094-9e6d-484a-b691-e42af62bac52">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsType() Failure: Value is not the exact type
+Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)</Message>
+          <StackTrace>   at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_replay_returns_same_result_without_duplicate_persisted_effect() in /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs:line 39
+   at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_replay_returns_same_result_without_duplicate_persisted_effect() in /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs:line 42
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0a918d51-30e6-4626-ac96-6ab1c702a69b" testId="147ed54d-9e12-cba1-e8b1-404501910435" testName="CoreBanking.IntegrationTests.Persistence.DatabaseMigrationTests.Model_preserves_money_rowversion_keys_and_restricted_relationships" computerName="a36a83846679" duration="00:00:00.0505296" startTime="2026-11-04T15:08:06.9830771+00:00" endTime="2026-11-04T15:08:07.0328580+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0a918d51-30e6-4626-ac96-6ab1c702a69b" />
+    <UnitTestResult executionId="a987c507-01a4-4cce-a914-e5500329f3f6" testId="d163d3f9-d211-428e-9770-a837f7c210e4" testName="CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Failed_posting_rolls_back_balances_and_completes_reserved_error" computerName="a36a83846679" duration="00:00:00.0196408" startTime="2026-11-04T15:08:09.0122533+00:00" endTime="2026-11-04T15:08:09.0323481+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a987c507-01a4-4cce-a914-e5500329f3f6">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsType() Failure: Value is not the exact type
+Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)</Message>
+          <StackTrace>   at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Failed_posting_rolls_back_balances_and_completes_reserved_error() in /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs:line 62
+   at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Failed_posting_rolls_back_balances_and_completes_reserved_error() in /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs:line 68
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5064ba8f-35fe-4b0a-8f21-62526e802222" testId="7a177f3e-ac19-d946-3773-14e3246d6255" testName="CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_rejects_amount_with_more_than_two_fractional_digits" computerName="a36a83846679" duration="00:00:00.0202041" startTime="2026-11-04T15:08:08.9664038+00:00" endTime="2026-11-04T15:08:08.9768656+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5064ba8f-35fe-4b0a-8f21-62526e802222">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Equal() Failure: Values differ
+Expected: InvalidRequest
+Actual:   NotFound</Message>
+          <StackTrace>   at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_rejects_amount_with_more_than_two_fractional_digits() in /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs:line 52
+   at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_rejects_amount_with_more_than_two_fractional_digits() in /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs:line 53
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="40a2abe8-608e-4a17-9a1b-0fddaf713038" testId="ad73c38b-6fc1-e8cd-018a-5482a91fae46" testName="CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Closing_zero_balance_active_account_persists_closed_state" computerName="a36a83846679" duration="00:00:00.0251062" startTime="2026-11-04T15:08:08.9858665+00:00" endTime="2026-11-04T15:08:09.0112850+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40a2abe8-608e-4a17-9a1b-0fddaf713038">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsType() Failure: Value is not the exact type
+Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AccountReference&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AccountReference&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)</Message>
+          <StackTrace>   at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Closing_zero_balance_active_account_persists_closed_state() in /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs:line 27
+   at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Closing_zero_balance_active_account_persists_closed_state() in /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs:line 28
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f62d4bdb-f2ed-440a-b121-4ad4050b9b5d" testId="5c20dca5-2d20-e0c1-9647-1336c0d5f333" testName="CoreBanking.IntegrationTests.Persistence.WorkshopSeedTests.Seed_has_expected_deterministic_counts_and_balance_error_scenarios" computerName="a36a83846679" duration="00:00:00.0681674" startTime="2026-11-04T15:07:54.2058418+00:00" endTime="2026-11-04T15:07:54.2955311+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f62d4bdb-f2ed-440a-b121-4ad4050b9b5d" />
+    <UnitTestResult executionId="9f04f95d-ab93-4fd8-bd1e-2de8a91b7498" testId="7925acf9-135a-49c2-c687-36bc78b53f47" testName="CoreBanking.IntegrationTests.Persistence.DatabaseMigrationTests.Empty_database_migrates_and_populated_database_keeps_schema_and_rows_on_migration_and_startup" computerName="a36a83846679" duration="00:00:01.8988534" startTime="2026-11-04T15:08:07.0339089+00:00" endTime="2026-11-04T15:08:08.9349006+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f04f95d-ab93-4fd8-bd1e-2de8a91b7498" />
+    <UnitTestResult executionId="41b346b0-5ba9-4f37-8beb-22d0837bd03b" testId="3e81c9f4-cb5c-38b6-98ea-b7a189d92660" testName="CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Same_key_and_different_key_concurrency_do_not_duplicate_or_lose_postings" computerName="a36a83846679" duration="00:00:00.0072136" startTime="2026-11-04T15:08:08.9781420+00:00" endTime="2026-11-04T15:08:08.9847389+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41b346b0-5ba9-4f37-8beb-22d0837bd03b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Single() Failure: The collection was empty</Message>
+          <StackTrace>   at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Same_key_and_different_key_concurrency_do_not_duplicate_or_lose_postings() in /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs:line 81
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ee90090f-11ab-452b-878f-c3e2b417848d" testId="57b0000c-37ed-7f0b-06a4-0a4ce290fae9" testName="CoreBanking.IntegrationTests.Persistence.DatabaseAvailabilityTests.Availability_reports_reachable_and_unavailable_SQL_without_healthy_fallback" computerName="a36a83846679" duration="00:00:00.0026360" startTime="2026-11-04T15:08:08.9375655+00:00" endTime="2026-11-04T15:08:08.9560036+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee90090f-11ab-452b-878f-c3e2b417848d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.True() Failure
+Expected: True
+Actual:   False</Message>
+          <StackTrace>   at CoreBanking.IntegrationTests.Persistence.DatabaseAvailabilityTests.Availability_reports_reachable_and_unavailable_SQL_without_healthy_fallback() in /source/tests/CoreBanking.IntegrationTests/Persistence/DatabaseAvailabilityTests.cs:line 14
+   at CoreBanking.IntegrationTests.Persistence.DatabaseAvailabilityTests.Availability_reports_reachable_and_unavailable_SQL_without_healthy_fallback() in /source/tests/CoreBanking.IntegrationTests/Persistence/DatabaseAvailabilityTests.cs:line 21
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CoreBanking.IntegrationTests.Persistence.DatabaseMigrationTests.Empty_database_migrates_and_populated_database_keeps_schema_and_rows_on_migration_and_startup" storage="/source/tests/corebanking.integrationtests/bin/release/net10.0/corebanking.integrationtests.dll" id="7925acf9-135a-49c2-c687-36bc78b53f47">
+      <Execution id="9f04f95d-ab93-4fd8-bd1e-2de8a91b7498" />
+      <TestMethod codeBase="/source/tests/CoreBanking.IntegrationTests/bin/Release/net10.0/CoreBanking.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.IntegrationTests.Persistence.DatabaseMigrationTests" name="Empty_database_migrates_and_populated_database_keeps_schema_and_rows_on_migration_and_startup" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Failed_posting_rolls_back_balances_and_completes_reserved_error" storage="/source/tests/corebanking.integrationtests/bin/release/net10.0/corebanking.integrationtests.dll" id="d163d3f9-d211-428e-9770-a837f7c210e4">
+      <Execution id="a987c507-01a4-4cce-a914-e5500329f3f6" />
+      <TestMethod codeBase="/source/tests/CoreBanking.IntegrationTests/bin/Release/net10.0/CoreBanking.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.IntegrationTests.Persistence.AccountMutationTests" name="Failed_posting_rolls_back_balances_and_completes_reserved_error" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Same_key_and_different_key_concurrency_do_not_duplicate_or_lose_postings" storage="/source/tests/corebanking.integrationtests/bin/release/net10.0/corebanking.integrationtests.dll" id="3e81c9f4-cb5c-38b6-98ea-b7a189d92660">
+      <Execution id="41b346b0-5ba9-4f37-8beb-22d0837bd03b" />
+      <TestMethod codeBase="/source/tests/CoreBanking.IntegrationTests/bin/Release/net10.0/CoreBanking.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.IntegrationTests.Persistence.AccountMutationTests" name="Same_key_and_different_key_concurrency_do_not_duplicate_or_lose_postings" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.IntegrationTests.Persistence.DatabaseAvailabilityTests.Availability_reports_reachable_and_unavailable_SQL_without_healthy_fallback" storage="/source/tests/corebanking.integrationtests/bin/release/net10.0/corebanking.integrationtests.dll" id="57b0000c-37ed-7f0b-06a4-0a4ce290fae9">
+      <Execution id="ee90090f-11ab-452b-878f-c3e2b417848d" />
+      <TestMethod codeBase="/source/tests/CoreBanking.IntegrationTests/bin/Release/net10.0/CoreBanking.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.IntegrationTests.Persistence.DatabaseAvailabilityTests" name="Availability_reports_reachable_and_unavailable_SQL_without_healthy_fallback" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.IntegrationTests.Persistence.DatabaseMigrationTests.Model_preserves_money_rowversion_keys_and_restricted_relationships" storage="/source/tests/corebanking.integrationtests/bin/release/net10.0/corebanking.integrationtests.dll" id="147ed54d-9e12-cba1-e8b1-404501910435">
+      <Execution id="0a918d51-30e6-4626-ac96-6ab1c702a69b" />
+      <TestMethod codeBase="/source/tests/CoreBanking.IntegrationTests/bin/Release/net10.0/CoreBanking.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.IntegrationTests.Persistence.DatabaseMigrationTests" name="Model_preserves_money_rowversion_keys_and_restricted_relationships" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Closing_zero_balance_active_account_persists_closed_state" storage="/source/tests/corebanking.integrationtests/bin/release/net10.0/corebanking.integrationtests.dll" id="ad73c38b-6fc1-e8cd-018a-5482a91fae46">
+      <Execution id="40a2abe8-608e-4a17-9a1b-0fddaf713038" />
+      <TestMethod codeBase="/source/tests/CoreBanking.IntegrationTests/bin/Release/net10.0/CoreBanking.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.IntegrationTests.Persistence.AccountMutationTests" name="Closing_zero_balance_active_account_persists_closed_state" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.IntegrationTests.Persistence.WorkshopSeedTests.Seed_has_expected_deterministic_counts_and_balance_error_scenarios" storage="/source/tests/corebanking.integrationtests/bin/release/net10.0/corebanking.integrationtests.dll" id="5c20dca5-2d20-e0c1-9647-1336c0d5f333">
+      <Execution id="f62d4bdb-f2ed-440a-b121-4ad4050b9b5d" />
+      <TestMethod codeBase="/source/tests/CoreBanking.IntegrationTests/bin/Release/net10.0/CoreBanking.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.IntegrationTests.Persistence.WorkshopSeedTests" name="Seed_has_expected_deterministic_counts_and_balance_error_scenarios" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_rejects_amount_with_more_than_two_fractional_digits" storage="/source/tests/corebanking.integrationtests/bin/release/net10.0/corebanking.integrationtests.dll" id="7a177f3e-ac19-d946-3773-14e3246d6255">
+      <Execution id="5064ba8f-35fe-4b0a-8f21-62526e802222" />
+      <TestMethod codeBase="/source/tests/CoreBanking.IntegrationTests/bin/Release/net10.0/CoreBanking.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.IntegrationTests.Persistence.AccountMutationTests" name="Adjustment_rejects_amount_with_more_than_two_fractional_digits" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_replay_returns_same_result_without_duplicate_persisted_effect" storage="/source/tests/corebanking.integrationtests/bin/release/net10.0/corebanking.integrationtests.dll" id="8de6e644-4080-6583-a549-3c64a8d41dbf">
+      <Execution id="f32a2094-9e6d-484a-b691-e42af62bac52" />
+      <TestMethod codeBase="/source/tests/CoreBanking.IntegrationTests/bin/Release/net10.0/CoreBanking.IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.IntegrationTests.Persistence.AccountMutationTests" name="Adjustment_replay_returns_same_result_without_duplicate_persisted_effect" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="8de6e644-4080-6583-a549-3c64a8d41dbf" executionId="f32a2094-9e6d-484a-b691-e42af62bac52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="147ed54d-9e12-cba1-e8b1-404501910435" executionId="0a918d51-30e6-4626-ac96-6ab1c702a69b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d163d3f9-d211-428e-9770-a837f7c210e4" executionId="a987c507-01a4-4cce-a914-e5500329f3f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a177f3e-ac19-d946-3773-14e3246d6255" executionId="5064ba8f-35fe-4b0a-8f21-62526e802222" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad73c38b-6fc1-e8cd-018a-5482a91fae46" executionId="40a2abe8-608e-4a17-9a1b-0fddaf713038" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c20dca5-2d20-e0c1-9647-1336c0d5f333" executionId="f62d4bdb-f2ed-440a-b121-4ad4050b9b5d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7925acf9-135a-49c2-c687-36bc78b53f47" executionId="9f04f95d-ab93-4fd8-bd1e-2de8a91b7498" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e81c9f4-cb5c-38b6-98ea-b7a189d92660" executionId="41b346b0-5ba9-4f37-8beb-22d0837bd03b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57b0000c-37ed-7f0b-06a4-0a4ce290fae9" executionId="ee90090f-11ab-452b-878f-c3e2b417848d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="9" executed="9" passed="3" failed="6" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.01] xUnit.net VSTest Adapter v4.0.1+0f7d528729 (64-bit .NET 10.0.14)
+[xUnit.net 00:00:00.31]   Discovering: CoreBanking.IntegrationTests
+[xUnit.net 00:00:00.45]   Discovered:  CoreBanking.IntegrationTests
+[xUnit.net 00:00:00.52]   Starting:    CoreBanking.IntegrationTests
+[xUnit.net 00:00:15.34]       Assert.True() Failure
+[xUnit.net 00:00:15.34]       Expected: True
+[xUnit.net 00:00:15.34]       Actual:   False
+[xUnit.net 00:00:15.34]       Stack Trace:
+[xUnit.net 00:00:15.35]         /source/tests/CoreBanking.IntegrationTests/Persistence/DatabaseAvailabilityTests.cs(14,0): at CoreBanking.IntegrationTests.Persistence.DatabaseAvailabilityTests.Availability_reports_reachable_and_unavailable_SQL_without_healthy_fallback()
+[xUnit.net 00:00:15.35]         /source/tests/CoreBanking.IntegrationTests/Persistence/DatabaseAvailabilityTests.cs(21,0): at CoreBanking.IntegrationTests.Persistence.DatabaseAvailabilityTests.Availability_reports_reachable_and_unavailable_SQL_without_healthy_fallback()
+[xUnit.net 00:00:15.35]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:15.36]       Assert.Equal() Failure: Values differ
+[xUnit.net 00:00:15.36]       Expected: InvalidRequest
+[xUnit.net 00:00:15.36]       Actual:   NotFound
+[xUnit.net 00:00:15.36]       Stack Trace:
+[xUnit.net 00:00:15.36]         /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs(52,0): at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_rejects_amount_with_more_than_two_fractional_digits()
+[xUnit.net 00:00:15.36]         /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs(53,0): at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_rejects_amount_with_more_than_two_fractional_digits()
+[xUnit.net 00:00:15.36]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:15.37]       Assert.Single() Failure: The collection was empty
+[xUnit.net 00:00:15.37]       Stack Trace:
+[xUnit.net 00:00:15.37]         /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs(81,0): at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Same_key_and_different_key_concurrency_do_not_duplicate_or_lose_postings()
+[xUnit.net 00:00:15.37]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:15.39]       Assert.IsType() Failure: Value is not the exact type
+[xUnit.net 00:00:15.39]       Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AccountReference&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:15.39]       Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AccountReference&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:15.39]       Stack Trace:
+[xUnit.net 00:00:15.39]         /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs(27,0): at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Closing_zero_balance_active_account_persists_closed_state()
+[xUnit.net 00:00:15.39]         /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs(28,0): at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Closing_zero_balance_active_account_persists_closed_state()
+[xUnit.net 00:00:15.39]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:15.41]       Assert.IsType() Failure: Value is not the exact type
+[xUnit.net 00:00:15.41]       Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:15.41]       Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:15.41]       Stack Trace:
+[xUnit.net 00:00:15.41]         /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs(62,0): at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Failed_posting_rolls_back_balances_and_completes_reserved_error()
+[xUnit.net 00:00:15.41]         /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs(68,0): at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Failed_posting_rolls_back_balances_and_completes_reserved_error()
+[xUnit.net 00:00:15.41]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:15.43]       Assert.IsType() Failure: Value is not the exact type
+[xUnit.net 00:00:15.43]       Expected: typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:15.43]       Actual:   typeof(CoreBanking.Application.Contracts.UseCaseResult&lt;AdjustmentReceipt&gt;) (from CoreBanking.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+[xUnit.net 00:00:15.43]       Stack Trace:
+[xUnit.net 00:00:15.43]         /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs(39,0): at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_replay_returns_same_result_without_duplicate_persisted_effect()
+[xUnit.net 00:00:15.43]         /source/tests/CoreBanking.IntegrationTests/Persistence/AccountMutationTests.cs(42,0): at CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_replay_returns_same_result_without_duplicate_persisted_effect()
+[xUnit.net 00:00:15.43]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:15.43]   Finished:    CoreBanking.IntegrationTests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="a36a83846679" outcome="Error" timestamp="2026-11-04T15:08:08.9611104+00:00">
+        <Text>[xUnit.net 00:00:15.34]     CoreBanking.IntegrationTests.Persistence.DatabaseAvailabilityTests.Availability_reports_reachable_and_unavailable_SQL_without_healthy_fallback [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="a36a83846679" outcome="Error" timestamp="2026-11-04T15:08:08.9776194+00:00">
+        <Text>[xUnit.net 00:00:15.36]     CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_rejects_amount_with_more_than_two_fractional_digits [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="a36a83846679" outcome="Error" timestamp="2026-11-04T15:08:08.9855238+00:00">
+        <Text>[xUnit.net 00:00:15.37]     CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Same_key_and_different_key_concurrency_do_not_duplicate_or_lose_postings [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="a36a83846679" outcome="Error" timestamp="2026-11-04T15:08:09.0119197+00:00">
+        <Text>[xUnit.net 00:00:15.39]     CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Closing_zero_balance_active_account_persists_closed_state [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="a36a83846679" outcome="Error" timestamp="2026-11-04T15:08:09.0331437+00:00">
+        <Text>[xUnit.net 00:00:15.41]     CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Failed_posting_rolls_back_balances_and_completes_reserved_error [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="a36a83846679" outcome="Error" timestamp="2026-11-04T15:08:09.0464252+00:00">
+        <Text>[xUnit.net 00:00:15.43]     CoreBanking.IntegrationTests.Persistence.AccountMutationTests.Adjustment_replay_returns_same_result_without_duplicate_persisted_effect [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

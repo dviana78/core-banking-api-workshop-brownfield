@@ -1,0 +1,1749 @@
+{
+  "CoreBanking.Application.dll": {
+    "/source/src/CoreBanking.Application/Security/CustomerVisibility.cs": {
+      "CoreBanking.Application.Security.CustomerVisibility": {
+        "System.Boolean CoreBanking.Application.Security.CustomerVisibility::Allows(System.String,CoreBanking.Application.Contracts.RequestContext)": {
+          "Lines": {
+            "10": 23,
+            "11": 23
+          },
+          "Branches": [
+            {
+              "Line": 10,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 6
+            },
+            {
+              "Line": 10,
+              "Offset": 25,
+              "EndOffset": 27,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 10,
+              "Offset": 25,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            },
+            {
+              "Line": 10,
+              "Offset": 17,
+              "EndOffset": 41,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 17
+            }
+          ]
+        }
+      },
+      "CoreBanking.Application.Security.CustomerVisibility/<FindAsync>d__1": {
+        "System.Void CoreBanking.Application.Security.CustomerVisibility/<FindAsync>d__1::MoveNext()": {
+          "Lines": {
+            "15": 17,
+            "16": 15,
+            "17": 15
+          },
+          "Branches": [
+            {
+              "Line": 16,
+              "Offset": 117,
+              "EndOffset": 119,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 14
+            },
+            {
+              "Line": 16,
+              "Offset": 117,
+              "EndOffset": 138,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 16,
+              "Offset": 136,
+              "EndOffset": 138,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 4
+            },
+            {
+              "Line": 16,
+              "Offset": 136,
+              "EndOffset": 141,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 11
+            }
+          ]
+        }
+      }
+    },
+    "/source/src/CoreBanking.Application/Security/EvaluateWorkshopToken.cs": {
+      "CoreBanking.Application.Security.EvaluateWorkshopToken": {
+        "CoreBanking.Application.Contracts.TokenPolicyResult CoreBanking.Application.Security.EvaluateWorkshopToken::Execute(CoreBanking.Application.Contracts.TokenPolicyInput)": {
+          "Lines": {
+            "12": 8,
+            "13": 6,
+            "14": 1,
+            "15": 5,
+            "16": 5,
+            "17": 5,
+            "18": 6,
+            "19": 5,
+            "20": 3
+          },
+          "Branches": [
+            {
+              "Line": 12,
+              "Offset": 16,
+              "EndOffset": 18,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 12,
+              "Offset": 16,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            },
+            {
+              "Line": 13,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 53,
+              "EndOffset": 68,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 6
+            },
+            {
+              "Line": 13,
+              "Offset": 66,
+              "EndOffset": 68,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 66,
+              "EndOffset": 72,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 75,
+              "EndOffset": 77,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 6
+            },
+            {
+              "Line": 13,
+              "Offset": 75,
+              "EndOffset": 85,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 83,
+              "EndOffset": 85,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 13,
+              "Offset": 83,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 5
+            },
+            {
+              "Line": 15,
+              "Offset": 108,
+              "EndOffset": 110,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 2
+            },
+            {
+              "Line": 15,
+              "Offset": 108,
+              "EndOffset": 122,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 3
+            },
+            {
+              "Line": 15,
+              "Offset": 129,
+              "EndOffset": 131,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 129,
+              "EndOffset": 137,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 3
+            },
+            {
+              "Line": 18,
+              "Offset": 172,
+              "EndOffset": 174,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 1
+            },
+            {
+              "Line": 18,
+              "Offset": 172,
+              "EndOffset": 191,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 4
+            },
+            {
+              "Line": 19,
+              "Offset": 199,
+              "EndOffset": 201,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 2
+            },
+            {
+              "Line": 19,
+              "Offset": 202,
+              "EndOffset": 204,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 2
+            },
+            {
+              "Line": 19,
+              "Offset": 202,
+              "EndOffset": 212,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 210,
+              "EndOffset": 212,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 2
+            },
+            {
+              "Line": 19,
+              "Offset": 199,
+              "EndOffset": 225,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 2
+            },
+            {
+              "Line": 19,
+              "Offset": 210,
+              "EndOffset": 225,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 223,
+              "EndOffset": 225,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 223,
+              "EndOffset": 229,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 232,
+              "EndOffset": 234,
+              "Path": 0,
+              "Ordinal": 24,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 232,
+              "EndOffset": 251,
+              "Path": 1,
+              "Ordinal": 25,
+              "Hits": 3
+            }
+          ]
+        }
+      }
+    },
+    "/source/src/CoreBanking.Application/Contracts/DomainFailure.cs": {
+      "CoreBanking.Application.Contracts.DomainFailure": {
+        "CoreBanking.Application.Contracts.SafeFailure CoreBanking.Application.Contracts.DomainFailure::Map(CoreBanking.Domain.Errors.BankingError)": {
+          "Lines": {
+            "7": 1,
+            "8": 1,
+            "9": 0,
+            "10": 1,
+            "11": 0,
+            "12": 0,
+            "13": 1
+          },
+          "Branches": [
+            {
+              "Line": 7,
+              "Offset": 8,
+              "EndOffset": 31,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 7,
+              "Offset": 8,
+              "EndOffset": 35,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 7,
+              "Offset": 8,
+              "EndOffset": 39,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 7,
+              "Offset": 8,
+              "EndOffset": 39,
+              "Path": 4,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 7,
+              "Offset": 8,
+              "EndOffset": 43,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "/source/src/CoreBanking.Application/Contracts/RequestContext.cs": {
+      "CoreBanking.Application.Contracts.RequestContext": {
+        "System.Void CoreBanking.Application.Contracts.RequestContext::.ctor(System.String,System.Collections.Generic.IReadOnlyList`1<System.String>,System.Boolean,System.String,System.String)": {
+          "Lines": {
+            "3": 25,
+            "4": 25,
+            "5": 25
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/source/src/CoreBanking.Application/Contracts/UseCaseResult.cs": {
+      "CoreBanking.Application.Contracts.BankingFailureException": {
+        "System.Void CoreBanking.Application.Contracts.BankingFailureException::.ctor(CoreBanking.Application.Contracts.SafeFailure)": {
+          "Lines": {
+            "7": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/source/src/CoreBanking.Application/Balances/GetAccountBalances.cs": {
+      "CoreBanking.Application.Balances.GetAccountBalances": {
+        "System.Void CoreBanking.Application.Balances.GetAccountBalances::.ctor(CoreBanking.Application.Ports.IAccountStore,CoreBanking.Application.Ports.IMambuGateway)": {
+          "Lines": {
+            "9": 2
+          },
+          "Branches": []
+        }
+      },
+      "CoreBanking.Application.Balances.GetAccountBalances/<ExecuteAsync>d__3": {
+        "System.Void CoreBanking.Application.Balances.GetAccountBalances/<ExecuteAsync>d__3::MoveNext()": {
+          "Lines": {
+            "13": 4,
+            "14": 5,
+            "15": 3,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 3
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 157,
+              "EndOffset": 159,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 14,
+              "Offset": 157,
+              "EndOffset": 181,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            },
+            {
+              "Line": 18,
+              "Offset": 348,
+              "EndOffset": 350,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 18,
+              "Offset": 358,
+              "EndOffset": 360,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 18,
+              "Offset": 348,
+              "EndOffset": 394,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 18,
+              "Offset": 358,
+              "EndOffset": 394,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 20,
+              "Offset": 396,
+              "EndOffset": 398,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 396,
+              "EndOffset": 411,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "/source/src/CoreBanking.Application/Adjustments/CreateBalanceAdjustment.cs": {
+      "CoreBanking.Application.Adjustments.CreateBalanceAdjustment": {
+        "System.Void CoreBanking.Application.Adjustments.CreateBalanceAdjustment::.ctor(CoreBanking.Application.Ports.IAccountStore,CoreBanking.Application.Ports.IIdempotencyStore,CoreBanking.Application.Ports.IMambuGateway,CoreBanking.Application.Ports.IReplayCodec)": {
+          "Lines": {
+            "8": 5
+          },
+          "Branches": []
+        }
+      },
+      "CoreBanking.Application.Adjustments.CreateBalanceAdjustment/<ExecuteAsync>d__5": {
+        "System.Void CoreBanking.Application.Adjustments.CreateBalanceAdjustment/<ExecuteAsync>d__5::MoveNext()": {
+          "Lines": {
+            "12": 7,
+            "13": 1,
+            "14": 5,
+            "15": 0,
+            "16": 5,
+            "17": 5,
+            "18": 5,
+            "19": 5,
+            "20": 6,
+            "23": 4,
+            "24": 4,
+            "25": 4,
+            "26": 5,
+            "27": 3,
+            "28": 3,
+            "29": 3,
+            "30": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1,
+            "37": 0,
+            "38": 2,
+            "40": 2,
+            "41": 2,
+            "42": 2,
+            "44": 5
+          },
+          "Branches": [
+            {
+              "Line": 12,
+              "Offset": 170,
+              "EndOffset": 172,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 12,
+              "Offset": 170,
+              "EndOffset": 194,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            },
+            {
+              "Line": 14,
+              "Offset": 216,
+              "EndOffset": 218,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 216,
+              "EndOffset": 240,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 5
+            },
+            {
+              "Line": 17,
+              "Offset": 258,
+              "EndOffset": 260,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 258,
+              "EndOffset": 277,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 5
+            },
+            {
+              "Line": 20,
+              "Offset": 431,
+              "EndOffset": 433,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 20,
+              "Offset": 431,
+              "EndOffset": 457,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 4
+            },
+            {
+              "Line": 26,
+              "Offset": 696,
+              "EndOffset": 698,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 26,
+              "Offset": 696,
+              "EndOffset": 710,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 3
+            },
+            {
+              "Line": 30,
+              "Offset": 983,
+              "EndOffset": 985,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 983,
+              "EndOffset": 997,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 1
+            },
+            {
+              "Line": 30,
+              "Offset": 1055,
+              "EndOffset": 1057,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 1055,
+              "EndOffset": 1069,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "/source/src/CoreBanking.Application/Adjustments/IdempotencyPolicy.cs": {
+      "CoreBanking.Application.Adjustments.IdempotencyPolicy": {
+        "System.Boolean CoreBanking.Application.Adjustments.IdempotencyPolicy::TryParseKey(System.String,System.Guid&)": {
+          "Lines": {
+            "9": 11
+          },
+          "Branches": [
+            {
+              "Line": 9,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 8
+            },
+            {
+              "Line": 9,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 7
+            },
+            {
+              "Line": 9,
+              "Offset": 12,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 9,
+              "Offset": 24,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.String CoreBanking.Application.Adjustments.IdempotencyPolicy::Payload(CoreBanking.Application.Contracts.AdjustmentInput)": {
+          "Lines": {
+            "11": 6
+          },
+          "Branches": []
+        },
+        "CoreBanking.Application.Contracts.UseCaseResult`1<CoreBanking.Application.Contracts.AdjustmentReceipt> CoreBanking.Application.Adjustments.IdempotencyPolicy::Replay(CoreBanking.Application.Contracts.StoredIdempotency,System.String)": {
+          "Lines": {
+            "13": 4,
+            "14": 4,
+            "15": 4,
+            "16": 4,
+            "17": 4
+          },
+          "Branches": [
+            {
+              "Line": 13,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 13,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 13,
+              "Offset": 20,
+              "EndOffset": 34,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 13,
+              "Offset": 12,
+              "EndOffset": 40,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "/source/src/CoreBanking.Application/Accounts/CloseAccount.cs": {
+      "CoreBanking.Application.Accounts.CloseAccount": {
+        "System.Void CoreBanking.Application.Accounts.CloseAccount::.ctor(CoreBanking.Application.Ports.IAccountStore,CoreBanking.Application.Ports.IMambuGateway)": {
+          "Lines": {
+            "8": 1
+          },
+          "Branches": []
+        }
+      },
+      "CoreBanking.Application.Accounts.CloseAccount/<ExecuteAsync>d__3": {
+        "System.Void CoreBanking.Application.Accounts.CloseAccount/<ExecuteAsync>d__3::MoveNext()": {
+          "Lines": {
+            "12": 2,
+            "13": 0,
+            "14": 2,
+            "15": 2,
+            "16": 2,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "22": 0,
+            "23": 1,
+            "24": 1,
+            "25": 2
+          },
+          "Branches": [
+            {
+              "Line": 12,
+              "Offset": 157,
+              "EndOffset": 159,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 157,
+              "EndOffset": 181,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 16,
+              "Offset": 369,
+              "EndOffset": 371,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 16,
+              "Offset": 369,
+              "EndOffset": 436,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 449,
+              "EndOffset": 451,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 449,
+              "EndOffset": 473,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 21,
+              "Offset": 621,
+              "EndOffset": 623,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 621,
+              "EndOffset": 640,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "/source/src/CoreBanking.Application/Accounts/CreateAccount.cs": {
+      "CoreBanking.Application.Accounts.CreateAccount": {
+        "System.Void CoreBanking.Application.Accounts.CreateAccount::.ctor(CoreBanking.Application.Ports.IAccountStore,CoreBanking.Application.Ports.IMambuGateway)": {
+          "Lines": {
+            "8": 2
+          },
+          "Branches": []
+        }
+      },
+      "CoreBanking.Application.Accounts.CreateAccount/<ExecuteAsync>d__3": {
+        "System.Void CoreBanking.Application.Accounts.CreateAccount/<ExecuteAsync>d__3::MoveNext()": {
+          "Lines": {
+            "12": 2,
+            "13": 2,
+            "14": 0,
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 0,
+            "27": 1,
+            "28": 1,
+            "29": 2
+          },
+          "Branches": [
+            {
+              "Line": 13,
+              "Offset": 69,
+              "EndOffset": 71,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 69,
+              "EndOffset": 93,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 16,
+              "Offset": 225,
+              "EndOffset": 227,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 16,
+              "Offset": 225,
+              "EndOffset": 249,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 18,
+              "Offset": 278,
+              "EndOffset": 280,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 18,
+              "Offset": 278,
+              "EndOffset": 297,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 2
+            },
+            {
+              "Line": 20,
+              "Offset": 428,
+              "EndOffset": 430,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 20,
+              "Offset": 428,
+              "EndOffset": 453,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            },
+            {
+              "Line": 20,
+              "Offset": 451,
+              "EndOffset": 453,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 20,
+              "Offset": 451,
+              "EndOffset": 475,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 1
+            },
+            {
+              "Line": 25,
+              "Offset": 783,
+              "EndOffset": 785,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 1
+            },
+            {
+              "Line": 25,
+              "Offset": 783,
+              "EndOffset": 808,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 806,
+              "EndOffset": 808,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 806,
+              "EndOffset": 825,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "/source/src/CoreBanking.Application/Accounts/GetAccount.cs": {
+      "CoreBanking.Application.Accounts.GetAccount": {
+        "System.Void CoreBanking.Application.Accounts.GetAccount::.ctor(CoreBanking.Application.Ports.IAccountStore,CoreBanking.Application.Ports.IMambuGateway)": {
+          "Lines": {
+            "7": 3
+          },
+          "Branches": []
+        }
+      },
+      "CoreBanking.Application.Accounts.GetAccount/<ExecuteAsync>d__3": {
+        "System.Void CoreBanking.Application.Accounts.GetAccount/<ExecuteAsync>d__3::MoveNext()": {
+          "Lines": {
+            "11": 4,
+            "12": 5,
+            "13": 1,
+            "14": 3
+          },
+          "Branches": [
+            {
+              "Line": 12,
+              "Offset": 143,
+              "EndOffset": 145,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 12,
+              "Offset": 143,
+              "EndOffset": 167,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "/source/src/CoreBanking.Application/Accounts/GetWorkshopHealth.cs": {
+      "CoreBanking.Application.Accounts.GetWorkshopHealth": {
+        "System.Threading.Tasks.Task`1<System.Boolean> CoreBanking.Application.Accounts.GetWorkshopHealth::ExecuteAsync(System.Threading.CancellationToken)": {
+          "Lines": {
+            "7": 2
+          },
+          "Branches": []
+        },
+        "System.Void CoreBanking.Application.Accounts.GetWorkshopHealth::.ctor(CoreBanking.Application.Ports.IDatabaseAvailability)": {
+          "Lines": {
+            "5": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/source/src/CoreBanking.Application/Accounts/ListCustomerAccounts.cs": {
+      "CoreBanking.Application.Accounts.ListCustomerAccounts": {
+        "System.Void CoreBanking.Application.Accounts.ListCustomerAccounts::.ctor(CoreBanking.Application.Ports.IAccountStore,CoreBanking.Application.Ports.IMambuGateway)": {
+          "Lines": {
+            "7": 2
+          },
+          "Branches": []
+        }
+      },
+      "CoreBanking.Application.Accounts.ListCustomerAccounts/<ExecuteAsync>d__3": {
+        "System.Void CoreBanking.Application.Accounts.ListCustomerAccounts/<ExecuteAsync>d__3::MoveNext()": {
+          "Lines": {
+            "11": 2,
+            "12": 2,
+            "13": 0,
+            "14": 2,
+            "15": 2,
+            "16": 1
+          },
+          "Branches": [
+            {
+              "Line": 12,
+              "Offset": 67,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 12,
+              "Offset": 67,
+              "EndOffset": 185,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 12,
+              "Offset": 187,
+              "EndOffset": 189,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 187,
+              "EndOffset": 211,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  "CoreBanking.Domain.dll": {
+    "/source/src/CoreBanking.Domain/Balances/BalancePolicy.cs": {
+      "CoreBanking.Domain.Balances.BalancePolicy": {
+        "CoreBanking.Domain.Errors.BankingError CoreBanking.Domain.Balances.BalancePolicy::Evaluate(System.Boolean,System.String,System.Nullable`1<System.Decimal>,System.Nullable`1<System.Decimal>,System.Nullable`1<System.DateTimeOffset>)": {
+          "Lines": {
+            "9": 12,
+            "10": 9,
+            "11": 8,
+            "12": 6,
+            "13": 2,
+            "14": 4,
+            "15": 4,
+            "16": 4
+          },
+          "Branches": [
+            {
+              "Line": 9,
+              "Offset": 1,
+              "EndOffset": 3,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 9,
+              "Offset": 1,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 8
+            },
+            {
+              "Line": 10,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 10,
+              "Offset": 36,
+              "EndOffset": 60,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 7
+            },
+            {
+              "Line": 11,
+              "Offset": 71,
+              "EndOffset": 73,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 11,
+              "Offset": 71,
+              "EndOffset": 95,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 6
+            },
+            {
+              "Line": 12,
+              "Offset": 102,
+              "EndOffset": 104,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 4
+            },
+            {
+              "Line": 12,
+              "Offset": 102,
+              "EndOffset": 113,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 2
+            },
+            {
+              "Line": 12,
+              "Offset": 111,
+              "EndOffset": 113,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 2
+            },
+            {
+              "Line": 12,
+              "Offset": 111,
+              "EndOffset": 135,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 4
+            },
+            {
+              "Line": 14,
+              "Offset": 142,
+              "EndOffset": 144,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 3
+            },
+            {
+              "Line": 14,
+              "Offset": 169,
+              "EndOffset": 171,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 2
+            },
+            {
+              "Line": 14,
+              "Offset": 142,
+              "EndOffset": 173,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 2
+            },
+            {
+              "Line": 14,
+              "Offset": 169,
+              "EndOffset": 173,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    },
+    "/source/src/CoreBanking.Domain/Adjustments/AdjustmentPolicy.cs": {
+      "CoreBanking.Domain.Adjustments.AdjustmentPolicy": {
+        "CoreBanking.Domain.Errors.BankingError CoreBanking.Domain.Adjustments.AdjustmentPolicy::ValidateAmount(System.Decimal)": {
+          "Lines": {
+            "11": 13,
+            "12": 13,
+            "13": 13
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 12
+            },
+            {
+              "Line": 11,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 11
+            },
+            {
+              "Line": 11,
+              "Offset": 48,
+              "EndOffset": 50,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 10
+            },
+            {
+              "Line": 11,
+              "Offset": 70,
+              "EndOffset": 72,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 9
+            },
+            {
+              "Line": 11,
+              "Offset": 11,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 11,
+              "Offset": 26,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            },
+            {
+              "Line": 11,
+              "Offset": 48,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 4
+            },
+            {
+              "Line": 11,
+              "Offset": 70,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 4
+            }
+          ]
+        },
+        "CoreBanking.Domain.Errors.BankingError CoreBanking.Domain.Adjustments.AdjustmentPolicy::ValidatePosting(CoreBanking.Domain.Accounts.AccountSnapshot,System.Decimal,System.String)": {
+          "Lines": {
+            "17": 10,
+            "18": 1,
+            "19": 9,
+            "20": 2,
+            "21": 7,
+            "22": 1,
+            "23": 6,
+            "24": 1,
+            "25": 5,
+            "26": 5,
+            "27": 1,
+            "28": 4
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 17,
+              "Offset": 12,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 9
+            },
+            {
+              "Line": 19,
+              "Offset": 51,
+              "EndOffset": 53,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 19,
+              "Offset": 51,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 7
+            },
+            {
+              "Line": 21,
+              "Offset": 88,
+              "EndOffset": 90,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 6
+            },
+            {
+              "Line": 21,
+              "Offset": 88,
+              "EndOffset": 106,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 21,
+              "Offset": 104,
+              "EndOffset": 106,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 21,
+              "Offset": 104,
+              "EndOffset": 127,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 6
+            },
+            {
+              "Line": 23,
+              "Offset": 138,
+              "EndOffset": 143,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 2
+            },
+            {
+              "Line": 23,
+              "Offset": 166,
+              "EndOffset": 168,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 166,
+              "EndOffset": 180,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 2
+            },
+            {
+              "Line": 23,
+              "Offset": 210,
+              "EndOffset": 212,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 210,
+              "EndOffset": 224,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 2
+            },
+            {
+              "Line": 23,
+              "Offset": 273,
+              "EndOffset": 275,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 1
+            },
+            {
+              "Line": 23,
+              "Offset": 138,
+              "EndOffset": 296,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 5
+            },
+            {
+              "Line": 23,
+              "Offset": 273,
+              "EndOffset": 296,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 5
+            },
+            {
+              "Line": 25,
+              "Offset": 340,
+              "EndOffset": 342,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 4
+            },
+            {
+              "Line": 25,
+              "Offset": 340,
+              "EndOffset": 388,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 1
+            },
+            {
+              "Line": 25,
+              "Offset": 386,
+              "EndOffset": 388,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 1
+            },
+            {
+              "Line": 25,
+              "Offset": 386,
+              "EndOffset": 409,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void CoreBanking.Domain.Adjustments.AdjustmentPolicy::.cctor()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/source/src/CoreBanking.Domain/Accounts/AccountPolicy.cs": {
+      "CoreBanking.Domain.Accounts.AccountPolicy": {
+        "CoreBanking.Domain.Errors.BankingError CoreBanking.Domain.Accounts.AccountPolicy::ValidateCreation(System.String,System.String)": {
+          "Lines": {
+            "8": 9,
+            "9": 9,
+            "10": 9
+          },
+          "Branches": [
+            {
+              "Line": 8,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 5
+            },
+            {
+              "Line": 8,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 4
+            },
+            {
+              "Line": 8,
+              "Offset": 37,
+              "EndOffset": 39,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 3
+            },
+            {
+              "Line": 8,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 2
+            },
+            {
+              "Line": 8,
+              "Offset": 11,
+              "EndOffset": 65,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 8,
+              "Offset": 24,
+              "EndOffset": 65,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 8,
+              "Offset": 37,
+              "EndOffset": 65,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 8,
+              "Offset": 50,
+              "EndOffset": 65,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            },
+            {
+              "Line": 8,
+              "Offset": 63,
+              "EndOffset": 65,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 8,
+              "Offset": 63,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 1
+            },
+            {
+              "Line": 8,
+              "Offset": 72,
+              "EndOffset": 74,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 8
+            },
+            {
+              "Line": 8,
+              "Offset": 85,
+              "EndOffset": 87,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 7
+            },
+            {
+              "Line": 8,
+              "Offset": 72,
+              "EndOffset": 89,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 2
+            },
+            {
+              "Line": 8,
+              "Offset": 85,
+              "EndOffset": 89,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 2
+            }
+          ]
+        },
+        "CoreBanking.Domain.Errors.BankingError CoreBanking.Domain.Accounts.AccountPolicy::ValidateClosure(CoreBanking.Domain.Accounts.AccountSnapshot)": {
+          "Lines": {
+            "14": 11,
+            "15": 9,
+            "16": 9,
+            "17": 9,
+            "18": 9
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 16,
+              "EndOffset": 18,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 14,
+              "Offset": 16,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 9
+            },
+            {
+              "Line": 15,
+              "Offset": 38,
+              "EndOffset": 40,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 4
+            },
+            {
+              "Line": 15,
+              "Offset": 38,
+              "EndOffset": 53,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 5
+            },
+            {
+              "Line": 15,
+              "Offset": 51,
+              "EndOffset": 53,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 2
+            },
+            {
+              "Line": 15,
+              "Offset": 51,
+              "EndOffset": 57,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 2
+            },
+            {
+              "Line": 15,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 7
+            },
+            {
+              "Line": 15,
+              "Offset": 98,
+              "EndOffset": 100,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 6
+            },
+            {
+              "Line": 15,
+              "Offset": 136,
+              "EndOffset": 138,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 4
+            },
+            {
+              "Line": 15,
+              "Offset": 154,
+              "EndOffset": 156,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 3
+            },
+            {
+              "Line": 15,
+              "Offset": 60,
+              "EndOffset": 158,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 6
+            },
+            {
+              "Line": 15,
+              "Offset": 98,
+              "EndOffset": 158,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 6
+            },
+            {
+              "Line": 15,
+              "Offset": 136,
+              "EndOffset": 158,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 6
+            },
+            {
+              "Line": 15,
+              "Offset": 154,
+              "EndOffset": 158,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 6
+            }
+          ]
+        }
+      }
+    },
+    "/source/src/CoreBanking.Domain/Accounts/AccountSnapshot.cs": {
+      "CoreBanking.Domain.Accounts.AccountSnapshot": {
+        "System.Void CoreBanking.Domain.Accounts.AccountSnapshot::.ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable`1<System.Decimal>,System.Nullable`1<System.Decimal>,System.Decimal,System.Decimal,System.Boolean,System.DateTimeOffset)": {
+          "Lines": {
+            "3": 22,
+            "4": 22,
+            "5": 22,
+            "6": 22
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

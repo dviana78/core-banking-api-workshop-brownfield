@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="4670e3c4-ab5d-43aa-877e-c2105d714a34" name="@00a574e14864 2026-11-04 16:18:22" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-04T16:18:22.5972619+00:00" queuing="2026-11-04T16:18:22.5972619+00:00" start="2026-11-04T16:18:17.9321195+00:00" finish="2026-11-04T16:18:41.3386485+00:00" />
+  <TestSettings name="default" id="5369841b-3852-44b4-b35c-b15edb17bea6">
+    <Deployment runDeploymentRoot="_00a574e14864_2026-11-04_16_18_22" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="ec282ad0-090f-4184-bc6e-ef7775b848c3" testId="be89e9d6-b871-8d81-1554-4e54f0c2ddd5" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;zero-lines&quot;, success: False)" computerName="00a574e14864" duration="00:00:01.1390655" startTime="2026-11-04T16:18:40.0706937+00:00" endTime="2026-11-04T16:18:41.2104306+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ec282ad0-090f-4184-bc6e-ef7775b848c3" />
+    <UnitTestResult executionId="5421e811-a464-4f66-bbd6-a378ebbf4c08" testId="4553b456-966f-cccb-daff-e1506e653145" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;negative-hit&quot;, success: False)" computerName="00a574e14864" duration="00:00:00.8254851" startTime="2026-11-04T16:18:22.3986016+00:00" endTime="2026-11-04T16:18:23.2122825+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5421e811-a464-4f66-bbd6-a378ebbf4c08" />
+    <UnitTestResult executionId="bf92e029-114a-426a-a8df-4a2f43a8df63" testId="87695c6d-2b6f-1a33-8aac-88f0bd55a3d3" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;missing-report&quot;, success: False)" computerName="00a574e14864" duration="00:00:00.9517675" startTime="2026-11-04T16:18:39.1195433+00:00" endTime="2026-11-04T16:18:40.0704171+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf92e029-114a-426a-a8df-4a2f43a8df63" />
+    <UnitTestResult executionId="5eac82b8-c56d-4749-8d16-dd64cefa7227" testId="367b22ec-f660-6548-a19b-15821114135d" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;duplicate-line-union&quot;, success: True)" computerName="00a574e14864" duration="00:00:01.4446149" startTime="2026-11-04T16:18:32.1606261+00:00" endTime="2026-11-04T16:18:33.6067430+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5eac82b8-c56d-4749-8d16-dd64cefa7227">
+      <Output>
+        <ErrorInfo>
+          <Message>Scenario duplicate-line-union, exit=1: \u001b[31;1mException: \u001b[0m/source/scripts/Assert-Coverage.ps1:3\u001b[0m
+\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m
+\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m   3 | \u001b[0m \u001b[36;1mthrow 'Coverage gate is not implemented.'\u001b[0m
+\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m     | \u001b[31;1m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m
+\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[31;1m\u001b[31;1m\u001b[36;1m     | \u001b[31;1mCoverage gate is not implemented.\u001b[0m
+</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(String scenario, Boolean success) in /source/tests/CoreBanking.UnitTests/Architecture/CoverageGateTests.cs:line 103
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c853a26f-48bd-4c26-97d0-851b1afe3097" testId="64d0e022-da2b-95cf-2961-6ac1a29bdbd3" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;changed-assembly&quot;, success: False)" computerName="00a574e14864" duration="00:00:01.0823946" startTime="2026-11-04T16:18:36.2262066+00:00" endTime="2026-11-04T16:18:37.3108111+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c853a26f-48bd-4c26-97d0-851b1afe3097" />
+    <UnitTestResult executionId="012bdbc2-82db-406c-bafe-565ecdb3b3d1" testId="7121f86a-798e-6eb5-0db7-e4264690e182" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;nonfinite-hit&quot;, success: False)" computerName="00a574e14864" duration="00:00:01.4680502" startTime="2026-11-04T16:18:25.8279722+00:00" endTime="2026-11-04T16:18:27.2969487+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="012bdbc2-82db-406c-bafe-565ecdb3b3d1" />
+    <UnitTestResult executionId="b1fd0b3c-4056-4478-b0ef-d406c6bd229a" testId="240204f0-9c03-801a-7887-9f5fb65918c6" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;high-average-low-module&quot;, success: False)" computerName="00a574e14864" duration="00:00:00.7857985" startTime="2026-11-04T16:18:24.1679373+00:00" endTime="2026-11-04T16:18:24.9542196+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1fd0b3c-4056-4478-b0ef-d406c6bd229a" />
+    <UnitTestResult executionId="9dd64a87-493d-4779-b8b6-5943be3ca778" testId="2fdc464b-ab35-3de3-cd9a-2852697ce1e6" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;duplicate-module&quot;, success: False)" computerName="00a574e14864" duration="00:00:00.8816697" startTime="2026-11-04T16:18:29.9248687+00:00" endTime="2026-11-04T16:18:30.8071104+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9dd64a87-493d-4779-b8b6-5943be3ca778" />
+    <UnitTestResult executionId="dfac7248-c3d3-4a3f-9f52-050390bf2c2e" testId="d07d985d-34a7-88b0-ff24-d602ab001aee" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;unexpected-module&quot;, success: False)" computerName="00a574e14864" duration="00:00:00.9168890" startTime="2026-11-04T16:18:29.0256784+00:00" endTime="2026-11-04T16:18:29.9245512+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dfac7248-c3d3-4a3f-9f52-050390bf2c2e" />
+    <UnitTestResult executionId="d25b137a-880e-49bd-b7ed-7994ed5b4fa3" testId="dc4f0638-a6af-cf48-e20c-bcc7bdbe3832" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;exactly-80&quot;, success: True)" computerName="00a574e14864" duration="00:00:01.6806935" startTime="2026-11-04T16:18:27.2973178+00:00" endTime="2026-11-04T16:18:29.0081878+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d25b137a-880e-49bd-b7ed-7994ed5b4fa3">
+      <Output>
+        <ErrorInfo>
+          <Message>Scenario exactly-80, exit=1: \u001b[31;1mException: \u001b[0m/source/scripts/Assert-Coverage.ps1:3\u001b[0m
+\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m
+\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m   3 | \u001b[0m \u001b[36;1mthrow 'Coverage gate is not implemented.'\u001b[0m
+\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m     | \u001b[31;1m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m
+\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[31;1m\u001b[31;1m\u001b[36;1m     | \u001b[31;1mCoverage gate is not implemented.\u001b[0m
+</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(String scenario, Boolean success) in /source/tests/CoreBanking.UnitTests/Architecture/CoverageGateTests.cs:line 103
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f828b5db-2e72-42eb-8320-14d337b5e27a" testId="417f92e3-354c-e721-4b81-52a7f7ecf6c0" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;stale-report&quot;, success: False)" computerName="00a574e14864" duration="00:00:00.8684416" startTime="2026-11-04T16:18:24.9547407+00:00" endTime="2026-11-04T16:18:25.8276444+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f828b5db-2e72-42eb-8320-14d337b5e27a" />
+    <UnitTestResult executionId="7782725a-8741-4404-8a5d-2d71fe1d97df" testId="3fe1f74d-6519-0a57-4064-00dd010f84a7" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;duplicate-lines-must-not-inflate&quot;, success: False)" computerName="00a574e14864" duration="00:00:01.0098285" startTime="2026-11-04T16:18:33.6111287+00:00" endTime="2026-11-04T16:18:34.6173844+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7782725a-8741-4404-8a5d-2d71fe1d97df" />
+    <UnitTestResult executionId="3a020087-92a1-4f1e-b83c-2fc53883b60b" testId="ad9010ec-f4fe-6472-c5f7-d396b6c96ad0" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;wrong-build&quot;, success: False)" computerName="00a574e14864" duration="00:00:00.9547244" startTime="2026-11-04T16:18:23.2135211+00:00" endTime="2026-11-04T16:18:24.1677255+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a020087-92a1-4f1e-b83c-2fc53883b60b" />
+    <UnitTestResult executionId="9e200788-e3b9-4b7e-8441-a13fb1a63892" testId="67a48f63-22d9-496e-51da-6a3e4d3a856c" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;missing-module&quot;, success: False)" computerName="00a574e14864" duration="00:00:01.3511719" startTime="2026-11-04T16:18:30.8073982+00:00" endTime="2026-11-04T16:18:32.1597454+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e200788-e3b9-4b7e-8441-a13fb1a63892" />
+    <UnitTestResult executionId="fefe47bd-57d2-4063-b9ab-6d88f6c572c1" testId="6b984c89-1207-0414-d935-dc29405dedea" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;malformed-report&quot;, success: False)" computerName="00a574e14864" duration="00:00:01.8062920" startTime="2026-11-04T16:18:37.3111612+00:00" endTime="2026-11-04T16:18:39.1176880+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fefe47bd-57d2-4063-b9ab-6d88f6c572c1" />
+    <UnitTestResult executionId="6dfd1f94-d5ec-4b53-96ba-5afa73c69d8d" testId="92e33682-bb17-9c32-67df-b9d5a0d8b5dc" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;79.99&quot;, success: False)" computerName="00a574e14864" duration="00:00:02.1009194" startTime="2026-11-04T16:18:20.2741310+00:00" endTime="2026-11-04T16:18:22.3851790+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6dfd1f94-d5ec-4b53-96ba-5afa73c69d8d" />
+    <UnitTestResult executionId="cf69f850-2b85-4501-bdef-a0a6c55e4039" testId="c1f552a1-d217-6573-fdf6-bbcf68a7ddd3" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;changed-report&quot;, success: False)" computerName="00a574e14864" duration="00:00:00.7885229" startTime="2026-11-04T16:18:35.4368991+00:00" endTime="2026-11-04T16:18:36.2260002+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf69f850-2b85-4501-bdef-a0a6c55e4039" />
+    <UnitTestResult executionId="8b3ecf69-931e-49e4-b37d-cf156eae5e42" testId="de92ea57-e0ac-3a42-6232-62192288a4dc" testName="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;fractional-hit&quot;, success: False)" computerName="00a574e14864" duration="00:00:00.8184314" startTime="2026-11-04T16:18:34.6175566+00:00" endTime="2026-11-04T16:18:35.4366781+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b3ecf69-931e-49e4-b37d-cf156eae5e42" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;duplicate-module&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="2fdc464b-ab35-3de3-cd9a-2852697ce1e6">
+      <Execution id="9dd64a87-493d-4779-b8b6-5943be3ca778" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;missing-report&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="87695c6d-2b6f-1a33-8aac-88f0bd55a3d3">
+      <Execution id="bf92e029-114a-426a-a8df-4a2f43a8df63" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;missing-module&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="67a48f63-22d9-496e-51da-6a3e4d3a856c">
+      <Execution id="9e200788-e3b9-4b7e-8441-a13fb1a63892" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;malformed-report&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="6b984c89-1207-0414-d935-dc29405dedea">
+      <Execution id="fefe47bd-57d2-4063-b9ab-6d88f6c572c1" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;wrong-build&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="ad9010ec-f4fe-6472-c5f7-d396b6c96ad0">
+      <Execution id="3a020087-92a1-4f1e-b83c-2fc53883b60b" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;changed-report&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="c1f552a1-d217-6573-fdf6-bbcf68a7ddd3">
+      <Execution id="cf69f850-2b85-4501-bdef-a0a6c55e4039" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;exactly-80&quot;, success: True)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="dc4f0638-a6af-cf48-e20c-bcc7bdbe3832">
+      <Execution id="d25b137a-880e-49bd-b7ed-7994ed5b4fa3" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;changed-assembly&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="64d0e022-da2b-95cf-2961-6ac1a29bdbd3">
+      <Execution id="c853a26f-48bd-4c26-97d0-851b1afe3097" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;unexpected-module&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="d07d985d-34a7-88b0-ff24-d602ab001aee">
+      <Execution id="dfac7248-c3d3-4a3f-9f52-050390bf2c2e" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;79.99&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="92e33682-bb17-9c32-67df-b9d5a0d8b5dc">
+      <Execution id="6dfd1f94-d5ec-4b53-96ba-5afa73c69d8d" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;negative-hit&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="4553b456-966f-cccb-daff-e1506e653145">
+      <Execution id="5421e811-a464-4f66-bbd6-a378ebbf4c08" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;fractional-hit&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="de92ea57-e0ac-3a42-6232-62192288a4dc">
+      <Execution id="8b3ecf69-931e-49e4-b37d-cf156eae5e42" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;duplicate-line-union&quot;, success: True)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="367b22ec-f660-6548-a19b-15821114135d">
+      <Execution id="5eac82b8-c56d-4749-8d16-dd64cefa7227" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;stale-report&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="417f92e3-354c-e721-4b81-52a7f7ecf6c0">
+      <Execution id="f828b5db-2e72-42eb-8320-14d337b5e27a" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;zero-lines&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="be89e9d6-b871-8d81-1554-4e54f0c2ddd5">
+      <Execution id="ec282ad0-090f-4184-bc6e-ef7775b848c3" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;high-average-low-module&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="240204f0-9c03-801a-7887-9f5fb65918c6">
+      <Execution id="b1fd0b3c-4056-4478-b0ef-d406c6bd229a" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;duplicate-lines-must-not-inflate&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="3fe1f74d-6519-0a57-4064-00dd010f84a7">
+      <Execution id="7782725a-8741-4404-8a5d-2d71fe1d97df" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: &quot;nonfinite-hit&quot;, success: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="7121f86a-798e-6eb5-0db7-e4264690e182">
+      <Execution id="012bdbc2-82db-406c-bafe-565ecdb3b3d1" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.CoverageGateTests" name="Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="be89e9d6-b871-8d81-1554-4e54f0c2ddd5" executionId="ec282ad0-090f-4184-bc6e-ef7775b848c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4553b456-966f-cccb-daff-e1506e653145" executionId="5421e811-a464-4f66-bbd6-a378ebbf4c08" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87695c6d-2b6f-1a33-8aac-88f0bd55a3d3" executionId="bf92e029-114a-426a-a8df-4a2f43a8df63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="367b22ec-f660-6548-a19b-15821114135d" executionId="5eac82b8-c56d-4749-8d16-dd64cefa7227" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64d0e022-da2b-95cf-2961-6ac1a29bdbd3" executionId="c853a26f-48bd-4c26-97d0-851b1afe3097" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7121f86a-798e-6eb5-0db7-e4264690e182" executionId="012bdbc2-82db-406c-bafe-565ecdb3b3d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="240204f0-9c03-801a-7887-9f5fb65918c6" executionId="b1fd0b3c-4056-4478-b0ef-d406c6bd229a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2fdc464b-ab35-3de3-cd9a-2852697ce1e6" executionId="9dd64a87-493d-4779-b8b6-5943be3ca778" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d07d985d-34a7-88b0-ff24-d602ab001aee" executionId="dfac7248-c3d3-4a3f-9f52-050390bf2c2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc4f0638-a6af-cf48-e20c-bcc7bdbe3832" executionId="d25b137a-880e-49bd-b7ed-7994ed5b4fa3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="417f92e3-354c-e721-4b81-52a7f7ecf6c0" executionId="f828b5db-2e72-42eb-8320-14d337b5e27a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3fe1f74d-6519-0a57-4064-00dd010f84a7" executionId="7782725a-8741-4404-8a5d-2d71fe1d97df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad9010ec-f4fe-6472-c5f7-d396b6c96ad0" executionId="3a020087-92a1-4f1e-b83c-2fc53883b60b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="67a48f63-22d9-496e-51da-6a3e4d3a856c" executionId="9e200788-e3b9-4b7e-8441-a13fb1a63892" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6b984c89-1207-0414-d935-dc29405dedea" executionId="fefe47bd-57d2-4063-b9ab-6d88f6c572c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92e33682-bb17-9c32-67df-b9d5a0d8b5dc" executionId="6dfd1f94-d5ec-4b53-96ba-5afa73c69d8d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1f552a1-d217-6573-fdf6-bbcf68a7ddd3" executionId="cf69f850-2b85-4501-bdef-a0a6c55e4039" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de92ea57-e0ac-3a42-6232-62192288a4dc" executionId="8b3ecf69-931e-49e4-b37d-cf156eae5e42" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="18" executed="18" passed="16" failed="2" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v4.0.1+0f7d528729 (64-bit .NET 10.0.14)
+[xUnit.net 00:00:00.41]   Discovering: CoreBanking.UnitTests
+[xUnit.net 00:00:00.52]   Discovered:  CoreBanking.UnitTests
+[xUnit.net 00:00:00.56]   Starting:    CoreBanking.UnitTests
+[xUnit.net 00:00:09.34]       Scenario exactly-80, exit=1: \u001b[31;1mException: \u001b[0m/source/scripts/Assert-Coverage.ps1:3\u001b[0m
+[xUnit.net 00:00:09.34]       \u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m
+[xUnit.net 00:00:09.34]       \u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m   3 | \u001b[0m \u001b[36;1mthrow 'Coverage gate is not implemented.'\u001b[0m
+[xUnit.net 00:00:09.34]       \u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m     | \u001b[31;1m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m
+[xUnit.net 00:00:09.34]       \u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[31;1m\u001b[31;1m\u001b[36;1m     | \u001b[31;1mCoverage gate is not implemented.\u001b[0m
+[xUnit.net 00:00:09.34]       
+[xUnit.net 00:00:09.34]       Stack Trace:
+[xUnit.net 00:00:09.34]         /source/tests/CoreBanking.UnitTests/Architecture/CoverageGateTests.cs(103,0): at CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(String scenario, Boolean success)
+[xUnit.net 00:00:09.34]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:13.93]       Scenario duplicate-line-union, exit=1: \u001b[31;1mException: \u001b[0m/source/scripts/Assert-Coverage.ps1:3\u001b[0m
+[xUnit.net 00:00:13.93]       \u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m
+[xUnit.net 00:00:13.93]       \u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m   3 | \u001b[0m \u001b[36;1mthrow 'Coverage gate is not implemented.'\u001b[0m
+[xUnit.net 00:00:13.93]       \u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m     | \u001b[31;1m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m
+[xUnit.net 00:00:13.93]       \u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[31;1m\u001b[31;1m\u001b[36;1m     | \u001b[31;1mCoverage gate is not implemented.\u001b[0m
+[xUnit.net 00:00:13.93]       
+[xUnit.net 00:00:13.93]       Stack Trace:
+[xUnit.net 00:00:13.93]         /source/tests/CoreBanking.UnitTests/Architecture/CoverageGateTests.cs(103,0): at CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(String scenario, Boolean success)
+[xUnit.net 00:00:13.93]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:21.54]   Finished:    CoreBanking.UnitTests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="00a574e14864" outcome="Error" timestamp="2026-11-04T16:18:29.0144103+00:00">
+        <Text>[xUnit.net 00:00:09.33]     CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: "exactly-80", success: True) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="00a574e14864" outcome="Error" timestamp="2026-11-04T16:18:33.6073978+00:00">
+        <Text>[xUnit.net 00:00:13.93]     CoreBanking.UnitTests.Architecture.CoverageGateTests.Gate_enforces_five_fresh_modules_and_deduplicated_line_thresholds(scenario: "duplicate-line-union", success: True) [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

@@ -1,0 +1,974 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="a2968a51-aac8-47d3-a55c-8af63c68156e" name="@8e2a8193fb42 2026-11-04 15:42:16" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-04T15:42:16.3332016+00:00" queuing="2026-11-04T15:42:16.3332017+00:00" start="2026-11-04T15:42:13.9263540+00:00" finish="2026-11-04T15:42:40.7871550+00:00" />
+  <TestSettings name="default" id="4ec8047e-6e41-4530-82bc-6683834bde7d">
+    <Deployment runDeploymentRoot="_8e2a8193fb42_2026-11-04_15_42_16" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="cd9e7d5b-4662-490d-a59d-66af590e5b5b" testId="7f8648c6-46de-ce52-fc6f-b5c1881767ac" testName="CoreBanking.Api.Tests.Functional.HostContractTests.Token_preserves_omitted_empty_and_distinct_scopes(includeScope: True, scope: &quot;&quot;)" computerName="8e2a8193fb42" duration="00:00:00.0798166" startTime="2026-11-04T15:42:30.8563841+00:00" endTime="2026-11-04T15:42:30.9373384+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd9e7d5b-4662-490d-a59d-66af590e5b5b" />
+    <UnitTestResult executionId="2deb156d-ead5-49c4-84b5-c89359a4a7bd" testId="ff819ed3-99e1-eb2d-0771-1d629b9737bb" testName="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests.Balance_business_errors_keep_exact_http_json_contract(accountId: &quot;acc-50680&quot;, expectedCode: 680, expectedMessage: &quot;Required balance information is missing&quot;)" computerName="8e2a8193fb42" duration="00:00:00.4409734" startTime="2026-11-04T15:42:31.7470657+00:00" endTime="2026-11-04T15:42:32.1884716+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2deb156d-ead5-49c4-84b5-c89359a4a7bd" />
+    <UnitTestResult executionId="2ff3046c-2531-4ae3-b6d3-f7cbacfcb672" testId="de90e957-934e-a7db-ab56-c782d3346d44" testName="CoreBanking.Api.Tests.Functional.AuthorizationContractTests.Each_existing_scope_authorizes_its_corresponding_operation" computerName="8e2a8193fb42" duration="00:00:00.2090483" startTime="2026-11-04T15:42:32.5774288+00:00" endTime="2026-11-04T15:42:32.7870863+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ff3046c-2531-4ae3-b6d3-f7cbacfcb672" />
+    <UnitTestResult executionId="836e9bd1-f852-4dd2-b3c4-997e8e19663e" testId="ec749307-dae1-d69c-4e95-5e7fd8e49d68" testName="CoreBanking.Api.Tests.Integration.DatabaseMigrationTests.Empty_database_migrates_and_populated_database_keeps_schema_and_rows_on_migration_and_startup" computerName="8e2a8193fb42" duration="00:00:06.7978350" startTime="2026-11-04T15:42:32.9625843+00:00" endTime="2026-11-04T15:42:39.7612264+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="836e9bd1-f852-4dd2-b3c4-997e8e19663e" />
+    <UnitTestResult executionId="18f27c1f-4874-43f2-949e-da68d6581b74" testId="a1b84e31-6dd2-3a53-2136-c3fed8fd4267" testName="CoreBanking.Api.Tests.Functional.HostContractTests.Token_errors_preserve_decision_precedence(grant: &quot;client_credentials&quot;, client: &quot;workshop-client&quot;, scope: &quot;unknown&quot;, scenario: &quot;unknown&quot;, status: 400, error: &quot;invalid_scope&quot;)" computerName="8e2a8193fb42" duration="00:00:00.1956966" startTime="2026-11-04T15:42:29.6345426+00:00" endTime="2026-11-04T15:42:29.8314478+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18f27c1f-4874-43f2-949e-da68d6581b74" />
+    <UnitTestResult executionId="eecb9bb3-948e-4962-a1fa-e5161f6f91ee" testId="4e794458-1f49-5490-f6de-a56354394e99" testName="CoreBanking.Api.Tests.Functional.HostContractTests.Token_errors_preserve_decision_precedence(grant: &quot;client_credentials&quot;, client: &quot;workshop-client&quot;, scope: &quot;accounts.read&quot;, scenario: &quot;unknown&quot;, status: 400, error: &quot;invalid_scenario&quot;)" computerName="8e2a8193fb42" duration="00:00:00.0103018" startTime="2026-11-04T15:42:29.8324965+00:00" endTime="2026-11-04T15:42:29.8446795+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eecb9bb3-948e-4962-a1fa-e5161f6f91ee" />
+    <UnitTestResult executionId="66d0eb3d-3ea1-44d7-96e6-8da5535a8f57" testId="517e3fd3-f92b-12f2-1dd7-e45856d49ebc" testName="CoreBanking.Api.Tests.Functional.HostContractTests.Token_errors_preserve_decision_precedence(grant: &quot;client_credentials&quot;, client: &quot;unknown&quot;, scope: &quot;unknown&quot;, scenario: &quot;unknown&quot;, status: 401, error: &quot;invalid_client&quot;)" computerName="8e2a8193fb42" duration="00:00:00.0035699" startTime="2026-11-04T15:42:29.8556313+00:00" endTime="2026-11-04T15:42:29.8598102+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66d0eb3d-3ea1-44d7-96e6-8da5535a8f57" />
+    <UnitTestResult executionId="e6b33dac-0f01-4f59-993c-0da498813e5a" testId="38dea44f-aa20-7109-f0f0-d4502dfaeefe" testName="CoreBanking.Api.Tests.Functional.AccountContractTests.Account_creation_returns_created_reference_and_persists_account" computerName="8e2a8193fb42" duration="00:00:00.0949187" startTime="2026-11-04T15:42:32.8669913+00:00" endTime="2026-11-04T15:42:32.9623150+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e6b33dac-0f01-4f59-993c-0da498813e5a" />
+    <UnitTestResult executionId="4ecfbb6c-04de-4875-9bbf-b28459e1d618" testId="1366e424-052f-9c8f-7967-796605f31891" testName="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests.Balance_business_errors_keep_exact_http_json_contract(accountId: &quot;acc-50677&quot;, expectedCode: 677, expectedMessage: &quot;Balance is not posible&quot;)" computerName="8e2a8193fb42" duration="00:00:00.0939706" startTime="2026-11-04T15:42:32.1887414+00:00" endTime="2026-11-04T15:42:32.2833565+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ecfbb6c-04de-4875-9bbf-b28459e1d618" />
+    <UnitTestResult executionId="5beeb7d5-d92b-4cc5-9c97-e886e66527e1" testId="ab7ce3d0-c692-8923-c96a-cc874b575e2a" testName="CoreBanking.Api.Tests.Integration.AccountMutationTests.Failed_posting_rolls_back_balances_and_replays_original_error_correlation(scenario: &quot;upstream-conflict&quot;, status: 409)" computerName="8e2a8193fb42" duration="00:00:00.0534178" startTime="2026-11-04T15:42:40.3664817+00:00" endTime="2026-11-04T15:42:40.4215556+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5beeb7d5-d92b-4cc5-9c97-e886e66527e1" />
+    <UnitTestResult executionId="bc24addd-2d56-461f-b2a4-5db9f64b4323" testId="f1cf81cf-1401-876b-782b-8fdc8cbcbf9a" testName="CoreBanking.Api.Tests.Integration.AccountMutationTests.Adjustment_rejects_amount_with_more_than_two_fractional_digits" computerName="8e2a8193fb42" duration="00:00:00.0225649" startTime="2026-11-04T15:42:40.0075337+00:00" endTime="2026-11-04T15:42:40.0303749+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc24addd-2d56-461f-b2a4-5db9f64b4323" />
+    <UnitTestResult executionId="e7f58229-a980-489e-8dbb-74f97c915cee" testId="17bb42fb-1faf-ddb9-5688-ea2fe4da3b09" testName="CoreBanking.Api.Tests.Functional.HostContractTests.Rate_limit_rejects_excess_requests" computerName="8e2a8193fb42" duration="00:00:00.1707590" startTime="2026-11-04T15:42:31.4995496+00:00" endTime="2026-11-04T15:42:31.6707912+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7f58229-a980-489e-8dbb-74f97c915cee" />
+    <UnitTestResult executionId="dfe5fb70-8299-4de2-94ca-36f2e50611c5" testId="0c109e34-af52-312d-488a-16cd6790573e" testName="CoreBanking.Api.Tests.Functional.HostContractTests.Swagger_ui_and_document_are_available_in_workshop_environment" computerName="8e2a8193fb42" duration="00:00:00.5389073" startTime="2026-11-04T15:42:30.9627173+00:00" endTime="2026-11-04T15:42:31.4990647+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dfe5fb70-8299-4de2-94ca-36f2e50611c5" />
+    <UnitTestResult executionId="56bde909-9a10-4f80-be09-bcbe05455174" testId="1c867cc3-a24b-6b5a-c04d-70eeabdd0b81" testName="CoreBanking.Api.Tests.Unit.WorkshopSeedTests.Seed_has_expected_deterministic_counts_and_balance_error_scenarios" computerName="8e2a8193fb42" duration="00:00:00.0452783" startTime="2026-11-04T15:42:15.6801528+00:00" endTime="2026-11-04T15:42:15.7380660+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56bde909-9a10-4f80-be09-bcbe05455174" />
+    <UnitTestResult executionId="8889aae5-63be-40b9-9737-ce5c4c2030dc" testId="4a2d06c4-c309-a5e5-a5c3-11ff88a2afd2" testName="CoreBanking.Api.Tests.DependencyPolicyTests.All_project_package_references_use_the_root_central_catalog" computerName="8e2a8193fb42" duration="00:00:03.5403377" startTime="2026-11-04T15:42:15.6766735+00:00" endTime="2026-11-04T15:42:19.2287165+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8889aae5-63be-40b9-9737-ce5c4c2030dc" />
+    <UnitTestResult executionId="ffbf4937-1712-4370-bddb-6102f37a0166" testId="22a175b5-3cd2-339a-2cd9-7457236ecbb5" testName="CoreBanking.Api.Tests.Integration.AccountMutationTests.Failed_posting_rolls_back_balances_and_replays_original_error_correlation(scenario: &quot;incomplete-reference&quot;, status: 502)" computerName="8e2a8193fb42" duration="00:00:00.0490162" startTime="2026-11-04T15:42:40.2710758+00:00" endTime="2026-11-04T15:42:40.3205188+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ffbf4937-1712-4370-bddb-6102f37a0166" />
+    <UnitTestResult executionId="a9bb7ed7-63c1-40a6-abf7-6d0a7150fe78" testId="761a3915-ac44-8af3-094a-d9b6a7e6e992" testName="CoreBanking.Api.Tests.Integration.AccountMutationTests.Adjustment_replay_returns_same_result_without_duplicate_persisted_effect" computerName="8e2a8193fb42" duration="00:00:00.2444197" startTime="2026-11-04T15:42:39.7621986+00:00" endTime="2026-11-04T15:42:40.0069676+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9bb7ed7-63c1-40a6-abf7-6d0a7150fe78" />
+    <UnitTestResult executionId="41da703c-9d77-473f-b998-ae2d1253969f" testId="02de3edd-3717-9739-006b-972389f225e9" testName="CoreBanking.Api.Tests.Functional.AuthorizationContractTests.Another_consumer_cannot_discover_a_hidden_account" computerName="8e2a8193fb42" duration="00:00:00.0270566" startTime="2026-11-04T15:42:32.5494689+00:00" endTime="2026-11-04T15:42:32.5771913+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41da703c-9d77-473f-b998-ae2d1253969f" />
+    <UnitTestResult executionId="f9281e05-f9f4-43ed-8bfe-3a13108a0068" testId="86ba16c7-65a2-e77e-482c-1dd81432e816" testName="CoreBanking.Api.Tests.Functional.AccountContractTests.Account_list_and_detail_return_json_for_visible_customer" computerName="8e2a8193fb42" duration="00:00:00.0590156" startTime="2026-11-04T15:42:32.8068959+00:00" endTime="2026-11-04T15:42:32.8666365+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9281e05-f9f4-43ed-8bfe-3a13108a0068" />
+    <UnitTestResult executionId="cd69d544-e9d9-4cbf-97ed-8defd66a262b" testId="0a35d185-9f79-5d8d-1a05-b1b7f389274f" testName="CoreBanking.Api.Tests.Functional.HostContractTests.Health_reports_database_availability_and_echoes_correlation_id" computerName="8e2a8193fb42" duration="00:00:00.3506162" startTime="2026-11-04T15:42:30.5037197+00:00" endTime="2026-11-04T15:42:30.8557321+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd69d544-e9d9-4cbf-97ed-8defd66a262b" />
+    <UnitTestResult executionId="e4f87631-80fc-46f6-93dd-f65e6f911fee" testId="1fb6570c-dda9-330e-5079-4a66e08f3066" testName="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests.Balance_business_errors_keep_exact_http_json_contract(accountId: &quot;acc-50679&quot;, expectedCode: 679, expectedMessage: &quot;Balance is unavailable while the account is pendin&quot;···)" computerName="8e2a8193fb42" duration="00:00:00.0178938" startTime="2026-11-04T15:42:32.2836912+00:00" endTime="2026-11-04T15:42:32.3026920+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e4f87631-80fc-46f6-93dd-f65e6f911fee" />
+    <UnitTestResult executionId="06b87048-c610-429e-928a-f93426af7753" testId="d2604fc0-2215-7433-b8cd-b24718b74e4d" testName="CoreBanking.Api.Tests.Integration.AccountMutationTests.Closing_zero_balance_active_account_persists_closed_state" computerName="8e2a8193fb42" duration="00:00:00.0536734" startTime="2026-11-04T15:42:40.4813559+00:00" endTime="2026-11-04T15:42:40.5360902+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06b87048-c610-429e-928a-f93426af7753" />
+    <UnitTestResult executionId="ac163bd6-2c62-4a80-a727-a2931f821e8f" testId="a871d98c-61f9-932d-d49b-b2153db898f8" testName="CoreBanking.Api.Tests.Functional.AuthorizationContractTests.Missing_token_is_unauthorized_and_missing_scope_is_forbidden" computerName="8e2a8193fb42" duration="00:00:00.0187469" startTime="2026-11-04T15:42:32.7873621+00:00" endTime="2026-11-04T15:42:32.8066346+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ac163bd6-2c62-4a80-a727-a2931f821e8f" />
+    <UnitTestResult executionId="baaec932-b652-4345-8962-b958d0dd55fc" testId="189cad6b-ae93-9315-82bd-fb53dd004fe3" testName="CoreBanking.Api.Tests.Functional.HostContractTests.Token_errors_preserve_decision_precedence(grant: &quot;password&quot;, client: &quot;unknown&quot;, scope: &quot;unknown&quot;, scenario: &quot;unknown&quot;, status: 400, error: &quot;unsupported_grant_type&quot;)" computerName="8e2a8193fb42" duration="00:00:00.0104955" startTime="2026-11-04T15:42:29.8451720+00:00" endTime="2026-11-04T15:42:29.8552487+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="baaec932-b652-4345-8962-b958d0dd55fc" />
+    <UnitTestResult executionId="7da0ba6c-b834-4309-ac87-8e574e38680d" testId="941c2132-2fb6-744f-0dbc-884fa73c5b44" testName="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests.Balance_error_precedence_is_inquiry_block_then_account_state_then_missing_data" computerName="8e2a8193fb42" duration="00:00:00.2368532" startTime="2026-11-04T15:42:32.3115259+00:00" endTime="2026-11-04T15:42:32.5490647+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7da0ba6c-b834-4309-ac87-8e574e38680d" />
+    <UnitTestResult executionId="ec919c9d-a567-4dbf-8daf-11fb87280f07" testId="47986474-17f5-acfd-f3e0-f37880973bac" testName="CoreBanking.Api.Tests.Integration.AccountMutationTests.Completed_adjustment_rejects_different_payload_without_second_movement" computerName="8e2a8193fb42" duration="00:00:00.0583105" startTime="2026-11-04T15:42:40.4220292+00:00" endTime="2026-11-04T15:42:40.4809961+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ec919c9d-a567-4dbf-8daf-11fb87280f07" />
+    <UnitTestResult executionId="582a4cfa-b2b4-48d5-82de-4a5b8ec1b3e1" testId="168976c6-69f6-dee1-7eda-950bd170e146" testName="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests.Authorization_is_checked_before_balance_business_errors" computerName="8e2a8193fb42" duration="00:00:00.0737121" startTime="2026-11-04T15:42:31.6724001+00:00" endTime="2026-11-04T15:42:31.7467644+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="582a4cfa-b2b4-48d5-82de-4a5b8ec1b3e1" />
+    <UnitTestResult executionId="ce9675db-eee6-4fb7-b335-98fcc5a42527" testId="0fb549ff-dbcd-a6a7-bd3d-57f25f4b0230" testName="CoreBanking.Api.Tests.Functional.HostContractTests.Token_preserves_omitted_empty_and_distinct_scopes(includeScope: True, scope: &quot;accounts.read accounts.read balances.read&quot;)" computerName="8e2a8193fb42" duration="00:00:00.0067632" startTime="2026-11-04T15:42:30.9379636+00:00" endTime="2026-11-04T15:42:30.9460348+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce9675db-eee6-4fb7-b335-98fcc5a42527" />
+    <UnitTestResult executionId="e852a599-5adb-4c5d-a97b-07a4c700f6e4" testId="03481912-ae68-aecf-e0bc-30306db3660e" testName="CoreBanking.Api.Tests.Integration.AccountMutationTests.Failed_posting_rolls_back_balances_and_replays_original_error_correlation(scenario: &quot;corrupt-json&quot;, status: 502)" computerName="8e2a8193fb42" duration="00:00:00.0982756" startTime="2026-11-04T15:42:40.1712745+00:00" endTime="2026-11-04T15:42:40.2701206+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e852a599-5adb-4c5d-a97b-07a4c700f6e4" />
+    <UnitTestResult executionId="b8cdfa69-6037-459e-99c5-efe4fd465379" testId="41d76685-987e-725d-9f9c-72318280ea19" testName="CoreBanking.Api.Tests.Functional.HostContractTests.Token_preserves_omitted_empty_and_distinct_scopes(includeScope: False, scope: null)" computerName="8e2a8193fb42" duration="00:00:00.0124900" startTime="2026-11-04T15:42:30.9464248+00:00" endTime="2026-11-04T15:42:30.9607607+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8cdfa69-6037-459e-99c5-efe4fd465379" />
+    <UnitTestResult executionId="be1054d0-3d44-4aaf-a090-54b7ad973b14" testId="793d25bb-6d8f-fe84-0e4b-bf0509a4c0c6" testName="CoreBanking.Api.Tests.Integration.AccountMutationTests.Processing_reservation_preserves_payload_conflict_consumer_isolation_and_stored_expiry" computerName="8e2a8193fb42" duration="00:00:00.1385975" startTime="2026-11-04T15:42:40.0308550+00:00" endTime="2026-11-04T15:42:40.1706115+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be1054d0-3d44-4aaf-a090-54b7ad973b14" />
+    <UnitTestResult executionId="1e874ad0-4626-40a6-86cc-62379b0c0101" testId="c8e5d755-621d-d11a-d0c7-68c3600b3f2b" testName="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests.Balance_business_errors_keep_exact_http_json_contract(accountId: &quot;acc-50678&quot;, expectedCode: 678, expectedMessage: &quot;Balance inquiry is not allowed for a locked accoun&quot;···)" computerName="8e2a8193fb42" duration="00:00:00.0079057" startTime="2026-11-04T15:42:32.3029021+00:00" endTime="2026-11-04T15:42:32.3112713+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e874ad0-4626-40a6-86cc-62379b0c0101" />
+    <UnitTestResult executionId="5c852443-597e-429a-b49f-6d4c2432599e" testId="161d5bb9-2584-2a4f-50ea-248200147bf5" testName="CoreBanking.Api.Tests.Functional.HostContractTests.Startup_rejects_environment_outside_workshop_and_development" computerName="8e2a8193fb42" duration="00:00:00.6412759" startTime="2026-11-04T15:42:29.8610929+00:00" endTime="2026-11-04T15:42:30.5032721+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c852443-597e-429a-b49f-6d4c2432599e" />
+    <UnitTestResult executionId="862e39a3-4984-42da-986f-7f29e70a901f" testId="bdd4a2d6-e2c8-2cef-8a93-7abb897e9136" testName="CoreBanking.Api.Tests.Integration.AccountMutationTests.Failed_posting_rolls_back_balances_and_replays_original_error_correlation(scenario: &quot;upstream-unavailable&quot;, status: 503)" computerName="8e2a8193fb42" duration="00:00:00.0444078" startTime="2026-11-04T15:42:40.3212644+00:00" endTime="2026-11-04T15:42:40.3659407+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="862e39a3-4984-42da-986f-7f29e70a901f" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.AccountContractTests.Account_creation_returns_created_reference_and_persists_account" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="38dea44f-aa20-7109-f0f0-d4502dfaeefe">
+      <Execution id="e6b33dac-0f01-4f59-993c-0da498813e5a" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.AccountContractTests" name="Account_creation_returns_created_reference_and_persists_account" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.AccountContractTests.Account_list_and_detail_return_json_for_visible_customer" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="86ba16c7-65a2-e77e-482c-1dd81432e816">
+      <Execution id="f9281e05-f9f4-43ed-8bfe-3a13108a0068" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.AccountContractTests" name="Account_list_and_detail_return_json_for_visible_customer" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.AuthorizationContractTests.Another_consumer_cannot_discover_a_hidden_account" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="02de3edd-3717-9739-006b-972389f225e9">
+      <Execution id="41da703c-9d77-473f-b998-ae2d1253969f" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.AuthorizationContractTests" name="Another_consumer_cannot_discover_a_hidden_account" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.HostContractTests.Token_errors_preserve_decision_precedence(grant: &quot;password&quot;, client: &quot;unknown&quot;, scope: &quot;unknown&quot;, scenario: &quot;unknown&quot;, status: 400, error: &quot;unsupported_grant_type&quot;)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="189cad6b-ae93-9315-82bd-fb53dd004fe3">
+      <Execution id="baaec932-b652-4345-8962-b958d0dd55fc" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.HostContractTests" name="Token_errors_preserve_decision_precedence" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.HostContractTests.Swagger_ui_and_document_are_available_in_workshop_environment" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="0c109e34-af52-312d-488a-16cd6790573e">
+      <Execution id="dfe5fb70-8299-4de2-94ca-36f2e50611c5" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.HostContractTests" name="Swagger_ui_and_document_are_available_in_workshop_environment" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Integration.DatabaseMigrationTests.Empty_database_migrates_and_populated_database_keeps_schema_and_rows_on_migration_and_startup" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="ec749307-dae1-d69c-4e95-5e7fd8e49d68">
+      <Execution id="836e9bd1-f852-4dd2-b3c4-997e8e19663e" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Integration.DatabaseMigrationTests" name="Empty_database_migrates_and_populated_database_keeps_schema_and_rows_on_migration_and_startup" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.HostContractTests.Token_preserves_omitted_empty_and_distinct_scopes(includeScope: True, scope: &quot;&quot;)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="7f8648c6-46de-ce52-fc6f-b5c1881767ac">
+      <Execution id="cd9e7d5b-4662-490d-a59d-66af590e5b5b" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.HostContractTests" name="Token_preserves_omitted_empty_and_distinct_scopes" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Integration.AccountMutationTests.Processing_reservation_preserves_payload_conflict_consumer_isolation_and_stored_expiry" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="793d25bb-6d8f-fe84-0e4b-bf0509a4c0c6">
+      <Execution id="be1054d0-3d44-4aaf-a090-54b7ad973b14" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Integration.AccountMutationTests" name="Processing_reservation_preserves_payload_conflict_consumer_isolation_and_stored_expiry" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Unit.WorkshopSeedTests.Seed_has_expected_deterministic_counts_and_balance_error_scenarios" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="1c867cc3-a24b-6b5a-c04d-70eeabdd0b81">
+      <Execution id="56bde909-9a10-4f80-be09-bcbe05455174" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Unit.WorkshopSeedTests" name="Seed_has_expected_deterministic_counts_and_balance_error_scenarios" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.AuthorizationContractTests.Each_existing_scope_authorizes_its_corresponding_operation" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="de90e957-934e-a7db-ab56-c782d3346d44">
+      <Execution id="2ff3046c-2531-4ae3-b6d3-f7cbacfcb672" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.AuthorizationContractTests" name="Each_existing_scope_authorizes_its_corresponding_operation" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Integration.AccountMutationTests.Failed_posting_rolls_back_balances_and_replays_original_error_correlation(scenario: &quot;upstream-unavailable&quot;, status: 503)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="bdd4a2d6-e2c8-2cef-8a93-7abb897e9136">
+      <Execution id="862e39a3-4984-42da-986f-7f29e70a901f" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Integration.AccountMutationTests" name="Failed_posting_rolls_back_balances_and_replays_original_error_correlation" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.HostContractTests.Health_reports_database_availability_and_echoes_correlation_id" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="0a35d185-9f79-5d8d-1a05-b1b7f389274f">
+      <Execution id="cd69d544-e9d9-4cbf-97ed-8defd66a262b" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.HostContractTests" name="Health_reports_database_availability_and_echoes_correlation_id" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.HostContractTests.Token_preserves_omitted_empty_and_distinct_scopes(includeScope: False, scope: null)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="41d76685-987e-725d-9f9c-72318280ea19">
+      <Execution id="b8cdfa69-6037-459e-99c5-efe4fd465379" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.HostContractTests" name="Token_preserves_omitted_empty_and_distinct_scopes" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests.Balance_business_errors_keep_exact_http_json_contract(accountId: &quot;acc-50680&quot;, expectedCode: 680, expectedMessage: &quot;Required balance information is missing&quot;)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="ff819ed3-99e1-eb2d-0771-1d629b9737bb">
+      <Execution id="2deb156d-ead5-49c4-84b5-c89359a4a7bd" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests" name="Balance_business_errors_keep_exact_http_json_contract" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.AuthorizationContractTests.Missing_token_is_unauthorized_and_missing_scope_is_forbidden" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="a871d98c-61f9-932d-d49b-b2153db898f8">
+      <Execution id="ac163bd6-2c62-4a80-a727-a2931f821e8f" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.AuthorizationContractTests" name="Missing_token_is_unauthorized_and_missing_scope_is_forbidden" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Integration.AccountMutationTests.Closing_zero_balance_active_account_persists_closed_state" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="d2604fc0-2215-7433-b8cd-b24718b74e4d">
+      <Execution id="06b87048-c610-429e-928a-f93426af7753" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Integration.AccountMutationTests" name="Closing_zero_balance_active_account_persists_closed_state" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests.Balance_business_errors_keep_exact_http_json_contract(accountId: &quot;acc-50678&quot;, expectedCode: 678, expectedMessage: &quot;Balance inquiry is not allowed for a locked accoun&quot;···)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="c8e5d755-621d-d11a-d0c7-68c3600b3f2b">
+      <Execution id="1e874ad0-4626-40a6-86cc-62379b0c0101" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests" name="Balance_business_errors_keep_exact_http_json_contract" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Integration.AccountMutationTests.Failed_posting_rolls_back_balances_and_replays_original_error_correlation(scenario: &quot;incomplete-reference&quot;, status: 502)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="22a175b5-3cd2-339a-2cd9-7457236ecbb5">
+      <Execution id="ffbf4937-1712-4370-bddb-6102f37a0166" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Integration.AccountMutationTests" name="Failed_posting_rolls_back_balances_and_replays_original_error_correlation" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.HostContractTests.Startup_rejects_environment_outside_workshop_and_development" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="161d5bb9-2584-2a4f-50ea-248200147bf5">
+      <Execution id="5c852443-597e-429a-b49f-6d4c2432599e" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.HostContractTests" name="Startup_rejects_environment_outside_workshop_and_development" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Integration.AccountMutationTests.Adjustment_rejects_amount_with_more_than_two_fractional_digits" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="f1cf81cf-1401-876b-782b-8fdc8cbcbf9a">
+      <Execution id="bc24addd-2d56-461f-b2a4-5db9f64b4323" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Integration.AccountMutationTests" name="Adjustment_rejects_amount_with_more_than_two_fractional_digits" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests.Authorization_is_checked_before_balance_business_errors" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="168976c6-69f6-dee1-7eda-950bd170e146">
+      <Execution id="582a4cfa-b2b4-48d5-82de-4a5b8ec1b3e1" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests" name="Authorization_is_checked_before_balance_business_errors" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests.Balance_business_errors_keep_exact_http_json_contract(accountId: &quot;acc-50679&quot;, expectedCode: 679, expectedMessage: &quot;Balance is unavailable while the account is pendin&quot;···)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="1fb6570c-dda9-330e-5079-4a66e08f3066">
+      <Execution id="e4f87631-80fc-46f6-93dd-f65e6f911fee" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests" name="Balance_business_errors_keep_exact_http_json_contract" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.HostContractTests.Token_errors_preserve_decision_precedence(grant: &quot;client_credentials&quot;, client: &quot;workshop-client&quot;, scope: &quot;unknown&quot;, scenario: &quot;unknown&quot;, status: 400, error: &quot;invalid_scope&quot;)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="a1b84e31-6dd2-3a53-2136-c3fed8fd4267">
+      <Execution id="18f27c1f-4874-43f2-949e-da68d6581b74" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.HostContractTests" name="Token_errors_preserve_decision_precedence" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.DependencyPolicyTests.All_project_package_references_use_the_root_central_catalog" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="4a2d06c4-c309-a5e5-a5c3-11ff88a2afd2">
+      <Execution id="8889aae5-63be-40b9-9737-ce5c4c2030dc" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.DependencyPolicyTests" name="All_project_package_references_use_the_root_central_catalog" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests.Balance_business_errors_keep_exact_http_json_contract(accountId: &quot;acc-50677&quot;, expectedCode: 677, expectedMessage: &quot;Balance is not posible&quot;)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="1366e424-052f-9c8f-7967-796605f31891">
+      <Execution id="4ecfbb6c-04de-4875-9bbf-b28459e1d618" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests" name="Balance_business_errors_keep_exact_http_json_contract" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Integration.AccountMutationTests.Failed_posting_rolls_back_balances_and_replays_original_error_correlation(scenario: &quot;upstream-conflict&quot;, status: 409)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="ab7ce3d0-c692-8923-c96a-cc874b575e2a">
+      <Execution id="5beeb7d5-d92b-4cc5-9c97-e886e66527e1" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Integration.AccountMutationTests" name="Failed_posting_rolls_back_balances_and_replays_original_error_correlation" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Integration.AccountMutationTests.Failed_posting_rolls_back_balances_and_replays_original_error_correlation(scenario: &quot;corrupt-json&quot;, status: 502)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="03481912-ae68-aecf-e0bc-30306db3660e">
+      <Execution id="e852a599-5adb-4c5d-a97b-07a4c700f6e4" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Integration.AccountMutationTests" name="Failed_posting_rolls_back_balances_and_replays_original_error_correlation" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.HostContractTests.Token_errors_preserve_decision_precedence(grant: &quot;client_credentials&quot;, client: &quot;unknown&quot;, scope: &quot;unknown&quot;, scenario: &quot;unknown&quot;, status: 401, error: &quot;invalid_client&quot;)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="517e3fd3-f92b-12f2-1dd7-e45856d49ebc">
+      <Execution id="66d0eb3d-3ea1-44d7-96e6-8da5535a8f57" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.HostContractTests" name="Token_errors_preserve_decision_precedence" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests.Balance_error_precedence_is_inquiry_block_then_account_state_then_missing_data" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="941c2132-2fb6-744f-0dbc-884fa73c5b44">
+      <Execution id="7da0ba6c-b834-4309-ac87-8e574e38680d" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.BalanceErrorContractTests" name="Balance_error_precedence_is_inquiry_block_then_account_state_then_missing_data" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.HostContractTests.Rate_limit_rejects_excess_requests" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="17bb42fb-1faf-ddb9-5688-ea2fe4da3b09">
+      <Execution id="e7f58229-a980-489e-8dbb-74f97c915cee" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.HostContractTests" name="Rate_limit_rejects_excess_requests" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Integration.AccountMutationTests.Adjustment_replay_returns_same_result_without_duplicate_persisted_effect" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="761a3915-ac44-8af3-094a-d9b6a7e6e992">
+      <Execution id="a9bb7ed7-63c1-40a6-abf7-6d0a7150fe78" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Integration.AccountMutationTests" name="Adjustment_replay_returns_same_result_without_duplicate_persisted_effect" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Integration.AccountMutationTests.Completed_adjustment_rejects_different_payload_without_second_movement" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="47986474-17f5-acfd-f3e0-f37880973bac">
+      <Execution id="ec919c9d-a567-4dbf-8daf-11fb87280f07" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Integration.AccountMutationTests" name="Completed_adjustment_rejects_different_payload_without_second_movement" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.HostContractTests.Token_errors_preserve_decision_precedence(grant: &quot;client_credentials&quot;, client: &quot;workshop-client&quot;, scope: &quot;accounts.read&quot;, scenario: &quot;unknown&quot;, status: 400, error: &quot;invalid_scenario&quot;)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="4e794458-1f49-5490-f6de-a56354394e99">
+      <Execution id="eecb9bb3-948e-4962-a1fa-e5161f6f91ee" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.HostContractTests" name="Token_errors_preserve_decision_precedence" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.Api.Tests.Functional.HostContractTests.Token_preserves_omitted_empty_and_distinct_scopes(includeScope: True, scope: &quot;accounts.read accounts.read balances.read&quot;)" storage="/source/tests/corebanking.api.tests/bin/release/net10.0/corebanking.api.tests.dll" id="0fb549ff-dbcd-a6a7-bd3d-57f25f4b0230">
+      <Execution id="ce9675db-eee6-4fb7-b335-98fcc5a42527" />
+      <TestMethod codeBase="/source/tests/CoreBanking.Api.Tests/bin/Release/net10.0/CoreBanking.Api.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.Api.Tests.Functional.HostContractTests" name="Token_preserves_omitted_empty_and_distinct_scopes" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="7f8648c6-46de-ce52-fc6f-b5c1881767ac" executionId="cd9e7d5b-4662-490d-a59d-66af590e5b5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff819ed3-99e1-eb2d-0771-1d629b9737bb" executionId="2deb156d-ead5-49c4-84b5-c89359a4a7bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de90e957-934e-a7db-ab56-c782d3346d44" executionId="2ff3046c-2531-4ae3-b6d3-f7cbacfcb672" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec749307-dae1-d69c-4e95-5e7fd8e49d68" executionId="836e9bd1-f852-4dd2-b3c4-997e8e19663e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1b84e31-6dd2-3a53-2136-c3fed8fd4267" executionId="18f27c1f-4874-43f2-949e-da68d6581b74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e794458-1f49-5490-f6de-a56354394e99" executionId="eecb9bb3-948e-4962-a1fa-e5161f6f91ee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="517e3fd3-f92b-12f2-1dd7-e45856d49ebc" executionId="66d0eb3d-3ea1-44d7-96e6-8da5535a8f57" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38dea44f-aa20-7109-f0f0-d4502dfaeefe" executionId="e6b33dac-0f01-4f59-993c-0da498813e5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1366e424-052f-9c8f-7967-796605f31891" executionId="4ecfbb6c-04de-4875-9bbf-b28459e1d618" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab7ce3d0-c692-8923-c96a-cc874b575e2a" executionId="5beeb7d5-d92b-4cc5-9c97-e886e66527e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f1cf81cf-1401-876b-782b-8fdc8cbcbf9a" executionId="bc24addd-2d56-461f-b2a4-5db9f64b4323" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17bb42fb-1faf-ddb9-5688-ea2fe4da3b09" executionId="e7f58229-a980-489e-8dbb-74f97c915cee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0c109e34-af52-312d-488a-16cd6790573e" executionId="dfe5fb70-8299-4de2-94ca-36f2e50611c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c867cc3-a24b-6b5a-c04d-70eeabdd0b81" executionId="56bde909-9a10-4f80-be09-bcbe05455174" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a2d06c4-c309-a5e5-a5c3-11ff88a2afd2" executionId="8889aae5-63be-40b9-9737-ce5c4c2030dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22a175b5-3cd2-339a-2cd9-7457236ecbb5" executionId="ffbf4937-1712-4370-bddb-6102f37a0166" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="761a3915-ac44-8af3-094a-d9b6a7e6e992" executionId="a9bb7ed7-63c1-40a6-abf7-6d0a7150fe78" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="02de3edd-3717-9739-006b-972389f225e9" executionId="41da703c-9d77-473f-b998-ae2d1253969f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86ba16c7-65a2-e77e-482c-1dd81432e816" executionId="f9281e05-f9f4-43ed-8bfe-3a13108a0068" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a35d185-9f79-5d8d-1a05-b1b7f389274f" executionId="cd69d544-e9d9-4cbf-97ed-8defd66a262b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fb6570c-dda9-330e-5079-4a66e08f3066" executionId="e4f87631-80fc-46f6-93dd-f65e6f911fee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d2604fc0-2215-7433-b8cd-b24718b74e4d" executionId="06b87048-c610-429e-928a-f93426af7753" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a871d98c-61f9-932d-d49b-b2153db898f8" executionId="ac163bd6-2c62-4a80-a727-a2931f821e8f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="189cad6b-ae93-9315-82bd-fb53dd004fe3" executionId="baaec932-b652-4345-8962-b958d0dd55fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="941c2132-2fb6-744f-0dbc-884fa73c5b44" executionId="7da0ba6c-b834-4309-ac87-8e574e38680d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="47986474-17f5-acfd-f3e0-f37880973bac" executionId="ec919c9d-a567-4dbf-8daf-11fb87280f07" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="168976c6-69f6-dee1-7eda-950bd170e146" executionId="582a4cfa-b2b4-48d5-82de-4a5b8ec1b3e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0fb549ff-dbcd-a6a7-bd3d-57f25f4b0230" executionId="ce9675db-eee6-4fb7-b335-98fcc5a42527" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="03481912-ae68-aecf-e0bc-30306db3660e" executionId="e852a599-5adb-4c5d-a97b-07a4c700f6e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41d76685-987e-725d-9f9c-72318280ea19" executionId="b8cdfa69-6037-459e-99c5-efe4fd465379" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="793d25bb-6d8f-fe84-0e4b-bf0509a4c0c6" executionId="be1054d0-3d44-4aaf-a090-54b7ad973b14" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c8e5d755-621d-d11a-d0c7-68c3600b3f2b" executionId="1e874ad0-4626-40a6-86cc-62379b0c0101" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="161d5bb9-2584-2a4f-50ea-248200147bf5" executionId="5c852443-597e-429a-b49f-6d4c2432599e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bdd4a2d6-e2c8-2cef-8a93-7abb897e9136" executionId="862e39a3-4984-42da-986f-7f29e70a901f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="34" executed="34" passed="34" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.01] xUnit.net VSTest Adapter v4.0.1+0f7d528729 (64-bit .NET 10.0.14)
+[xUnit.net 00:00:00.59]   Discovering: CoreBanking.Api.Tests
+[xUnit.net 00:00:00.69]   Discovered:  CoreBanking.Api.Tests
+[xUnit.net 00:00:00.76]   Starting:    CoreBanking.Api.Tests
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[62]
+      User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[58]
+      Creating key {5df925f3-d66d-4902-a05f-59e53a05a396} with creation date 2026-11-04 15:42:29Z, activation date 2026-11-04 15:42:29Z, and expiration date 2027-02-02 15:42:29Z.
+warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
+      No XML encryptor configured. Key {5df925f3-d66d-4902-a05f-59e53a05a396} may be persisted to storage in unencrypted form.
+info: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[39]
+      Writing data to file '/root/.aspnet/DataProtection-Keys/key-5df925f3-d66d-4902-a05f-59e53a05a396.xml'.
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Workshop
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /source/src/CoreBanking.Api
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '&lt;&gt;f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 37.8965ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '&lt;&gt;f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 2.5939ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '&lt;&gt;f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 2.095ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '&lt;&gt;f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 0.8961ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.HealthController.Health (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Health", controller = "Health"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Health(System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.HealthController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '&lt;&gt;f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.HealthController.Health (CoreBanking.Api) in 303.6977ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.HealthController.Health (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 47.0239ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 2.0284ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.4828ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[62]
+      User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Workshop
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /source/src/CoreBanking.Api
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.4485ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[2]
+      Authorization failed. These requirements were not met:
+      Handler assertion should evaluate to true.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[13]
+      AuthenticationScheme: Bearer was forbidden.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.6242ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAccountBalances", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccountBalances(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'CoreBanking.Api.Models.BalanceBusinessError'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api) in 416.8646ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.0258ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAccountBalances", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccountBalances(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'CoreBanking.Api.Models.BalanceBusinessError'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api) in 86.3116ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.9648ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAccountBalances", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccountBalances(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'CoreBanking.Api.Models.BalanceBusinessError'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api) in 10.9259ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 0.9946ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAccountBalances", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccountBalances(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'CoreBanking.Api.Models.BalanceBusinessError'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api) in 2.9671ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 0.9486ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAccountBalances", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccountBalances(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'CoreBanking.Api.Models.BalanceBusinessError'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api) in 3.0577ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAccountBalances", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccountBalances(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'CoreBanking.Api.Models.BalanceBusinessError'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api) in 4.0115ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAccountBalances", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccountBalances(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'CoreBanking.Api.Models.BalanceBusinessError'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api) in 2.7545ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.3221ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAccount", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccount(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '&lt;&gt;f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.GetAccount (CoreBanking.Api) in 7.7946ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAccount", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccount(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '&lt;&gt;f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.GetAccount (CoreBanking.Api) in 2.472ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 0.884ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAccount", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccount(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'CoreBanking.Api.Models.AccountReference'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.GetAccount (CoreBanking.Api) in 5.7617ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 0.6089ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAccountBalances", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccountBalances(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'CoreBanking.Api.Models.AccountBalance'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api) in 8.6701ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccountBalances (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 0.5417ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateAccount", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAccount(System.String, CoreBanking.Api.Models.CreateAccountRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'CoreBanking.Api.Models.AccountReference'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateAccount (CoreBanking.Api) in 102.333ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 0.6257ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CloseAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CloseAccount", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CloseAccount(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'CoreBanking.Api.Models.AccountReference'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CloseAccount (CoreBanking.Api) in 36.1211ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CloseAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 0.4935ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '&lt;&gt;f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 10.7045ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 0.9537ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[2]
+      Authorization failed. These requirements were not met:
+      DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+      ClaimsAuthorizationRequirement:Claim.Type=consumer
+      Handler assertion should evaluate to true.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[12]
+      AuthenticationScheme: Bearer was challenged.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[1]
+      Failed to validate the token.
+      Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+      The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+         at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+         at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+         at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[7]
+      Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+      The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[2]
+      Authorization failed. These requirements were not met:
+      DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+      ClaimsAuthorizationRequirement:Claim.Type=consumer
+      Handler assertion should evaluate to true.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[12]
+      AuthenticationScheme: Bearer was challenged.
+info: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[2]
+      Authorization failed. These requirements were not met:
+      Handler assertion should evaluate to true.
+info: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[13]
+      AuthenticationScheme: Bearer was forbidden.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.2652ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.ListCustomerAccounts (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "ListCustomerAccounts", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListCustomerAccounts(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'CoreBanking.Api.Models.AccountReference[]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.ListCustomerAccounts (CoreBanking.Api) in 30.3598ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.ListCustomerAccounts (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAccount", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAccount(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'CoreBanking.Api.Models.AccountReference'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.GetAccount (CoreBanking.Api) in 2.8511ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.GetAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.0385ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateAccount", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateAccount(System.String, CoreBanking.Api.Models.CreateAccountRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'CoreBanking.Api.Models.AccountReference'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateAccount (CoreBanking.Api) in 11.293ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateAccount (CoreBanking.Api)'
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[62]
+      User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://*:8080
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Workshop
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /source/src/CoreBanking.Api
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.HealthController.Health (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Health", controller = "Health"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Health(System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.HealthController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '&lt;&gt;f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.HealthController.Health (CoreBanking.Api) in 21.475ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.HealthController.Health (CoreBanking.Api)'
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.052ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'CoreBanking.Api.Models.AdjustmentResponse'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 180.0285ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor[1]
+      Executing ContentResult with HTTP Response ContentType of application/json
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 11.7616ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.2474ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '&lt;&gt;f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 4.2107ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.5107ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing StatusCodeResult, setting HTTP status code 202
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 14.6141ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '&lt;&gt;f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 5.0537ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.4599ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor[1]
+      Executing ContentResult with HTTP Response ContentType of application/problem+json
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 40.0709ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor[1]
+      Executing ContentResult with HTTP Response ContentType of application/problem+json
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 5.2079ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.2634ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor[1]
+      Executing ContentResult with HTTP Response ContentType of application/problem+json
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 21.8781ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor[1]
+      Executing ContentResult with HTTP Response ContentType of application/problem+json
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 4.9692ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.3559ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor[1]
+      Executing ContentResult with HTTP Response ContentType of application/problem+json
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 21.0045ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor[1]
+      Executing ContentResult with HTTP Response ContentType of application/problem+json
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 7.6227ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.8542ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor[1]
+      Executing ContentResult with HTTP Response ContentType of application/problem+json
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 25.5818ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor[1]
+      Executing ContentResult with HTTP Response ContentType of application/problem+json
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 6.0173ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.3277ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'CoreBanking.Api.Models.AdjustmentResponse'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 26.4161ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CreateBalanceAdjustment", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBalanceAdjustment(System.String, System.String, CoreBanking.Api.Models.BalanceAdjustmentRequest, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type '&lt;&gt;f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api) in 8.1289ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CreateBalanceAdjustment (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(CoreBanking.Api.Models.TokenRequest) on controller CoreBanking.Api.Controllers.TokenController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '&lt;&gt;f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api) in 1.6665ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.TokenController.Token (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'CoreBanking.Api.Controllers.AccountsController.CloseAccount (CoreBanking.Api)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "CloseAccount", controller = "Accounts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CloseAccount(System.String, System.Threading.CancellationToken) on controller CoreBanking.Api.Controllers.AccountsController (CoreBanking.Api).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'CoreBanking.Api.Models.AccountReference'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action CoreBanking.Api.Controllers.AccountsController.CloseAccount (CoreBanking.Api) in 27.2338ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'CoreBanking.Api.Controllers.AccountsController.CloseAccount (CoreBanking.Api)'
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+[xUnit.net 00:00:25.69]   Finished:    CoreBanking.Api.Tests
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

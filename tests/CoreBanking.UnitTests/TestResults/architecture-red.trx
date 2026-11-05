@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="c920c871-76b4-4966-80f4-4df82b405c69" name="@cf41ac4dab3a 2026-11-04 14:39:02" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-04T14:39:02.6713225+00:00" queuing="2026-11-04T14:39:02.6713226+00:00" start="2026-11-04T14:38:59.9576730+00:00" finish="2026-11-04T14:39:04.6154421+00:00" />
+  <TestSettings name="default" id="b191dac0-0a02-4b59-aa5d-5b26c3aab5f8">
+    <Deployment runDeploymentRoot="_cf41ac4dab3a_2026-11-04_14_39_02" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="09f8e0ab-e6c3-4067-bdec-b1f7c02e017f" testId="e60d67dd-b1fc-c818-88b7-596f2032b9e3" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_allows_api_composition_and_plain_inward_contracts" computerName="cf41ac4dab3a" duration="00:00:00.0003045" startTime="2026-11-04T14:39:02.1025798+00:00" endTime="2026-11-04T14:39:02.1026598+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09f8e0ab-e6c3-4067-bdec-b1f7c02e017f" />
+    <UnitTestResult executionId="f88300a9-ff13-4863-8e37-7e87d0c0bcfd" testId="a862457b-c753-c31f-aca5-2fe6f245953e" testName="CoreBanking.UnitTests.Architecture.DependencyGraphTests.Checker_rejects_reversed_edges_cycles_and_production_to_test_references" computerName="cf41ac4dab3a" duration="00:00:00.0012602" startTime="2026-11-04T14:39:02.1009691+00:00" endTime="2026-11-04T14:39:02.1029828+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f88300a9-ff13-4863-8e37-7e87d0c0bcfd" />
+    <UnitTestResult executionId="6913e14a-4e0a-49eb-8f0e-5a3e35407524" testId="49e05391-d9bb-2374-43e4-56c12c08405f" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Api_technical_dependencies_are_confined_to_composition" computerName="cf41ac4dab3a" duration="00:00:02.3035430" startTime="2026-11-04T14:39:02.1029068+00:00" endTime="2026-11-04T14:39:04.4137630+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6913e14a-4e0a-49eb-8f0e-5a3e35407524">
+      <Output>
+        <ErrorInfo>
+          <Message>Controllers/AccountsController.cs: technical dependency outside composition: Microsoft.EntityFrameworkCore
+Controllers/AccountsController.cs: technical dependency outside composition: System.Data
+Controllers/AccountsController.cs: technical dependency outside composition: CoreBanking.Api.Data
+Controllers/HealthController.cs: technical dependency outside composition: CoreBanking.Api.Data
+Data/BankingDbContext.cs: technical dependency outside composition: Microsoft.EntityFrameworkCore
+Data/BankingDbContext.cs: technical dependency outside composition: CoreBanking.Api.Data
+Data/Entities.cs: technical dependency outside composition: CoreBanking.Api.Data
+Data/WorkshopSeed.cs: technical dependency outside composition: CoreBanking.Api.Data
+Data/Migrations/20261031231830_InitialCreate.cs: technical dependency outside composition: Microsoft.EntityFrameworkCore
+Data/Migrations/20261031231830_InitialCreate.cs: technical dependency outside composition: CoreBanking.Api.Data
+Data/Migrations/20261031231830_InitialCreate.Designer.cs: technical dependency outside composition: Microsoft.EntityFrameworkCore
+Data/Migrations/20261031231830_InitialCreate.Designer.cs: technical dependency outside composition: CoreBanking.Api.Data
+Data/Migrations/BankingDbContextModelSnapshot.cs: technical dependency outside composition: Microsoft.EntityFrameworkCore
+Data/Migrations/BankingDbContextModelSnapshot.cs: technical dependency outside composition: CoreBanking.Api.Data</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Api_technical_dependencies_are_confined_to_composition() in /source/tests/CoreBanking.UnitTests/Architecture/LayerBoundaryTests.cs:line 32
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="41d5edad-ed57-46c5-b03b-efaae9c2e920" testId="22f7a38e-da30-814e-ea4c-32f0ad0abfc7" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_framework_types_in_inward_signatures" computerName="cf41ac4dab3a" duration="00:00:00.0002366" startTime="2026-11-04T14:39:04.4342641+00:00" endTime="2026-11-04T14:39:04.4344438+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41d5edad-ed57-46c5-b03b-efaae9c2e920" />
+    <UnitTestResult executionId="0396839f-7135-4025-86ba-24e43748ade5" testId="7c9b9efe-d405-3995-e5a4-f1c51d98b6fb" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_technical_use_outside_api_composition(source: &quot;class Handler { CoreBanking.Infrastructure.Persist&quot;···)" computerName="cf41ac4dab3a" duration="00:00:00.0000260" startTime="2026-11-04T14:39:02.1020160+00:00" endTime="2026-11-04T14:39:02.1021778+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0396839f-7135-4025-86ba-24e43748ade5" />
+    <UnitTestResult executionId="ddcecfd2-7c26-4019-904a-0712ddec0d71" testId="52f14979-5bf1-5f35-c852-f4506b83a9bd" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_technical_use_outside_api_composition(source: &quot;using Alias = CoreBanking.Infrastructure.Persisten&quot;···)" computerName="cf41ac4dab3a" duration="00:00:00.1846018" startTime="2026-11-04T14:39:01.8835106+00:00" endTime="2026-11-04T14:39:02.0868906+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ddcecfd2-7c26-4019-904a-0712ddec0d71" />
+    <UnitTestResult executionId="55f0d2a1-3869-4812-8703-056c47b83beb" testId="868a8cc2-0d4e-a424-871f-10b4e562503c" testName="CoreBanking.UnitTests.Architecture.DependencyGraphTests.Existing_projects_do_not_introduce_unauthorized_direct_references" computerName="cf41ac4dab3a" duration="00:00:01.9442171" startTime="2026-11-04T14:39:02.1031782+00:00" endTime="2026-11-04T14:39:04.0288481+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="55f0d2a1-3869-4812-8703-056c47b83beb" />
+    <UnitTestResult executionId="22cfa4bb-961c-437d-a179-e705d9a158eb" testId="2b72f38d-322b-29e6-c312-9bedfe61feea" testName="CoreBanking.UnitTests.Architecture.DependencyGraphTests.Approved_graph_has_no_violations" computerName="cf41ac4dab3a" duration="00:00:00.1827641" startTime="2026-11-04T14:39:01.8857666+00:00" endTime="2026-11-04T14:39:02.0806366+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22cfa4bb-961c-437d-a179-e705d9a158eb" />
+    <UnitTestResult executionId="9acdd163-f0fd-43ef-b3a1-b442f4608565" testId="caa6a353-7b31-937c-3304-89d5aab08859" testName="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_technical_use_outside_api_composition(source: &quot;global using Microsoft.EntityFrameworkCore;&quot;)" computerName="cf41ac4dab3a" duration="00:00:00.0002804" startTime="2026-11-04T14:39:02.0990878+00:00" endTime="2026-11-04T14:39:02.1011059+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9acdd163-f0fd-43ef-b3a1-b442f4608565" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyGraphTests.Checker_rejects_reversed_edges_cycles_and_production_to_test_references" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="a862457b-c753-c31f-aca5-2fe6f245953e">
+      <Execution id="f88300a9-ff13-4863-8e37-7e87d0c0bcfd" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyGraphTests" name="Checker_rejects_reversed_edges_cycles_and_production_to_test_references" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_technical_use_outside_api_composition(source: &quot;using Alias = CoreBanking.Infrastructure.Persisten&quot;···)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="52f14979-5bf1-5f35-c852-f4506b83a9bd">
+      <Execution id="ddcecfd2-7c26-4019-904a-0712ddec0d71" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Checker_rejects_technical_use_outside_api_composition" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Api_technical_dependencies_are_confined_to_composition" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="49e05391-d9bb-2374-43e4-56c12c08405f">
+      <Execution id="6913e14a-4e0a-49eb-8f0e-5a3e35407524" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Api_technical_dependencies_are_confined_to_composition" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_framework_types_in_inward_signatures" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="22f7a38e-da30-814e-ea4c-32f0ad0abfc7">
+      <Execution id="41d5edad-ed57-46c5-b03b-efaae9c2e920" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Checker_rejects_framework_types_in_inward_signatures" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_allows_api_composition_and_plain_inward_contracts" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="e60d67dd-b1fc-c818-88b7-596f2032b9e3">
+      <Execution id="09f8e0ab-e6c3-4067-bdec-b1f7c02e017f" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Checker_allows_api_composition_and_plain_inward_contracts" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_technical_use_outside_api_composition(source: &quot;class Handler { CoreBanking.Infrastructure.Persist&quot;···)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="7c9b9efe-d405-3995-e5a4-f1c51d98b6fb">
+      <Execution id="0396839f-7135-4025-86ba-24e43748ade5" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Checker_rejects_technical_use_outside_api_composition" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyGraphTests.Approved_graph_has_no_violations" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="2b72f38d-322b-29e6-c312-9bedfe61feea">
+      <Execution id="22cfa4bb-961c-437d-a179-e705d9a158eb" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyGraphTests" name="Approved_graph_has_no_violations" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyGraphTests.Existing_projects_do_not_introduce_unauthorized_direct_references" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="868a8cc2-0d4e-a424-871f-10b4e562503c">
+      <Execution id="55f0d2a1-3869-4812-8703-056c47b83beb" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyGraphTests" name="Existing_projects_do_not_introduce_unauthorized_direct_references" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Checker_rejects_technical_use_outside_api_composition(source: &quot;global using Microsoft.EntityFrameworkCore;&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="caa6a353-7b31-937c-3304-89d5aab08859">
+      <Execution id="9acdd163-f0fd-43ef-b3a1-b442f4608565" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.LayerBoundaryTests" name="Checker_rejects_technical_use_outside_api_composition" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="e60d67dd-b1fc-c818-88b7-596f2032b9e3" executionId="09f8e0ab-e6c3-4067-bdec-b1f7c02e017f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a862457b-c753-c31f-aca5-2fe6f245953e" executionId="f88300a9-ff13-4863-8e37-7e87d0c0bcfd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49e05391-d9bb-2374-43e4-56c12c08405f" executionId="6913e14a-4e0a-49eb-8f0e-5a3e35407524" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22f7a38e-da30-814e-ea4c-32f0ad0abfc7" executionId="41d5edad-ed57-46c5-b03b-efaae9c2e920" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c9b9efe-d405-3995-e5a4-f1c51d98b6fb" executionId="0396839f-7135-4025-86ba-24e43748ade5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52f14979-5bf1-5f35-c852-f4506b83a9bd" executionId="ddcecfd2-7c26-4019-904a-0712ddec0d71" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="868a8cc2-0d4e-a424-871f-10b4e562503c" executionId="55f0d2a1-3869-4812-8703-056c47b83beb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b72f38d-322b-29e6-c312-9bedfe61feea" executionId="22cfa4bb-961c-437d-a179-e705d9a158eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="caa6a353-7b31-937c-3304-89d5aab08859" executionId="9acdd163-f0fd-43ef-b3a1-b442f4608565" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="9" executed="9" passed="8" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v4.0.1+0f7d528729 (64-bit .NET 10.0.14)
+[xUnit.net 00:00:00.52]   Discovering: CoreBanking.UnitTests
+[xUnit.net 00:00:00.60]   Discovered:  CoreBanking.UnitTests
+[xUnit.net 00:00:00.65]   Starting:    CoreBanking.UnitTests
+[xUnit.net 00:00:03.22]       Controllers/AccountsController.cs: technical dependency outside composition: Microsoft.EntityFrameworkCore
+[xUnit.net 00:00:03.22]       Controllers/AccountsController.cs: technical dependency outside composition: System.Data
+[xUnit.net 00:00:03.22]       Controllers/AccountsController.cs: technical dependency outside composition: CoreBanking.Api.Data
+[xUnit.net 00:00:03.22]       Controllers/HealthController.cs: technical dependency outside composition: CoreBanking.Api.Data
+[xUnit.net 00:00:03.23]       Data/BankingDbContext.cs: technical dependency outside composition: Microsoft.EntityFrameworkCore
+[xUnit.net 00:00:03.23]       Data/BankingDbContext.cs: technical dependency outside composition: CoreBanking.Api.Data
+[xUnit.net 00:00:03.23]       Data/Entities.cs: technical dependency outside composition: CoreBanking.Api.Data
+[xUnit.net 00:00:03.23]       Data/WorkshopSeed.cs: technical dependency outside composition: CoreBanking.Api.Data
+[xUnit.net 00:00:03.23]       Data/Migrations/20261031231830_InitialCreate.cs: technical dependency outside composition: Microsoft.EntityFrameworkCore
+[xUnit.net 00:00:03.23]       Data/Migrations/20261031231830_InitialCreate.cs: technical dependency outside composition: CoreBanking.Api.Data
+[xUnit.net 00:00:03.23]       Data/Migrations/20261031231830_InitialCreate.Designer.cs: technical dependency outside composition: Microsoft.EntityFrameworkCore
+[xUnit.net 00:00:03.23]       Data/Migrations/20261031231830_InitialCreate.Designer.cs: technical dependency outside composition: CoreBanking.Api.Data
+[xUnit.net 00:00:03.23]       Data/Migrations/BankingDbContextModelSnapshot.cs: technical dependency outside composition: Microsoft.EntityFrameworkCore
+[xUnit.net 00:00:03.23]       Data/Migrations/BankingDbContextModelSnapshot.cs: technical dependency outside composition: CoreBanking.Api.Data
+[xUnit.net 00:00:03.23]       Stack Trace:
+[xUnit.net 00:00:03.23]         /source/tests/CoreBanking.UnitTests/Architecture/LayerBoundaryTests.cs(32,0): at CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Api_technical_dependencies_are_confined_to_composition()
+[xUnit.net 00:00:03.23]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:00:03.23]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+[xUnit.net 00:00:03.24]   Finished:    CoreBanking.UnitTests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="cf41ac4dab3a" outcome="Error" timestamp="2026-11-04T14:39:04.4193856+00:00">
+        <Text>[xUnit.net 00:00:03.22]     CoreBanking.UnitTests.Architecture.LayerBoundaryTests.Api_technical_dependencies_are_confined_to_composition [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

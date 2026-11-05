@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="bf03bf2f-3fe0-4373-b00a-596ac0455604" name="@83f1bb933d64 2026-11-04 16:22:35" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-04T16:22:35.4568282+00:00" queuing="2026-11-04T16:22:35.4568285+00:00" start="2026-11-04T16:22:33.2844925+00:00" finish="2026-11-04T16:22:46.0898720+00:00" />
+  <TestSettings name="default" id="52a84f77-40ef-4b2e-8870-64a711552701">
+    <Deployment runDeploymentRoot="_83f1bb933d64_2026-11-04_16_22_35" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="dc952be9-2753-4192-a7a6-176fc07bd5fd" testId="e628efcc-a22a-aa5c-480d-7ef45ab5f797" testName="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(extra: &quot;src/Other/CoreBanking.Api.csproj&quot;)" computerName="83f1bb933d64" duration="00:00:00.0003837" startTime="2026-11-04T16:22:36.8212020+00:00" endTime="2026-11-04T16:22:36.8214536+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dc952be9-2753-4192-a7a6-176fc07bd5fd">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : Explicit solution membership validation is not implemented.</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage) in /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs:line 69
+   at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(String extra) in /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs:line 28
+   at InvokeStub_DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1a5f74a3-7337-40df-b346-aef655abc976" testId="e569e328-dff5-af74-a061-87c827757fd4" testName="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Migration_host_and_runner_do_not_own_banking_rules_or_web_operations" computerName="83f1bb933d64" duration="00:00:00.0082088" startTime="2026-11-04T16:22:46.0036797+00:00" endTime="2026-11-04T16:22:46.0114218+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a5f74a3-7337-40df-b346-aef655abc976" />
+    <UnitTestResult executionId="8a0e5686-7a84-477d-8d67-c6ece66a893d" testId="a3962d17-bc4f-4679-228d-d9c6ffb1f181" testName="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: &quot;Transitional&quot;, legacy: False, valid: False)" computerName="83f1bb933d64" duration="00:00:00.0002652" startTime="2026-11-04T16:22:36.8306762+00:00" endTime="2026-11-04T16:22:36.8308451+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a0e5686-7a84-477d-8d67-c6ece66a893d">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : Explicit solution membership validation is not implemented.</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage) in /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs:line 69
+   at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(String stage, Boolean legacy, Boolean valid) in /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs:line 18
+   at InvokeStub_DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="505af062-26c1-4ddf-9889-e54acc8706ff" testId="73d6f62d-ecb3-3bcc-068d-1829c343fb6f" testName="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: &quot;Final&quot;, legacy: False, valid: True)" computerName="83f1bb933d64" duration="00:00:00.0003597" startTime="2026-11-04T16:22:36.8257044+00:00" endTime="2026-11-04T16:22:36.8257893+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="505af062-26c1-4ddf-9889-e54acc8706ff">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : Explicit solution membership validation is not implemented.</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage) in /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs:line 69
+   at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(String stage, Boolean legacy, Boolean valid) in /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs:line 18
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="09927aad-6453-4c8f-9289-c94642d3abb2" testId="017eab21-5d25-8a03-a49b-25e50c01e6da" testName="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Actual_solution_and_project_paths_satisfy_requested_validation_stage" computerName="83f1bb933d64" duration="00:00:02.3196024" startTime="2026-11-04T16:22:34.4672012+00:00" endTime="2026-11-04T16:22:36.8069648+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09927aad-6453-4c8f-9289-c94642d3abb2">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : Explicit solution membership validation is not implemented.</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage) in /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs:line 69
+   at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Actual_solution_and_project_paths_satisfy_requested_validation_stage() in /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs:line 43
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="02444606-def2-4df2-ada5-49b4647cd297" testId="e4a1075f-f7ed-879d-382e-46a254e5a453" testName="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: &quot;Final&quot;, legacy: True, valid: False)" computerName="83f1bb933d64" duration="00:00:00.0003370" startTime="2026-11-04T16:22:36.8269134+00:00" endTime="2026-11-04T16:22:36.8270972+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="02444606-def2-4df2-ada5-49b4647cd297">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : Explicit solution membership validation is not implemented.</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage) in /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs:line 69
+   at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(String stage, Boolean legacy, Boolean valid) in /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs:line 18
+   at InvokeStub_DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f43e4a6b-b193-4b96-8dbe-9aebeae6ad29" testId="7a6e4646-faa1-a4da-a839-d8fabaccb11e" testName="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(extra: &quot;src/CoreBanking.ServiceDefaults/CoreBanking.Servic&quot;···)" computerName="83f1bb933d64" duration="00:00:00.0000554" startTime="2026-11-04T16:22:36.8238041+00:00" endTime="2026-11-04T16:22:36.8239310+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f43e4a6b-b193-4b96-8dbe-9aebeae6ad29">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : Explicit solution membership validation is not implemented.</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage) in /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs:line 69
+   at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(String extra) in /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs:line 28
+   at InvokeStub_DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="187401b1-5ec2-49c9-8704-10ff59aa01a8" testId="f819642e-af9e-1871-a69f-98a1277646ba" testName="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: &quot;Unknown&quot;, legacy: False, valid: False)" computerName="83f1bb933d64" duration="00:00:00.0000543" startTime="2026-11-04T16:22:36.8292123+00:00" endTime="2026-11-04T16:22:36.8293513+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="187401b1-5ec2-49c9-8704-10ff59aa01a8">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : Explicit solution membership validation is not implemented.</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage) in /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs:line 69
+   at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(String stage, Boolean legacy, Boolean valid) in /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs:line 18
+   at InvokeStub_DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2e505586-d83e-45d2-8619-1de531fdabba" testId="f2467a5e-c6cf-f2bc-3829-436c88984e7d" testName="CoreBanking.UnitTests.Application.PortSubstitutionTests.Use_cases_accept_replaced_ports_without_host_or_database(replaceGateway: False)" computerName="83f1bb933d64" duration="00:00:00.0130052" startTime="2026-11-04T16:22:34.5522672+00:00" endTime="2026-11-04T16:22:34.5524776+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e505586-d83e-45d2-8619-1de531fdabba" />
+    <UnitTestResult executionId="d39de036-ca09-4c48-a34b-80e58566edf6" testId="107b7345-456a-6785-db5c-976dd946fbe8" testName="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: &quot;Transitional&quot;, legacy: True, valid: True)" computerName="83f1bb933d64" duration="00:00:00.0000662" startTime="2026-11-04T16:22:36.8279982+00:00" endTime="2026-11-04T16:22:36.8281298+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d39de036-ca09-4c48-a34b-80e58566edf6">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : Explicit solution membership validation is not implemented.</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage) in /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs:line 69
+   at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(String stage, Boolean legacy, Boolean valid) in /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs:line 18
+   at InvokeStub_DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cefa3d60-e344-4caa-81fc-b2e8389c2221" testId="f62d07c0-943c-278a-d1eb-b1317e7384e2" testName="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.All_packages_use_the_exact_central_catalog_and_technical_layer_allowlists" computerName="83f1bb933d64" duration="00:00:09.1933481" startTime="2026-11-04T16:22:36.8348275+00:00" endTime="2026-11-04T16:22:46.0030224+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cefa3d60-e344-4caa-81fc-b2e8389c2221" />
+    <UnitTestResult executionId="1c395bf2-4eb9-4195-9f9e-86462500fdbf" testId="e292e5a9-8289-cb4d-8c5e-abebc876d919" testName="CoreBanking.UnitTests.Application.PortSubstitutionTests.Cancellation_crosses_replaced_gateway_without_completion_or_posting" computerName="83f1bb933d64" duration="00:00:00.0430774" startTime="2026-11-04T16:22:34.4636759+00:00" endTime="2026-11-04T16:22:34.5256471+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c395bf2-4eb9-4195-9f9e-86462500fdbf" />
+    <UnitTestResult executionId="02272332-a16e-4964-a35b-e6fe028f6ce8" testId="65d0d228-db96-b6b7-11d6-1e57ab514081" testName="CoreBanking.UnitTests.Application.PortSubstitutionTests.Use_cases_accept_replaced_ports_without_host_or_database(replaceGateway: True)" computerName="83f1bb933d64" duration="00:00:00.0006284" startTime="2026-11-04T16:22:34.5534734+00:00" endTime="2026-11-04T16:22:34.5536228+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="02272332-a16e-4964-a35b-e6fe028f6ce8" />
+    <UnitTestResult executionId="4723cc71-f083-4f76-991c-191a0d0cc195" testId="d406df68-095b-9f24-5d3d-81e8731b32de" testName="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(extra: &quot;src/CoreBanking.AppHost/CoreBanking.AppHost.csproj&quot;)" computerName="83f1bb933d64" duration="00:00:00.0014489" startTime="2026-11-04T16:22:36.8179605+00:00" endTime="2026-11-04T16:22:36.8183957+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4723cc71-f083-4f76-991c-191a0d0cc195">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : Explicit solution membership validation is not implemented.</Message>
+          <StackTrace>   at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage) in /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs:line 69
+   at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(String extra) in /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs:line 28
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Migration_host_and_runner_do_not_own_banking_rules_or_web_operations" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="e569e328-dff5-af74-a061-87c827757fd4">
+      <Execution id="1a5f74a3-7337-40df-b346-aef655abc976" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyPolicyTests" name="Migration_host_and_runner_do_not_own_banking_rules_or_web_operations" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(extra: &quot;src/CoreBanking.ServiceDefaults/CoreBanking.Servic&quot;···)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="7a6e4646-faa1-a4da-a839-d8fabaccb11e">
+      <Execution id="f43e4a6b-b193-4b96-8dbe-9aebeae6ad29" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyPolicyTests" name="Membership_rejects_extra_missing_renamed_and_duplicate_projects" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(extra: &quot;src/CoreBanking.AppHost/CoreBanking.AppHost.csproj&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="d406df68-095b-9f24-5d3d-81e8731b32de">
+      <Execution id="4723cc71-f083-4f76-991c-191a0d0cc195" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyPolicyTests" name="Membership_rejects_extra_missing_renamed_and_duplicate_projects" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.All_packages_use_the_exact_central_catalog_and_technical_layer_allowlists" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="f62d07c0-943c-278a-d1eb-b1317e7384e2">
+      <Execution id="cefa3d60-e344-4caa-81fc-b2e8389c2221" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyPolicyTests" name="All_packages_use_the_exact_central_catalog_and_technical_layer_allowlists" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.PortSubstitutionTests.Use_cases_accept_replaced_ports_without_host_or_database(replaceGateway: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="f2467a5e-c6cf-f2bc-3829-436c88984e7d">
+      <Execution id="2e505586-d83e-45d2-8619-1de531fdabba" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.PortSubstitutionTests" name="Use_cases_accept_replaced_ports_without_host_or_database" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: &quot;Transitional&quot;, legacy: True, valid: True)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="107b7345-456a-6785-db5c-976dd946fbe8">
+      <Execution id="d39de036-ca09-4c48-a34b-80e58566edf6" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyPolicyTests" name="Membership_policy_is_explicit_and_never_auto_relaxes" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.PortSubstitutionTests.Cancellation_crosses_replaced_gateway_without_completion_or_posting" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="e292e5a9-8289-cb4d-8c5e-abebc876d919">
+      <Execution id="1c395bf2-4eb9-4195-9f9e-86462500fdbf" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.PortSubstitutionTests" name="Cancellation_crosses_replaced_gateway_without_completion_or_posting" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: &quot;Final&quot;, legacy: False, valid: True)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="73d6f62d-ecb3-3bcc-068d-1829c343fb6f">
+      <Execution id="505af062-26c1-4ddf-9889-e54acc8706ff" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyPolicyTests" name="Membership_policy_is_explicit_and_never_auto_relaxes" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: &quot;Unknown&quot;, legacy: False, valid: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="f819642e-af9e-1871-a69f-98a1277646ba">
+      <Execution id="187401b1-5ec2-49c9-8704-10ff59aa01a8" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyPolicyTests" name="Membership_policy_is_explicit_and_never_auto_relaxes" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: &quot;Final&quot;, legacy: True, valid: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="e4a1075f-f7ed-879d-382e-46a254e5a453">
+      <Execution id="02444606-def2-4df2-ada5-49b4647cd297" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyPolicyTests" name="Membership_policy_is_explicit_and_never_auto_relaxes" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: &quot;Transitional&quot;, legacy: False, valid: False)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="a3962d17-bc4f-4679-228d-d9c6ffb1f181">
+      <Execution id="8a0e5686-7a84-477d-8d67-c6ece66a893d" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyPolicyTests" name="Membership_policy_is_explicit_and_never_auto_relaxes" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Actual_solution_and_project_paths_satisfy_requested_validation_stage" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="017eab21-5d25-8a03-a49b-25e50c01e6da">
+      <Execution id="09927aad-6453-4c8f-9289-c94642d3abb2" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyPolicyTests" name="Actual_solution_and_project_paths_satisfy_requested_validation_stage" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Application.PortSubstitutionTests.Use_cases_accept_replaced_ports_without_host_or_database(replaceGateway: True)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="65d0d228-db96-b6b7-11d6-1e57ab514081">
+      <Execution id="02272332-a16e-4964-a35b-e6fe028f6ce8" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Application.PortSubstitutionTests" name="Use_cases_accept_replaced_ports_without_host_or_database" />
+    </UnitTest>
+    <UnitTest name="CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(extra: &quot;src/Other/CoreBanking.Api.csproj&quot;)" storage="/source/tests/corebanking.unittests/bin/release/net10.0/corebanking.unittests.dll" id="e628efcc-a22a-aa5c-480d-7ef45ab5f797">
+      <Execution id="dc952be9-2753-4192-a7a6-176fc07bd5fd" />
+      <TestMethod codeBase="/source/tests/CoreBanking.UnitTests/bin/Release/net10.0/CoreBanking.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="CoreBanking.UnitTests.Architecture.DependencyPolicyTests" name="Membership_rejects_extra_missing_renamed_and_duplicate_projects" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="e628efcc-a22a-aa5c-480d-7ef45ab5f797" executionId="dc952be9-2753-4192-a7a6-176fc07bd5fd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e569e328-dff5-af74-a061-87c827757fd4" executionId="1a5f74a3-7337-40df-b346-aef655abc976" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3962d17-bc4f-4679-228d-d9c6ffb1f181" executionId="8a0e5686-7a84-477d-8d67-c6ece66a893d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73d6f62d-ecb3-3bcc-068d-1829c343fb6f" executionId="505af062-26c1-4ddf-9889-e54acc8706ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="017eab21-5d25-8a03-a49b-25e50c01e6da" executionId="09927aad-6453-4c8f-9289-c94642d3abb2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4a1075f-f7ed-879d-382e-46a254e5a453" executionId="02444606-def2-4df2-ada5-49b4647cd297" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a6e4646-faa1-a4da-a839-d8fabaccb11e" executionId="f43e4a6b-b193-4b96-8dbe-9aebeae6ad29" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f819642e-af9e-1871-a69f-98a1277646ba" executionId="187401b1-5ec2-49c9-8704-10ff59aa01a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2467a5e-c6cf-f2bc-3829-436c88984e7d" executionId="2e505586-d83e-45d2-8619-1de531fdabba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="107b7345-456a-6785-db5c-976dd946fbe8" executionId="d39de036-ca09-4c48-a34b-80e58566edf6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f62d07c0-943c-278a-d1eb-b1317e7384e2" executionId="cefa3d60-e344-4caa-81fc-b2e8389c2221" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e292e5a9-8289-cb4d-8c5e-abebc876d919" executionId="1c395bf2-4eb9-4195-9f9e-86462500fdbf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65d0d228-db96-b6b7-11d6-1e57ab514081" executionId="02272332-a16e-4964-a35b-e6fe028f6ce8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d406df68-095b-9f24-5d3d-81e8731b32de" executionId="4723cc71-f083-4f76-991c-191a0d0cc195" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="14" executed="14" passed="5" failed="9" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v4.0.1+0f7d528729 (64-bit .NET 10.0.14)
+[xUnit.net 00:00:00.20]   Discovering: CoreBanking.UnitTests
+[xUnit.net 00:00:00.35]   Discovered:  CoreBanking.UnitTests
+[xUnit.net 00:00:00.41]   Starting:    CoreBanking.UnitTests
+[xUnit.net 00:00:02.80]       System.NotImplementedException : Explicit solution membership validation is not implemented.
+[xUnit.net 00:00:02.80]       Stack Trace:
+[xUnit.net 00:00:02.80]         /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs(69,0): at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage)
+[xUnit.net 00:00:02.80]         /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs(43,0): at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Actual_solution_and_project_paths_satisfy_requested_validation_stage()
+[xUnit.net 00:00:02.80]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:00:02.80]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+[xUnit.net 00:00:02.81]       System.NotImplementedException : Explicit solution membership validation is not implemented.
+[xUnit.net 00:00:02.81]       Stack Trace:
+[xUnit.net 00:00:02.81]         /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs(69,0): at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage)
+[xUnit.net 00:00:02.81]         /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs(28,0): at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(String extra)
+[xUnit.net 00:00:02.81]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:00:02.81]            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+[xUnit.net 00:00:02.81]       System.NotImplementedException : Explicit solution membership validation is not implemented.
+[xUnit.net 00:00:02.81]       Stack Trace:
+[xUnit.net 00:00:02.81]         /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs(69,0): at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage)
+[xUnit.net 00:00:02.81]         /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs(28,0): at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(String extra)
+[xUnit.net 00:00:02.81]            at InvokeStub_DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(Object, Span`1)
+[xUnit.net 00:00:02.81]            at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:02.81]       System.NotImplementedException : Explicit solution membership validation is not implemented.
+[xUnit.net 00:00:02.81]       Stack Trace:
+[xUnit.net 00:00:02.81]         /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs(69,0): at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage)
+[xUnit.net 00:00:02.81]         /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs(28,0): at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(String extra)
+[xUnit.net 00:00:02.81]            at InvokeStub_DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(Object, Span`1)
+[xUnit.net 00:00:02.81]            at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:02.81]       System.NotImplementedException : Explicit solution membership validation is not implemented.
+[xUnit.net 00:00:02.81]       Stack Trace:
+[xUnit.net 00:00:02.81]         /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs(69,0): at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage)
+[xUnit.net 00:00:02.81]         /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs(18,0): at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(String stage, Boolean legacy, Boolean valid)
+[xUnit.net 00:00:02.81]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:00:02.81]            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+[xUnit.net 00:00:02.81]       System.NotImplementedException : Explicit solution membership validation is not implemented.
+[xUnit.net 00:00:02.81]       Stack Trace:
+[xUnit.net 00:00:02.81]         /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs(69,0): at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage)
+[xUnit.net 00:00:02.81]         /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs(18,0): at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(String stage, Boolean legacy, Boolean valid)
+[xUnit.net 00:00:02.81]            at InvokeStub_DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(Object, Span`1)
+[xUnit.net 00:00:02.81]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:02.82]       System.NotImplementedException : Explicit solution membership validation is not implemented.
+[xUnit.net 00:00:02.82]       Stack Trace:
+[xUnit.net 00:00:02.82]         /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs(69,0): at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage)
+[xUnit.net 00:00:02.82]         /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs(18,0): at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(String stage, Boolean legacy, Boolean valid)
+[xUnit.net 00:00:02.82]            at InvokeStub_DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(Object, Span`1)
+[xUnit.net 00:00:02.82]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:02.82]       System.NotImplementedException : Explicit solution membership validation is not implemented.
+[xUnit.net 00:00:02.82]       Stack Trace:
+[xUnit.net 00:00:02.82]         /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs(69,0): at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage)
+[xUnit.net 00:00:02.82]         /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs(18,0): at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(String stage, Boolean legacy, Boolean valid)
+[xUnit.net 00:00:02.82]            at InvokeStub_DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(Object, Span`1)
+[xUnit.net 00:00:02.82]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:02.82]       System.NotImplementedException : Explicit solution membership validation is not implemented.
+[xUnit.net 00:00:02.82]       Stack Trace:
+[xUnit.net 00:00:02.82]         /source/tests/CoreBanking.UnitTests/Support/ArchitectureInspector.cs(69,0): at CoreBanking.UnitTests.Support.ArchitectureInspector.MembershipViolations(IEnumerable`1 projects, String stage)
+[xUnit.net 00:00:02.82]         /source/tests/CoreBanking.UnitTests/Architecture/DependencyPolicyTests.cs(18,0): at CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(String stage, Boolean legacy, Boolean valid)
+[xUnit.net 00:00:02.82]            at InvokeStub_DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(Object, Span`1)
+[xUnit.net 00:00:02.82]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:00:12.01]   Finished:    CoreBanking.UnitTests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="83f1bb933d64" outcome="Error" timestamp="2026-11-04T16:22:36.8111441+00:00">
+        <Text>[xUnit.net 00:00:02.80]     CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Actual_solution_and_project_paths_satisfy_requested_validation_stage [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="83f1bb933d64" outcome="Error" timestamp="2026-11-04T16:22:36.8197452+00:00">
+        <Text>[xUnit.net 00:00:02.81]     CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(extra: "src/CoreBanking.AppHost/CoreBanking.AppHost.csproj") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="83f1bb933d64" outcome="Error" timestamp="2026-11-04T16:22:36.8220606+00:00">
+        <Text>[xUnit.net 00:00:02.81]     CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(extra: "src/Other/CoreBanking.Api.csproj") [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="83f1bb933d64" outcome="Error" timestamp="2026-11-04T16:22:36.8244330+00:00">
+        <Text>[xUnit.net 00:00:02.81]     CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_rejects_extra_missing_renamed_and_duplicate_projects(extra: "src/CoreBanking.ServiceDefaults/CoreBanking.Servic"···) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="83f1bb933d64" outcome="Error" timestamp="2026-11-04T16:22:36.8262609+00:00">
+        <Text>[xUnit.net 00:00:02.81]     CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: "Final", legacy: False, valid: True) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="83f1bb933d64" outcome="Error" timestamp="2026-11-04T16:22:36.8274993+00:00">
+        <Text>[xUnit.net 00:00:02.81]     CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: "Final", legacy: True, valid: False) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="83f1bb933d64" outcome="Error" timestamp="2026-11-04T16:22:36.8285296+00:00">
+        <Text>[xUnit.net 00:00:02.82]     CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: "Transitional", legacy: True, valid: True) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="83f1bb933d64" outcome="Error" timestamp="2026-11-04T16:22:36.8300264+00:00">
+        <Text>[xUnit.net 00:00:02.82]     CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: "Unknown", legacy: False, valid: False) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="83f1bb933d64" outcome="Error" timestamp="2026-11-04T16:22:36.8312919+00:00">
+        <Text>[xUnit.net 00:00:02.82]     CoreBanking.UnitTests.Architecture.DependencyPolicyTests.Membership_policy_is_explicit_and_never_auto_relaxes(stage: "Transitional", legacy: False, valid: False) [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>
